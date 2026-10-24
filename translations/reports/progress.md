@@ -1,7 +1,7 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**7** 份；翻譯中：**17** 份；已翻完待組裝：**0** 份
+- 已驗證：**10** 份；翻譯中：**14** 份；已翻完待組裝：**0** 份
 - 未開始：**459** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
@@ -13,9 +13,9 @@
 | `02_financial_data_universe/03_etfs_eda.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/04_cme_futures_eda.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/05_futures_session_aggregation.ipynb` | 21/21 | 3/3 | 已組裝／驗證通過 |  |
-| `02_financial_data_universe/06_futures_continuous.ipynb` | 0/35 | 0/6 | 翻譯中 |  |
-| `02_financial_data_universe/07_sp500_options_eda.ipynb` | 0/37 | 0/5 | 翻譯中 |  |
-| `02_financial_data_universe/08_options_greeks_computation.ipynb` | 0/40 | 0/5 | 翻譯中 |  |
+| `02_financial_data_universe/06_futures_continuous.ipynb` | 35/35 | 6/6 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/07_sp500_options_eda.ipynb` | 37/37 | 5/5 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/08_options_greeks_computation.ipynb` | 40/40 | 5/5 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/09_options_continuous.ipynb` | 0/29 | 0/5 | 翻譯中 |  |
 | `02_financial_data_universe/10_crypto_perps_eda.ipynb` | 0/20 | 0/4 | 翻譯中 |  |
 | `02_financial_data_universe/11_crypto_premium_analysis.ipynb` | 0/22 | 0/4 | 翻譯中 |  |
