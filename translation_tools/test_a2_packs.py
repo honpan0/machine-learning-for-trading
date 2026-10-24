@@ -149,5 +149,29 @@ class A2Tests(unittest.TestCase):
             collect.load_packs(self.root,self.src_rel)
 
 
+    def test_collect_real_world_escaped_response_no_manual_fix(self):
+        data = self.make_packs()
+        pack = data["packs"][0]
+        uid0, uid1 = pack["ids"]
+        reply = (
+            rf"\<escape><<\<ML4T-ZH-BEGIN:{uid0}>>>" + "\n"
+            + "第一段。\n"
+            + rf"<<\<ML4T-ZH-END:{uid0}>>>" + "\\" + "\n"
+            + "\\\n"
+            + rf"\<escape><<\<ML4T-ZH-BEGIN:{uid1}>>>" + "\n"
+            + "第二段。\n"
+            + rf"<<\<ML4T-ZH-END:{uid1}>>>" + "\n"
+        )
+        path = self.work / "inbox/pack_001.txt"
+        original = reply.encode("utf-8")
+        path.write_bytes(original)
+        added = collect.collect_one(self.root, self.src_rel, self.work, self.manifest,
+                                    data, 1, path, False, False)
+        self.assertEqual(added, 2)
+        self.assertEqual(path.read_bytes(), original)
+        self.assertEqual((self.work / "responses" / f"{uid0}.md").read_text(encoding="utf-8"), "第一段。\n")
+        self.assertEqual((self.work / "responses" / f"{uid1}.md").read_text(encoding="utf-8"), "第二段。\n")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

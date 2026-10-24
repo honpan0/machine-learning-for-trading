@@ -21,7 +21,14 @@ from dataclasses import dataclass
 from pathlib import Path
 
 UID = r"c\d{4}-p\d{3}"
-TOKEN = re.compile(rf"(?P<prefix><<<|<<\\<|<escape><<<)ML4T-ZH-(?P<kind>BEGIN|END):(?P<uid>{UID})>>>")
+# AI occasionally escapes angle brackets, prints a literal <escape> wrapper,
+# or appends one spare backslash after a marker. Match *only* standalone marker
+# sequences, never such substrings in ordinary Markdown/code.
+TOKEN = re.compile(
+    rf"(?P<prefix>(?:\\?<escape>)?(?:<<<|<<\\<))"
+    rf"ML4T-ZH-(?P<kind>BEGIN|END):(?P<uid>{UID})>>>"
+    rf"(?P<suffix>\\?)"
+)
 MARKER_LINE = re.compile(rf"[ \t]*(?:{TOKEN.pattern}[ \t]*)+")
 BEGIN = re.compile(rf"<<<ML4T-ZH-BEGIN:({UID})>>>")
 END = re.compile(rf"<<<ML4T-ZH-END:({UID})>>>")
@@ -47,22 +54,36 @@ class Inspection:
 
 
 def normalize(raw: str) -> tuple[str, int, int]:
-    """Normalize only complete marker-only lines, leaving prose byte-for-byte intact."""
-    result = []
+    """Repair only marker-only lines and orphan backslashes between blocks.
+
+    Standalone backslashes *inside* translated prose are never touched. Input
+    is not changed in place; strict validate() must pass before callers write.
+    """
+    result: list[str] = []
     repaired = 0
     joins = 0
+    outside_translation = True
     for line in raw.splitlines(keepends=True):
         body = line.rstrip("\r\n")
         ending = line[len(body):]
-        if not MARKER_LINE.fullmatch(body):
+        if MARKER_LINE.fullmatch(body):
+            found = list(TOKEN.finditer(body))
+            canonical = [f"<<<ML4T-ZH-{m['kind']}:{m['uid']}>>>" for m in found]
+            repaired += sum(m["prefix"] != "<<<" or bool(m["suffix"]) for m in found)
+            joins += max(0, len(found) - 1)
+            sep = "\r\n" if ending == "\r\n" else "\n"
+            result.append(sep.join(canonical) + ending)
+            for marker in found:
+                # We do not try to repair nesting, duplicate IDs, or wrong
+                # ENDs; strict validation will reject these later.
+                outside_translation = marker["kind"] == "END"
+        elif outside_translation and body.strip() == "\\":
+            # Some ChatGPT replies contain a bare '\' line *between*
+            # blocks. Such a line is forbidden by the response protocol.
+            # Never remove a slash inside a translated Markdown block.
+            repaired += 1
+        else:
             result.append(line)
-            continue
-        found = list(TOKEN.finditer(body))
-        canonical = [f"<<<ML4T-ZH-{m['kind']}:{m['uid']}>>>" for m in found]
-        repaired += sum(m["prefix"] != "<<<" for m in found)
-        joins += max(0, len(found) - 1)
-        sep = "\r\n" if ending == "\r\n" else "\n"
-        result.append(sep.join(canonical) + ending)
     return "".join(result), repaired, joins
 
 

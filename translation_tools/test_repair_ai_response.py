@@ -121,5 +121,73 @@ class MarkerRepairTests(unittest.TestCase):
             self.assertFalse((work / "batch_001.txt.bak").exists())
 
 
+    def test_real_world_escaped_html_suffix_and_orphan_slash(self):
+        # Reproduces the pattern from the 04_cme_futures_eda Pack 001 reply.
+        raw = (
+            r"\<escape><<\<ML4T-ZH-BEGIN:c0000-p000>>>" + "\n"
+            + "保留原始內文中的 `\\` 和 $x^2$。\n"
+            + r"<<\<ML4T-ZH-END:c0000-p000>>>" + "\\" + "\n"
+            + "\\\n"  # An orphan backslash outside all translation units
+            + r"\<escape><<\<ML4T-ZH-BEGIN:c0001-p000>>>" + "\n"
+            + "第二段完整翻譯。\n"
+            + r"<<\<ML4T-ZH-END:c0001-p000>>>" + "\n"
+        )
+        normalized, changes, joins = normalize(raw)
+        self.assertEqual(normalized, (
+            f"{BEG0}\n保留原始內文中的 `\\` 和 $x^2$。\n{END0}\n"
+            f"{BEG1}\n第二段完整翻譯。\n{END1}\n"
+        ))
+        self.assertEqual((changes, joins), (5, 0))
+        self.assertEqual(validate(normalized, [U0, U1]), 2)
+        self.assertEqual(normalize(normalized), (normalized, 0, 0))
+
+    def test_mixed_escaped_glued_markers_with_trailing_slash(self):
+        raw = (
+            f"{BEG0}\r\n第一單元。\r\n"
+            + r"<<\<ML4T-ZH-END:c0000-p000>>>\\<escape><<\<ML4T-ZH-BEGIN:c0001-p000>>>" + "\r\n"
+            + "第二單元。\r\n"
+            + r"<<\<ML4T-ZH-END:c0001-p000>>>" + "\\" + "\r\n"
+        )
+        fixed, count, joins = normalize(raw)
+        self.assertEqual(fixed, f"{BEG0}\r\n第一單元。\r\n{END0}\r\n{BEG1}\r\n第二單元。\r\n{END1}\r\n")
+        self.assertEqual((count, joins), (3, 1))
+        self.assertEqual(validate(fixed, [U0, U1]), 2)
+
+    def test_standalone_backslash_inside_translation_preserved(self):
+        raw = f"{BEG0}\n\\\n\n內文含獨立反斜線。\n{END0}\n"
+        fixed, changes, joins = normalize(raw)
+        self.assertEqual(fixed, raw)
+        self.assertEqual((changes, joins), (0, 0))
+        self.assertEqual(validate(fixed, [U0]), 1)
+
+    def test_malformed_marker_or_extra_prose_still_rejected(self):
+        bad = [
+            r"\<escape><<\<ML4T-ZH-BEGIN:c0000-p000>>" + "\n譯文\n" + END0,
+            r"<<<ML4T-ZH-BEGIN:c0000-p000>>>\ other" + "\n譯文\n" + END0,
+            "不可隨意刪除的前言\n" + BEG0 + "\n譯文\n" + END0,
+            BEG0 + "\n譯文\n" + r"<<\<ML4T-ZH-END:c0001-p000>>>" + "\n",
+        ]
+        for raw in bad:
+            with self.subTest(raw=raw):
+                normalized, _, _ = normalize(raw)
+                with self.assertRaises(RepairError):
+                    validate(normalized, [U0])
+
+    def test_repair_failure_does_not_write_backup_or_change_translation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            task = work / "batch_001.md"
+            reply = work / "batch_001.txt"
+            task.write_text(f"## 單元：{U0}\n", encoding="utf-8")
+            bad = (r"\<escape><<\<ML4T-ZH-BEGIN:c0000-p000>>>" +
+                   "\n原譯文\n" +
+                   r"<<\<ML4T-ZH-END:c0001-p000>>>" + "\n").encode("utf-8")
+            reply.write_bytes(bad)
+            with self.assertRaises(RepairError):
+                inspect(reply, task)
+            self.assertEqual(reply.read_bytes(), bad)
+            self.assertFalse((work / "batch_001.txt.bak").exists())
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
