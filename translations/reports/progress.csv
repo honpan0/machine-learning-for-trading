@@ -1,7 +1,7 @@
 ﻿Notebook,分類,狀態,完成單元,總單元,完成批次,總批次,中文版已存在,備註
 01_process_is_edge/factor_regimes.ipynb,01_process_is_edge,已組裝／驗證通過,28,28,5,5,是,
 01_process_is_edge/macro_regimes.ipynb,01_process_is_edge,已組裝／驗證通過,38,38,6,6,是,
-02_financial_data_universe/01_us_equities_eda.ipynb,02_financial_data_universe,未開始,0,0,0,0,否,
+02_financial_data_universe/01_us_equities_eda.ipynb,02_financial_data_universe,已組裝／驗證通過,14,14,2,2,是,
 02_financial_data_universe/02_corporate_actions.ipynb,02_financial_data_universe,未開始,0,0,0,0,否,
 02_financial_data_universe/03_etfs_eda.ipynb,02_financial_data_universe,未開始,0,0,0,0,否,
 02_financial_data_universe/04_cme_futures_eda.ipynb,02_financial_data_universe,未開始,0,0,0,0,否,

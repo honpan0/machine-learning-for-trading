@@ -1,14 +1,14 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**2** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**481** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**3** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**480** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
 | `01_process_is_edge/factor_regimes.ipynb` | 28/28 | 5/5 | 已組裝／驗證通過 |  |
 | `01_process_is_edge/macro_regimes.ipynb` | 38/38 | 6/6 | 已組裝／驗證通過 |  |
-| `02_financial_data_universe/01_us_equities_eda.ipynb` | — | 0/0 | 未開始 |  |
+| `02_financial_data_universe/01_us_equities_eda.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/02_corporate_actions.ipynb` | — | 0/0 | 未開始 |  |
 | `02_financial_data_universe/03_etfs_eda.ipynb` | — | 0/0 | 未開始 |  |
 | `02_financial_data_universe/04_cme_futures_eda.ipynb` | — | 0/0 | 未開始 |  |
