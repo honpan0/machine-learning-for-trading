@@ -1,35 +1,35 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**3** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**480** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**5** 份；翻譯中：**19** 份；已翻完待組裝：**0** 份
+- 未開始：**459** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
 | `01_process_is_edge/factor_regimes.ipynb` | 28/28 | 5/5 | 已組裝／驗證通過 |  |
 | `01_process_is_edge/macro_regimes.ipynb` | 38/38 | 6/6 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/01_us_equities_eda.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
-| `02_financial_data_universe/02_corporate_actions.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/03_etfs_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/04_cme_futures_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/05_futures_session_aggregation.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/06_futures_continuous.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/07_sp500_options_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/08_options_greeks_computation.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/09_options_continuous.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/10_crypto_perps_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/11_crypto_premium_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/12_fx_pairs_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/13_data_quality_framework.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/14_point_in_time_validation.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/15_survivorship_bias_detection.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/16_provider_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/17_complete_pipeline.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/18_data_management.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/19_incremental_updates.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/20_storage_benchmark_file.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/21_storage_benchmark_database.ipynb` | — | 0/0 | 未開始 |  |
-| `02_financial_data_universe/22_pandas_polars_benchmark.ipynb` | — | 0/0 | 未開始 |  |
+| `02_financial_data_universe/02_corporate_actions.ipynb` | 26/26 | 3/3 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/03_etfs_eda.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/04_cme_futures_eda.ipynb` | 0/17 | 0/2 | 翻譯中 |  |
+| `02_financial_data_universe/05_futures_session_aggregation.ipynb` | 0/21 | 0/3 | 翻譯中 |  |
+| `02_financial_data_universe/06_futures_continuous.ipynb` | 0/35 | 0/6 | 翻譯中 |  |
+| `02_financial_data_universe/07_sp500_options_eda.ipynb` | 0/37 | 0/5 | 翻譯中 |  |
+| `02_financial_data_universe/08_options_greeks_computation.ipynb` | 0/40 | 0/5 | 翻譯中 |  |
+| `02_financial_data_universe/09_options_continuous.ipynb` | 0/29 | 0/5 | 翻譯中 |  |
+| `02_financial_data_universe/10_crypto_perps_eda.ipynb` | 0/20 | 0/4 | 翻譯中 |  |
+| `02_financial_data_universe/11_crypto_premium_analysis.ipynb` | 0/22 | 0/4 | 翻譯中 |  |
+| `02_financial_data_universe/12_fx_pairs_eda.ipynb` | 0/17 | 0/2 | 翻譯中 |  |
+| `02_financial_data_universe/13_data_quality_framework.ipynb` | 0/27 | 0/4 | 翻譯中 |  |
+| `02_financial_data_universe/14_point_in_time_validation.ipynb` | 0/18 | 0/3 | 翻譯中 |  |
+| `02_financial_data_universe/15_survivorship_bias_detection.ipynb` | 0/28 | 0/4 | 翻譯中 |  |
+| `02_financial_data_universe/16_provider_comparison.ipynb` | 0/16 | 0/2 | 翻譯中 |  |
+| `02_financial_data_universe/17_complete_pipeline.ipynb` | 0/22 | 0/3 | 翻譯中 |  |
+| `02_financial_data_universe/18_data_management.ipynb` | 0/27 | 0/3 | 翻譯中 |  |
+| `02_financial_data_universe/19_incremental_updates.ipynb` | 0/16 | 0/2 | 翻譯中 |  |
+| `02_financial_data_universe/20_storage_benchmark_file.ipynb` | 0/15 | 0/2 | 翻譯中 |  |
+| `02_financial_data_universe/21_storage_benchmark_database.ipynb` | 0/42 | 0/5 | 翻譯中 |  |
+| `02_financial_data_universe/22_pandas_polars_benchmark.ipynb` | 0/51 | 0/4 | 翻譯中 |  |
 | `03_market_microstructure/01_itch_parser.ipynb` | — | 0/0 | 未開始 |  |
 | `03_market_microstructure/02_itch_lob_reconstruction.ipynb` | — | 0/0 | 未開始 |  |
 | `03_market_microstructure/03_itch_lob_analysis.ipynb` | — | 0/0 | 未開始 |  |
