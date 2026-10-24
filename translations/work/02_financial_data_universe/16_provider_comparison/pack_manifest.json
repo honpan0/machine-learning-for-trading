@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/16_provider_comparison.ipynb",
+  "source_sha256": "a09e8c4c130bac7e129405a00aa8016dad4fa115610cf323aa530f7fcc82daec",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0002-p000",
+            "c0004-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0021-p000",
+            "c0023-p000",
+            "c0026-p000",
+            "c0029-p000"
+          ],
+          "chars": 4694
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0033-p000",
+            "c0034-p000",
+            "c0037-p000",
+            "c0039-p000"
+          ],
+          "chars": 3905
+        }
+      ],
+      "chars": 8599,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0002-p000",
+        "c0004-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0021-p000",
+        "c0023-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0033-p000",
+        "c0034-p000",
+        "c0037-p000",
+        "c0039-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "fb0ca3f36a2e3e4c0b86518cc8ccc5093fc8b2f219ffa1c12121992fa025c5f4",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

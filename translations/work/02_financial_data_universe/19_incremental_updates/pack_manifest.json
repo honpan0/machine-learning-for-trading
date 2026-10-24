@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/19_incremental_updates.ipynb",
+  "source_sha256": "a640b249669d2957d07b0a2191f0325cd93e4ef442c94f5be612c7abc4c4b6d2",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0008-p001",
+            "c0010-p000",
+            "c0011-p000",
+            "c0013-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0017-p000"
+          ],
+          "chars": 4884
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0021-p000",
+            "c0022-p000",
+            "c0022-p001"
+          ],
+          "chars": 3737
+        }
+      ],
+      "chars": 8621,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0008-p001",
+        "c0010-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0017-p000",
+        "c0021-p000",
+        "c0022-p000",
+        "c0022-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "9d07c5b7a20ef540f30869f3d902b866aef80ddfa8e2c9cb922212b947880875",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

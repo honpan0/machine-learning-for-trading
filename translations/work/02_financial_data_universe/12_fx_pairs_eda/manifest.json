@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "source": "02_financial_data_universe/12_fx_pairs_eda.ipynb",
+  "source_sha256": "a4059d47188f8b0aed9b105b30e555b98029e44b2905a9c0b8e70b822bbf59c4",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1055,
+      "source_sha256": "38a3b8025fafc2de84393dea91288cbdce9f04cb5d9311cf23741ddcd15f33ea",
+      "chars": 1055
+    },
+    {
+      "id": "c0002-p000",
+      "cell_index": 2,
+      "start": 0,
+      "end": 613,
+      "source_sha256": "91b4e49363ff11820d31d099ab18baeaa357a39d1551666ce94d22099c187ab7",
+      "chars": 613
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 22,
+      "source_sha256": "75c326373d0f8322ec9edd386eaf0f0f62cfa1349e0629f653779bc28f00bd89",
+      "chars": 22
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 575,
+      "source_sha256": "18c330896bb7825bbc5dfb36dd2b68c978037db07b47ccf1fff6698fcdd72adb",
+      "chars": 575
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 179,
+      "source_sha256": "47ac35f64e8202363ab17fa37f4a37f01d5961625d52b61b3b5d18f7e4a88515",
+      "chars": 179
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 22,
+      "source_sha256": "acc3a7df849ea07fbb1eac32659fd4cb91bf99f35e0fc5748b30cca80a602f99",
+      "chars": 22
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 791,
+      "source_sha256": "9ef2c3a3386cf5a9b7ec9583d68ec3a8e5d4f99acd52a9dec8dad03e8cd1b8de",
+      "chars": 791
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 632,
+      "source_sha256": "daf94765f069ad2e98b68da94784b33263570fb1f05e564056b3c26fa6d59be9",
+      "chars": 632
+    },
+    {
+      "id": "c0016-p000",
+      "cell_index": 16,
+      "start": 0,
+      "end": 453,
+      "source_sha256": "847052cd733589553e93968d5550210ee1262def2b5ee55fdf39602f00c07d6e",
+      "chars": 453
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 637,
+      "source_sha256": "f32bb18e1573cbc53aa37ab4cb8f93175202332977c6abc508244cfa3397353b",
+      "chars": 637
+    },
+    {
+      "id": "c0021-p000",
+      "cell_index": 21,
+      "start": 0,
+      "end": 1008,
+      "source_sha256": "b4aaa9e507d112cd2462386752292b8ce28f9898ab1754509eba1ec8ae8255af",
+      "chars": 1008
+    },
+    {
+      "id": "c0023-p000",
+      "cell_index": 23,
+      "start": 0,
+      "end": 264,
+      "source_sha256": "a00953ea3a7a47926d7628b3c496ab5a75f84283cc8c1470c1f7a03ecc5f7094",
+      "chars": 264
+    },
+    {
+      "id": "c0025-p000",
+      "cell_index": 25,
+      "start": 0,
+      "end": 781,
+      "source_sha256": "e283955459b9418f10eabc7831e7c0fd3707d2ef45ac8e75916a8c53c81eb297",
+      "chars": 781
+    },
+    {
+      "id": "c0027-p000",
+      "cell_index": 27,
+      "start": 0,
+      "end": 452,
+      "source_sha256": "638d606ac4f99b9b021e5647e4bb3a53a6f72ea1003288b325c4a06a5145bd05",
+      "chars": 452
+    },
+    {
+      "id": "c0029-p000",
+      "cell_index": 29,
+      "start": 0,
+      "end": 462,
+      "source_sha256": "7c2b200cd76d527b7bb239b19889c72d280b1c1519ab363406a12086be010f9d",
+      "chars": 462
+    },
+    {
+      "id": "c0030-p000",
+      "cell_index": 30,
+      "start": 0,
+      "end": 1334,
+      "source_sha256": "515e8133f3e96550824c595a4d07ace7e26dfc8aa715d3d5f14dca0412906290",
+      "chars": 1334
+    },
+    {
+      "id": "c0030-p001",
+      "cell_index": 30,
+      "start": 1334,
+      "end": 1973,
+      "source_sha256": "7310e9b0148f24332f5d852c0ae316f3ca61beb532d944bf3bcb00ccd30a4e6a",
+      "chars": 639
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0002-p000",
+      "c0004-p000",
+      "c0006-p000",
+      "c0008-p000",
+      "c0010-p000",
+      "c0012-p000",
+      "c0014-p000",
+      "c0016-p000",
+      "c0018-p000"
+    ],
+    [
+      "c0021-p000",
+      "c0023-p000",
+      "c0025-p000",
+      "c0027-p000",
+      "c0029-p000",
+      "c0030-p000",
+      "c0030-p001"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

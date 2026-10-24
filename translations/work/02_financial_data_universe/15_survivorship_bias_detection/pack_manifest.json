@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/15_survivorship_bias_detection.ipynb",
+  "source_sha256": "6b25adee59af4b77de5c7c21ef3d459ec224c4aed22283053fb0b27e8b1e3fd5",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0002-p000",
+            "c0005-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 4002
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0012-p000",
+            "c0013-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000"
+          ],
+          "chars": 4436
+        }
+      ],
+      "chars": 8438,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0002-p000",
+        "c0005-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0012-p000",
+        "c0013-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "6c41b7881c0c6755d5288e18d82183e70a9c0f50ddc3cb0b8e5f3d3e35bf0b18",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0029-p000",
+            "c0031-p000",
+            "c0033-p000",
+            "c0035-p000",
+            "c0037-p000",
+            "c0040-p000",
+            "c0043-p000",
+            "c0044-p000"
+          ],
+          "chars": 4780
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0046-p000",
+            "c0047-p000",
+            "c0049-p000",
+            "c0051-p000",
+            "c0052-p000",
+            "c0052-p001",
+            "c0052-p002"
+          ],
+          "chars": 3867
+        }
+      ],
+      "chars": 8647,
+      "number": 2,
+      "ids": [
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0031-p000",
+        "c0033-p000",
+        "c0035-p000",
+        "c0037-p000",
+        "c0040-p000",
+        "c0043-p000",
+        "c0044-p000",
+        "c0046-p000",
+        "c0047-p000",
+        "c0049-p000",
+        "c0051-p000",
+        "c0052-p000",
+        "c0052-p001",
+        "c0052-p002"
+      ],
+      "oversize": false,
+      "task_sha256": "57b78660b89ce87f54f39b2870a75345e21671bf2c879efc5f418130963be2a3",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

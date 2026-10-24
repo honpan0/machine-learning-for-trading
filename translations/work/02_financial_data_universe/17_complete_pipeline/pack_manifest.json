@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/17_complete_pipeline.ipynb",
+  "source_sha256": "156fb464908f292e1c6e489de3818f09925983e70887c2c2572fa69dad83d429",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0002-p000",
+            "c0005-p000",
+            "c0006-p000"
+          ],
+          "chars": 4726
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0006-p001",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0021-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0028-p000",
+            "c0030-p000",
+            "c0032-p000",
+            "c0036-p000",
+            "c0038-p000",
+            "c0041-p000"
+          ],
+          "chars": 4121
+        }
+      ],
+      "chars": 8847,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0002-p000",
+        "c0005-p000",
+        "c0006-p000",
+        "c0006-p001",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0021-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0028-p000",
+        "c0030-p000",
+        "c0032-p000",
+        "c0036-p000",
+        "c0038-p000",
+        "c0041-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "9cd511bb07fe5b953310d30b320b26ca084c860cf3ea199ed1bd90b43610f090",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0042-p000"
+          ],
+          "chars": 1752
+        }
+      ],
+      "chars": 1752,
+      "number": 2,
+      "ids": [
+        "c0042-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "62e6c863f45ffa806094ce93305d646e652679521df4ad487762679a442147ee",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

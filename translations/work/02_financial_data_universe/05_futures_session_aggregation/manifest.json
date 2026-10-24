@@ -1,0 +1,212 @@
+{
+  "version": "1.0",
+  "source": "02_financial_data_universe/05_futures_session_aggregation.ipynb",
+  "source_sha256": "3108432c754939690e8fafe4d3b41d30ed295c6e1afe7917e017eac15b4dcb66",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1127,
+      "source_sha256": "a5878be40d1126fb1142c4003727c9e888b3bd7ea5f79551fd5a18fd52203371",
+      "chars": 1127
+    },
+    {
+      "id": "c0002-p000",
+      "cell_index": 2,
+      "start": 0,
+      "end": 350,
+      "source_sha256": "a4140040dd69415a437e9a0c30e18a193ca294f2935cabfb7836d36757a40036",
+      "chars": 350
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 685,
+      "source_sha256": "d1663648f343238b1ef1509f9bfb73bdea78d1f80418df9bbfb71fc21dc34a3a",
+      "chars": 685
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 98,
+      "source_sha256": "d3b185e9a108b3d0622bb852116fcb8d0713816a292fc306bae77d71f480b66c",
+      "chars": 98
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 99,
+      "source_sha256": "0bd6172e0b0befb1461141c875fd208b1eed9993307d25e98456f2779df9f8df",
+      "chars": 99
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 208,
+      "source_sha256": "8bf87d97a9c072ad8b55e6e4c4a7db994708037f04fa7a8abb15c7b48a22d656",
+      "chars": 208
+    },
+    {
+      "id": "c0016-p000",
+      "cell_index": 16,
+      "start": 0,
+      "end": 378,
+      "source_sha256": "963a563f9ecf51bf2afac58bbf1e5d2a0b943486d09099f19c1cbb7a407f73c8",
+      "chars": 378
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 273,
+      "source_sha256": "c7d72c3fbc43669546330a3890181fc1ed65e2263b853ea829cb114b34de0970",
+      "chars": 273
+    },
+    {
+      "id": "c0019-p000",
+      "cell_index": 19,
+      "start": 0,
+      "end": 1703,
+      "source_sha256": "8018e1e4b7596d9abebb9ebf491f81ace32c8f47cdf2be44bf62e8bb783e4400",
+      "chars": 1703
+    },
+    {
+      "id": "c0021-p000",
+      "cell_index": 21,
+      "start": 0,
+      "end": 165,
+      "source_sha256": "e7c9bf52ad7d23c76bdd263040cc252790c02bcce58ca7ddccd3745c9048a550",
+      "chars": 165
+    },
+    {
+      "id": "c0024-p000",
+      "cell_index": 24,
+      "start": 0,
+      "end": 861,
+      "source_sha256": "a07b2971c6e6d3aa9273d33c32a08c71dcc537e9ae13ba7443fbcfdd11cf9e78",
+      "chars": 861
+    },
+    {
+      "id": "c0026-p000",
+      "cell_index": 26,
+      "start": 0,
+      "end": 502,
+      "source_sha256": "3431d840ceff8c79b9e4c0bdcb9e8f012068b8d60ad05f9ae51e4dcc17c2783c",
+      "chars": 502
+    },
+    {
+      "id": "c0028-p000",
+      "cell_index": 28,
+      "start": 0,
+      "end": 139,
+      "source_sha256": "d92b0820ce009f16fc21c35ddb2734cef15c444f444416a3a2e9479a44225807",
+      "chars": 139
+    },
+    {
+      "id": "c0030-p000",
+      "cell_index": 30,
+      "start": 0,
+      "end": 310,
+      "source_sha256": "0fd2923ed87d046610310a7cbfca33066ad27862234eba3334cbd44bc588cda3",
+      "chars": 310
+    },
+    {
+      "id": "c0033-p000",
+      "cell_index": 33,
+      "start": 0,
+      "end": 1011,
+      "source_sha256": "6822f361dc79dbf4d5da4a28b1602c484ebf40b497dbe67e22637252ef3f713d",
+      "chars": 1011
+    },
+    {
+      "id": "c0035-p000",
+      "cell_index": 35,
+      "start": 0,
+      "end": 371,
+      "source_sha256": "aa3bb2f7014717cf3b347b64f97555545d48fdc8afec718177e90a4ac614f544",
+      "chars": 371
+    },
+    {
+      "id": "c0037-p000",
+      "cell_index": 37,
+      "start": 0,
+      "end": 66,
+      "source_sha256": "dc8a25c72536805180942c9bf3ab31fd7bf6a24d641e4f8a55ab5ed363e8fa8c",
+      "chars": 66
+    },
+    {
+      "id": "c0040-p000",
+      "cell_index": 40,
+      "start": 0,
+      "end": 81,
+      "source_sha256": "7360022f5e353061b85cd9eb3c643a8a5d4da3da79c83241b83fb4e828176a7f",
+      "chars": 81
+    },
+    {
+      "id": "c0043-p000",
+      "cell_index": 43,
+      "start": 0,
+      "end": 203,
+      "source_sha256": "a472f3d5c9f4f85ba912c39288fd8b79d173410b55dbf792165f2ff975b27f15",
+      "chars": 203
+    },
+    {
+      "id": "c0045-p000",
+      "cell_index": 45,
+      "start": 0,
+      "end": 1611,
+      "source_sha256": "3200d7b11990a6cacba21b4e8eeb7108e80b3f5d2ae395091c20e20a53470562",
+      "chars": 1611
+    },
+    {
+      "id": "c0045-p001",
+      "cell_index": 45,
+      "start": 1611,
+      "end": 1862,
+      "source_sha256": "b45fc1b614904454ed1b82f9e12ccdc37f3f7635c9ef0c27c8ebf00cac5676b2",
+      "chars": 251
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0002-p000",
+      "c0005-p000",
+      "c0008-p000",
+      "c0011-p000",
+      "c0014-p000",
+      "c0016-p000",
+      "c0018-p000",
+      "c0019-p000"
+    ],
+    [
+      "c0021-p000",
+      "c0024-p000",
+      "c0026-p000",
+      "c0028-p000",
+      "c0030-p000",
+      "c0033-p000",
+      "c0035-p000",
+      "c0037-p000",
+      "c0040-p000",
+      "c0043-p000"
+    ],
+    [
+      "c0045-p000",
+      "c0045-p001"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/02_corporate_actions.ipynb",
+  "source_sha256": "db7f30ff9044833278017b423a5c71ac46a126b8b25bdf8f3cd03079aa3d5a14",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0015-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000"
+          ],
+          "chars": 4878
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0028-p000",
+            "c0030-p000",
+            "c0032-p000",
+            "c0033-p000",
+            "c0036-p000",
+            "c0039-p000",
+            "c0040-p000",
+            "c0041-p000",
+            "c0043-p000",
+            "c0044-p000"
+          ],
+          "chars": 4795
+        }
+      ],
+      "chars": 9673,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0015-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0028-p000",
+        "c0030-p000",
+        "c0032-p000",
+        "c0033-p000",
+        "c0036-p000",
+        "c0039-p000",
+        "c0040-p000",
+        "c0041-p000",
+        "c0043-p000",
+        "c0044-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "675b4ab95ed319d8eda9132bda9da2425ee929830ae7586527a82147ac717eb4",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0045-p000",
+            "c0045-p001"
+          ],
+          "chars": 2210
+        }
+      ],
+      "chars": 2210,
+      "number": 2,
+      "ids": [
+        "c0045-p000",
+        "c0045-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "2c3232ccc4787b5cc33b00d71d7b921b2face12088565e890acc442681ca8d97",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
