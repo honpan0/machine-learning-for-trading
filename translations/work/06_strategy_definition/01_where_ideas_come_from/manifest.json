@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "source": "06_strategy_definition/01_where_ideas_come_from.ipynb",
+  "source_sha256": "8dc7931f9fe54bd71ae50b06ff17ee208da6fbe27180daca289fc6dff700cce3",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1557,
+      "source_sha256": "50b79dee1c6fa15cc0a3170200eabdd5a1e28e0cf3ca29134f3e2800f924aa34",
+      "chars": 1557
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1557,
+      "end": 2407,
+      "source_sha256": "2ead93f4dad0ad644c1d3395019e22cb3b9c2ab025f54ba763a565328a51d715",
+      "chars": 850
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 292,
+      "source_sha256": "b40e65a5296faf482186a10315e391ea13e08434583cf131596a81bd3895a5c6",
+      "chars": 292
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 616,
+      "source_sha256": "a4c4b1030a71dd54c387f8af543aeecd2be979c444c761ed60c06b33a9579ce5",
+      "chars": 616
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 1161,
+      "source_sha256": "67efb8ca8e65e2601470f4cb1c686b033ac174eaaa7164477cc916999aea580b",
+      "chars": 1161
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 413,
+      "source_sha256": "36de3367e38f78e746f8f6fc9fca9241e409bfecce990918eb30530e72c7c922",
+      "chars": 413
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 472,
+      "source_sha256": "ba0928705784c6f38345def6970d716a87b229a211c03c8a283a9078dd65f78c",
+      "chars": 472
+    },
+    {
+      "id": "c0013-p000",
+      "cell_index": 13,
+      "start": 0,
+      "end": 813,
+      "source_sha256": "0e1f585627563da00dc721b2bfda5b8233c8f412903e489c545614456506aa07",
+      "chars": 813
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 447,
+      "source_sha256": "f6c29a5855583dd098d16a2651a34ea68fb4b5d7ed09bc2f03b42cc26cdcac4c",
+      "chars": 447
+    },
+    {
+      "id": "c0017-p000",
+      "cell_index": 17,
+      "start": 0,
+      "end": 606,
+      "source_sha256": "ca4930c0332a5b9148605cefe412f75a20d85bbf0dfd452404081553a8d99ee1",
+      "chars": 606
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 340,
+      "source_sha256": "14f9a69b09dda24a71b8bc34644fa6a733ba1724e8ba5d96d6e7ede091c99082",
+      "chars": 340
+    },
+    {
+      "id": "c0019-p000",
+      "cell_index": 19,
+      "start": 0,
+      "end": 248,
+      "source_sha256": "1cc71905785dd43632c025bfa3a74f008d76efa7287788641b48545ead81884e",
+      "chars": 248
+    },
+    {
+      "id": "c0021-p000",
+      "cell_index": 21,
+      "start": 0,
+      "end": 1265,
+      "source_sha256": "0584636abf9a6145f69fe5ac458935f3372157e225b49fc4840e78958f368a87",
+      "chars": 1265
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0003-p000",
+      "c0005-p000",
+      "c0007-p000",
+      "c0008-p000"
+    ],
+    [
+      "c0010-p000",
+      "c0013-p000",
+      "c0014-p000",
+      "c0017-p000",
+      "c0018-p000",
+      "c0019-p000",
+      "c0021-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

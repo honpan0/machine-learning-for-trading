@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "source": "06_strategy_definition/01_where_ideas_come_from.ipynb",
+  "source_sha256": "8dc7931f9fe54bd71ae50b06ff17ee208da6fbe27180daca289fc6dff700cce3",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0008-p000"
+          ],
+          "chars": 4889
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0013-p000",
+            "c0014-p000",
+            "c0017-p000",
+            "c0018-p000",
+            "c0019-p000",
+            "c0021-p000"
+          ],
+          "chars": 4191
+        }
+      ],
+      "chars": 9080,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0013-p000",
+        "c0014-p000",
+        "c0017-p000",
+        "c0018-p000",
+        "c0019-p000",
+        "c0021-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "e4310e3709e835ef0ad90429ce623293d7caffc1bcd1ae609f6e21088269c772",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

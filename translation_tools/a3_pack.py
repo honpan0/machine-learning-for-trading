@@ -22,7 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
-MASK_VERSION = 4
+MASK_VERSION = 6
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -49,6 +49,18 @@ PRICE = re.compile(r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?(?![A-Za-z0-9$
 PRICE_PER_UNIT = re.compile(
     r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
     r"(?:/[A-Za-z][A-Za-z0-9_-]*)+(?![/A-Za-z0-9_$])"
+)
+# v6: do not interpret the prefix of math `$1/c(u)$` as a $/unit price.
+# The v4/v5 price regex is deliberately retained for previously issued packs.
+PRICE_PER_UNIT_V6 = re.compile(
+    r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
+    r"(?:/[A-Za-z][A-Za-z0-9_-]*)+(?![/A-Za-z0-9_$(])"
+)
+# v5: A Markdown-table description uses `$D` as a standalone *dollar-bar
+# threshold*, not a math delimiter. Only recognize this exact table context.
+BARE_DOLLAR_BAR_THRESHOLD = re.compile(
+    r"\|[ \t]*Dollar bars[ \t]*\|[ \t]*Every[ \t]+(?P<symbol>\$D)[ \t]+traded[ \t]*\|",
+    re.IGNORECASE,
 )
 HTML = re.compile(r"</?[A-Za-z][^<>\n]*?>")
 DANGEROUS = re.compile(r"\\(?:frac|dfrac|tfrac|sqrt|mathcal|displaystyle|begin|end|sum|int|left|right|Gamma|Theta|Delta)\b")
@@ -103,6 +115,13 @@ def _is_escaped_dollar(raw: str, index: int) -> bool:
 def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_version: int = 3):
     """Tokenize dollars outside protected spans. Never pair prices as math."""
     occupied = bytearray(len(raw))
+    # Scope this exception to the specific dollar-bars definition row.
+    # It is NOT a general rule allowing unterminated `$X` math.
+    bare_bar_symbols = (
+        {match.start("symbol"): match.end("symbol")
+         for match in BARE_DOLLAR_BAR_THRESHOLD.finditer(raw)}
+        if mask_version >= 5 else {}
+    )
     for start, end, _ in spans:
         occupied[start:end] = b"\x01" * (end - start)
 
@@ -129,6 +148,11 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
         if occupied[i] or raw[i] != "$" or _is_escaped_dollar(raw, i):
             i += 1
             continue
+        if i in bare_bar_symbols:
+            end = bare_bar_symbols[i]
+            add_span(i, end, "symbol")
+            i = end
+            continue
         double = raw.startswith("$$", i)
         close = closing_dollar(i, double)
         if double:
@@ -142,7 +166,8 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
         # A numerical dollar amount followed by prose is not the opening of
         # a math expression. In particular, '$50.00; next is $60.00' must
         # protect TWO prices without swallowing 'next is'.
-        unit_price = PRICE_PER_UNIT.match(raw, i) if mask_version >= 4 else None
+        unit_price = (PRICE_PER_UNIT_V6.match(raw, i) if mask_version >= 6
+                      else PRICE_PER_UNIT.match(raw, i) if mask_version >= 4 else None)
         price = unit_price or PRICE.match(raw, i)
         if price is not None:
             numeric_formula = False
@@ -191,8 +216,8 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
 
 
 def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
-    """Mask protected spans while preserving the exact historical v1/v2 spans."""
-    if mask_version not in (1, 2, 3, 4):
+    """Mask protected spans while preserving historical v1-v5 tokenization."""
+    if mask_version not in (1, 2, 3, 4, 5, 6):
         raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")
@@ -219,7 +244,7 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
     for match in INLINE_CODE.finditer(raw):
         add(match.start(), match.end(), "inline-code")
 
-    if mask_version in (3, 4):
+    if mask_version in (3, 4, 5, 6):
         # Fixed-delimiter math, code, links and markup are barriers for the
         # dollar tokenizer. Old versions retain their original precedence.
         for match in MATH_FIXED_V3.finditer(raw):
@@ -271,12 +296,12 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
         raise A3Error("來源存在未被安全遮蔽的 LaTeX（如不成對的公式），請檢查來源")
     if mask_version == 2 and re.search(r"(?<!\\)\$", masked):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4) and any(
+    if mask_version in (3, 4, 5, 6) and any(
         ch == "$" and not _is_escaped_dollar(masked, pos)
         for pos, ch in enumerate(masked)
     ):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4) and re.search(r"\\[\[(]", masked):
+    if mask_version in (3, 4, 5, 6) and re.search(r"\\[\[(]", masked):
         raise A3Error("來源含未閉合的 LaTeX 括號公式")
     if with_sources:
         return masked, replacements, protected_source
@@ -481,7 +506,7 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         if (present != keys or "[[ML4T_A3_" in TOKEN.sub("", translated) or
             DANGEROUS.search(translated) or "$$" in translated or
             (u.get("mask_version", 1) == 2 and re.search(r"(?<!\\)\$", translated)) or
-            (u.get("mask_version", 1) in (3, 4) and any(
+            (u.get("mask_version", 1) in (3, 4, 5, 6) and any(
                 char == "$" and not _is_escaped_dollar(translated, pos)
                 for pos, char in enumerate(translated)))):
             rejected.append(uid)

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "source": "07_defining_the_learning_task/06_ic_inference.ipynb",
+  "source_sha256": "766f543cbc521edac3d053501ea8226c20631a2c65fae7cc5790172a84a1ba70",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0012-p000"
+          ],
+          "chars": 4884
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0014-p000",
+            "c0016-p000",
+            "c0019-p000",
+            "c0022-p000",
+            "c0023-p000",
+            "c0026-p000",
+            "c0029-p000",
+            "c0030-p000"
+          ],
+          "chars": 4064
+        }
+      ],
+      "chars": 8948,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0022-p000",
+        "c0023-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0030-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "325d58a00c23a3adc678faa7456838d9f126a3d6be0daf518554275098f298f4",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0032-p000"
+          ],
+          "chars": 1427
+        }
+      ],
+      "chars": 1427,
+      "number": 2,
+      "ids": [
+        "c0032-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "5939844af0a65292edbea611110ec35905213fb6c444d53b312c76ae25054537",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

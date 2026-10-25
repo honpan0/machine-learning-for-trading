@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**56** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**427** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**76** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**407** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -62,26 +62,26 @@
 | `04_fundamental_alternative_data/12_kalshi_prediction_markets.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
 | `04_fundamental_alternative_data/13_polymarket_prediction_markets.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
 | `04_fundamental_alternative_data/14_text_data_extraction.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
-| `05_synthetic_data/00_classical_simulation.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/01_timegan.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/02_tailgan_tail_risk.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/03_sigcwgan_signatures.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/04_gtgan_irregular.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/05_diffusion_ts.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/06_llm_tabular_great.ipynb` | — | 0/0 | 未開始 |  |
-| `05_synthetic_data/07_dp_gan.ipynb` | — | 0/0 | 未開始 |  |
-| `06_strategy_definition/01_where_ideas_come_from.ipynb` | — | 0/0 | 未開始 |  |
-| `06_strategy_definition/02_cv_foundations.ipynb` | — | 0/0 | 未開始 |  |
-| `06_strategy_definition/03_case_study_overview.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/01_data_quality_diagnostics.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/02_preprocessing_pipeline.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/03_label_methods.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/04_maximum_favorable_adverse_excursion.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/05_signal_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/06_ic_inference.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/07_multiple_testing.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/08_causal_sanity_checks.ipynb` | — | 0/0 | 未開始 |  |
-| `07_defining_the_learning_task/10_ml4t_library_ecosystem.ipynb` | — | 0/0 | 未開始 |  |
+| `05_synthetic_data/00_classical_simulation.ipynb` | 50/50 | 6/6 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/01_timegan.ipynb` | 26/26 | 3/3 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/02_tailgan_tail_risk.ipynb` | 28/28 | 2/2 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/03_sigcwgan_signatures.ipynb` | 48/48 | 5/5 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/04_gtgan_irregular.ipynb` | 40/40 | 5/5 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/05_diffusion_ts.ipynb` | 45/45 | 5/5 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/06_llm_tabular_great.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `05_synthetic_data/07_dp_gan.ipynb` | 25/25 | 3/3 | 已組裝／驗證通過 |  |
+| `06_strategy_definition/01_where_ideas_come_from.ipynb` | 13/13 | 2/2 | 已組裝／驗證通過 |  |
+| `06_strategy_definition/02_cv_foundations.ipynb` | 38/38 | 3/3 | 已組裝／驗證通過 |  |
+| `06_strategy_definition/03_case_study_overview.ipynb` | 24/24 | 2/2 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/01_data_quality_diagnostics.ipynb` | 35/35 | 3/3 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/02_preprocessing_pipeline.ipynb` | 40/40 | 3/3 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/03_label_methods.ipynb` | 40/40 | 5/5 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/04_maximum_favorable_adverse_excursion.ipynb` | 28/28 | 3/3 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/05_signal_evaluation.ipynb` | 42/42 | 6/6 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/06_ic_inference.ipynb` | 16/16 | 3/3 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/07_multiple_testing.ipynb` | 30/30 | 5/5 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/08_causal_sanity_checks.ipynb` | 40/40 | 7/7 | 已組裝／驗證通過 |  |
+| `07_defining_the_learning_task/10_ml4t_library_ecosystem.ipynb` | 20/20 | 2/2 | 已組裝／驗證通過 |  |
 | `08_financial_features/01_price_volume_features.ipynb` | — | 0/0 | 未開始 |  |
 | `08_financial_features/02_microstructure_features.ipynb` | — | 0/0 | 未開始 |  |
 | `08_financial_features/03_structural_cross_instrument_features.ipynb` | — | 0/0 | 未開始 |  |

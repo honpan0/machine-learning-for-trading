@@ -217,6 +217,138 @@ class MaskV4UnitPricesTests(unittest.TestCase):
         self.assertNotIn('$', masked)
 
 
+class MaskV5DollarBarSymbolTests(unittest.TestCase):
+    TABLE = ("| Bar type | Trigger | Timing |\n"
+             "|---|---|---|\n"
+             "| Dollar bars | Every $D traded | Variable (value-driven) |\n")
+
+    def test_bare_dollar_D_masked_but_prose_visible(self):
+        masked, tokens, originals = a3.mask_text(self.TABLE, True, mask_version=5)
+        self.assertEqual([t["kind"] for t in tokens], ["symbol"])
+        self.assertEqual(list(originals.values()), ["$D"])
+        self.assertIn("Every ", masked)
+        self.assertIn(" traded | Variable (value-driven)", masked)
+        for key, value in originals.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, self.TABLE)
+
+    def test_regular_math_in_same_cell_remains_math(self):
+        source = self.TABLE + "Defined formula: $h(t_0)$ and $dh/dt = f_\\theta(h)$; the drift ignores $t$."
+        masked, tokens, originals = a3.mask_text(source, True, mask_version=5)
+        self.assertEqual([t["kind"] for t in tokens], ["symbol", "math", "math", "math"])
+        self.assertEqual(list(originals.values()),
+                         ["$D", "$h(t_0)$", "$dh/dt = f_\\theta(h)$", "$t$"])
+        for key, value in originals.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+
+    def test_unsafe_unpaired_dollars_still_fail(self):
+        for source in (
+            "Every $D traded",  # not inside the named table row
+            "| Volume bars | Every $D traded | Variable |",
+            "| Dollar bars | Every $D trade | Variable |",
+            "Compute $x + y",
+            "The price is $D and math starts $x",
+        ):
+            with self.subTest(source=source), self.assertRaises(a3.A3Error):
+                a3.mask_text(source, mask_version=5)
+
+    def test_v4_packs_remain_strict_for_same_text(self):
+        with self.assertRaises(a3.A3Error):
+            a3.mask_text(self.TABLE, mask_version=4)
+        # A valid issued v4 pack can still be reproduced using its recorded version.
+        old = "Cost ~$10/symbol/mo and derivative $h(t_0)$."
+        v4 = a3.mask_text(old, True, mask_version=4)
+        v5 = a3.mask_text(old, True, mask_version=5)
+        self.assertEqual(v4, v5)
+
+    def test_restore_v5_dollar_bar_symbol_exact(self):
+        src = self.TABLE
+        masked, tokens = a3.mask_text(src, mask_version=5)
+        uid = "c0007-p000"
+        u = {"id": uid, "mask_version": 5,
+             "source_sha256": a3.sha(src.encode()),
+             "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        translated = masked.replace("Every ", "每成交 ").replace(" traded", " 的金額")
+        reply = (f"<<<ML4T-ZH-BEGIN:{uid}>>>\n{translated}\n"
+                 f"<<<ML4T-ZH-END:{uid}>>>\n").encode()
+        with mock.patch.object(a3.packing, "english", return_value=src):
+            out, rejected, _, _, _ = a3.restore_one(
+                Path(), "", Path(), {}, {uid: u}, {}, {"units": [u]}, reply)
+        self.assertFalse(rejected)
+        self.assertEqual(out[uid].rstrip("\n"), src.replace("Every $D traded", "每成交 $D 的金額").rstrip("\n"))
+
+
+class MaskV6RatioFormulaTests(unittest.TestCase):
+    # Reproduces the original chapter-07 label_methods explanatory paragraph.
+    RATIO_TEXT = ("Uniqueness depends only on the index geometry of the labels, not on prices: "
+                  "label $i$ is\nalive over bars $[i, i+H]$, and $w_i$ averages "
+                  "$1/c(u)$ over that span. Concurrency is a\nper-symbol quantity.")
+
+    def test_ratio_math_is_one_protected_span(self):
+        masked, tokens, originals = a3.mask_text("$1/c(u)$", True, mask_version=6)
+        self.assertEqual([t["kind"] for t in tokens], ["math"])
+        self.assertEqual(list(originals.values()), ["$1/c(u)$"])
+        self.assertNotIn("$", masked)
+
+    def test_chapter_07_ratio_prose_remains_visible(self):
+        masked, tokens, originals = a3.mask_text(self.RATIO_TEXT, True, mask_version=6)
+        self.assertEqual([t["kind"] for t in tokens], ["math"] * 4)
+        self.assertEqual(list(originals.values()),
+                         ["$i$", "$[i, i+H]$", "$w_i$", "$1/c(u)$"])
+        self.assertIn(" averages ", masked)
+        self.assertIn(" over that span", masked)
+        for key, value in originals.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, self.RATIO_TEXT)
+
+    def test_v6_prices_and_other_math_regressions(self):
+        cases = [
+            ("Price $10/symbol/mo and $2/GB/day.", ["$10/symbol/mo", "$2/GB/day"],
+             ["price", "price"]),
+            ("Formula $10/x + y$ and $1/c(u)$.", ["$10/x + y$", "$1/c(u)$"],
+             ["math", "math"]),
+            ("Dollar bars | Every $D traded | Variable", ["$D"], ["symbol"]),
+        ]
+        for source, values, kinds in cases:
+            if "$D" in source:
+                source = "| Dollar bars | Every $D traded | Variable |"
+            with self.subTest(source=source):
+                masked, tokens, originals = a3.mask_text(source, True, mask_version=6)
+                self.assertEqual(list(originals.values()), values)
+                self.assertEqual([t["kind"] for t in tokens], kinds)
+                for key, value in originals.items():
+                    masked = masked.replace(key, value)
+                self.assertEqual(masked, source)
+
+    def test_old_v4_v5_ratio_behavior_remains_unchanged(self):
+        for version in (4, 5):
+            with self.subTest(version=version), self.assertRaises(a3.A3Error):
+                a3.mask_text("$1/c(u)$", mask_version=version)
+        self.assertEqual(a3.MASK_VERSION, 6)
+
+    def test_v6_ratio_restore_and_extra_dollar_rejection(self):
+        source = "Weighted uniqueness $1/c(u)$ remains well-defined."
+        masked, tokens = a3.mask_text(source, mask_version=6)
+        uid = "c0056-p000"
+        u = {"id": uid, "mask_version": 6,
+             "source_sha256": a3.sha(source.encode()),
+             "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        for extra in ("", " $x$"):
+            translated = masked.replace("remains well-defined", "仍有明確定義") + extra
+            reply = (f"<<<ML4T-ZH-BEGIN:{uid}>>>\n{translated}\n"
+                     f"<<<ML4T-ZH-END:{uid}>>>\n").encode()
+            with mock.patch.object(a3.packing, "english", return_value=source):
+                outputs, rejected, _, _, _ = a3.restore_one(
+                    Path(), "", Path(), {}, {uid: u}, {}, {"units": [u]}, reply)
+            if extra:
+                self.assertEqual(rejected, [uid])
+            else:
+                self.assertFalse(rejected)
+                self.assertEqual(outputs[uid], source.replace(
+                    "remains well-defined", "仍有明確定義"))
+
+
 class Tests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()

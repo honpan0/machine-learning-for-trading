@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "source": "07_defining_the_learning_task/10_ml4t_library_ecosystem.ipynb",
+  "source_sha256": "d54a54f668d064c98e4e6396e58db164e89faa0ed2b05dde95b84a704c646bc6",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0001-p000",
+      "cell_index": 1,
+      "start": 0,
+      "end": 1016,
+      "source_sha256": "f489a185168860dcd02bd5d9196616a00242baa2c0bb6ba6dd8be88e190b8b30",
+      "chars": 1016
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 203,
+      "source_sha256": "e4625e9f7779dfd2488cdbbde4e470a12f5b029e3f45b74425f825ec956a14b3",
+      "chars": 203
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 223,
+      "source_sha256": "7174d556b594b60668269f286c59dce9fd36d66ae947543d4d92d357385775b3",
+      "chars": 223
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 380,
+      "source_sha256": "153ec0f5d4a2f9a4c17fba37c542d74dec77bd31b3de455622f1b27ba926dfab",
+      "chars": 380
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 275,
+      "source_sha256": "8aa47fa6325ee1f5414adbfe02e09698a5bddcdc859cb60475a60ff51c1588f2",
+      "chars": 275
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 23,
+      "source_sha256": "f06318c76f2aa5d442c4dec04900e7ee3334a474aab0fd0e954c7bc0be1d20f9",
+      "chars": 23
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 365,
+      "source_sha256": "553348d47385d2b405b224935d44c48a8fb2564ce11cec7ede94881056810203",
+      "chars": 365
+    },
+    {
+      "id": "c0015-p000",
+      "cell_index": 15,
+      "start": 0,
+      "end": 222,
+      "source_sha256": "708304cc906230bfbefb9410cd7a2c5d4a47d1e9b98a7ff6ec031d5564b633f5",
+      "chars": 222
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 377,
+      "source_sha256": "db9539a28c5259c2df5c9a7dd5f0a2edd327129d2cbacf2be4ed78fc415d8ef3",
+      "chars": 377
+    },
+    {
+      "id": "c0019-p000",
+      "cell_index": 19,
+      "start": 0,
+      "end": 180,
+      "source_sha256": "610c1278d547398ab57615a3b85ee8fad34adb24ca9014c8c1ee7bce48d30f56",
+      "chars": 180
+    },
+    {
+      "id": "c0021-p000",
+      "cell_index": 21,
+      "start": 0,
+      "end": 273,
+      "source_sha256": "ecee32b87b73bf94c6a89461604d9134251276ba705878a84c5fb8c0cc4cc4c3",
+      "chars": 273
+    },
+    {
+      "id": "c0022-p000",
+      "cell_index": 22,
+      "start": 0,
+      "end": 560,
+      "source_sha256": "eaec2ee3f0e8d6b293c6d64f95756d2fcbc3cb32da716b80a1342d9e6ec22f58",
+      "chars": 560
+    },
+    {
+      "id": "c0024-p000",
+      "cell_index": 24,
+      "start": 0,
+      "end": 470,
+      "source_sha256": "d3f18ca0275ca88bb9fe5498dcb87481cdd9fea868a407ccef92e1cb70f8fe59",
+      "chars": 470
+    },
+    {
+      "id": "c0025-p000",
+      "cell_index": 25,
+      "start": 0,
+      "end": 131,
+      "source_sha256": "771ea3a809f26dcba90608946eee823dcfb105ade9dc082a5691ce1a72c04a59",
+      "chars": 131
+    },
+    {
+      "id": "c0026-p000",
+      "cell_index": 26,
+      "start": 0,
+      "end": 169,
+      "source_sha256": "1c94e3122edf586e45442b87e382c2927491889d5ff8593fb9379db8621526f3",
+      "chars": 169
+    },
+    {
+      "id": "c0028-p000",
+      "cell_index": 28,
+      "start": 0,
+      "end": 118,
+      "source_sha256": "931110d14c81fbc0da95fafe480b1de2047d9a2a8f7648bddbbd1d62bdc9d521",
+      "chars": 118
+    },
+    {
+      "id": "c0029-p000",
+      "cell_index": 29,
+      "start": 0,
+      "end": 239,
+      "source_sha256": "565ab9f8c3958e34aeffc25653974e99e01fc1d48b5bf31eb9f478b5ea18cc6a",
+      "chars": 239
+    },
+    {
+      "id": "c0031-p000",
+      "cell_index": 31,
+      "start": 0,
+      "end": 105,
+      "source_sha256": "7383313e862423f2fde34fccdd362718908cb108fe700237c13a2273e7989abc",
+      "chars": 105
+    },
+    {
+      "id": "c0032-p000",
+      "cell_index": 32,
+      "start": 0,
+      "end": 230,
+      "source_sha256": "8672634671765708a97dcd367d0a979c176b335ac971775a3647cdab7c859ea6",
+      "chars": 230
+    },
+    {
+      "id": "c0034-p000",
+      "cell_index": 34,
+      "start": 0,
+      "end": 657,
+      "source_sha256": "9d1a19f57f9d8cd8560a0e19e6bed8bd623aa2251f8dc34e0919b624005fa2ee",
+      "chars": 657
+    }
+  ],
+  "batches": [
+    [
+      "c0001-p000",
+      "c0004-p000",
+      "c0007-p000",
+      "c0009-p000",
+      "c0011-p000",
+      "c0012-p000",
+      "c0014-p000",
+      "c0015-p000",
+      "c0018-p000",
+      "c0019-p000",
+      "c0021-p000",
+      "c0022-p000",
+      "c0024-p000",
+      "c0025-p000",
+      "c0026-p000",
+      "c0028-p000"
+    ],
+    [
+      "c0029-p000",
+      "c0031-p000",
+      "c0032-p000",
+      "c0034-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}
