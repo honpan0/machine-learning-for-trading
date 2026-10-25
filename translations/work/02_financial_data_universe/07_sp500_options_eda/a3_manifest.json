@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/07_sp500_options_eda.ipynb",
+  "source_sha256": "f0d62b04c20f992ecbd0fa863103a15c41b2274357bd830b73ec837c89397996",
+  "a2_pack_manifest_sha256": "080b1c888b989b820d5bb670fb42504c4f0b15a5bf76d991b29380d4c5d79147",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

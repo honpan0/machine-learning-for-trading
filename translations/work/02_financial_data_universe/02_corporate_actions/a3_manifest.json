@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/02_corporate_actions.ipynb",
+  "source_sha256": "db7f30ff9044833278017b423a5c71ac46a126b8b25bdf8f3cd03079aa3d5a14",
+  "a2_pack_manifest_sha256": "6ed9a06b43e05ba6b762c2ea2bca74c59ad431c233d070e9909b743e3d2bb981",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

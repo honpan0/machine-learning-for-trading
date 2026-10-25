@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/08_options_greeks_computation.ipynb",
+  "source_sha256": "07a236a26c355b96dbabd41cbfe380d644a6c6e1139926b199ceec437aac165a",
+  "a2_pack_manifest_sha256": "555b9f971de59cb5ed14b76670f937dacb6de235501f0704e2419ad8a68145fc",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

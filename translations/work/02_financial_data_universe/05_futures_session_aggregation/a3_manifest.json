@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/05_futures_session_aggregation.ipynb",
+  "source_sha256": "3108432c754939690e8fafe4d3b41d30ed295c6e1afe7917e017eac15b4dcb66",
+  "a2_pack_manifest_sha256": "3ff8b63fd2c952d079234ebcf8a70e959937b6f8b79e9cf398dd5974688af081",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

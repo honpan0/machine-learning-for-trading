@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/03_etfs_eda.ipynb",
+  "source_sha256": "3e0f416044c9d51f3c021b2dd2f805aa14fcbbf2276443bbaa41f2a592568d0d",
+  "a2_pack_manifest_sha256": "3026d0b8bcc9d56d3ea79f20e46158b2b6d95d1569c0a4794e0d67e19b4921f5",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/01_us_equities_eda.ipynb",
+  "source_sha256": "927b3f0322141dff6f0ddc2a11648265b4e5490080fb9ae9cbb5085f73031430",
+  "a2_pack_manifest_sha256": "2a1c35c604fe4d5dc89d3a293184a10cf2ccd7cdf3895514bae75859442a3f1f",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

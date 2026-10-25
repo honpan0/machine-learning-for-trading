@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "02_financial_data_universe/04_cme_futures_eda.ipynb",
+  "source_sha256": "41ff988e864ba6fbd1ed3f46a29fff219098bdcb6d21980965d4ef71f639f6af",
+  "a2_pack_manifest_sha256": "cdcbb38eae0db2a870649a8b6258ff7151adc02da79214b9341ca25d4db2b965",
+  "packs": [],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}
