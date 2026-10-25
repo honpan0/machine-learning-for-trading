@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "source": "08_financial_features/06_robustness_sensitivity.ipynb",
+  "source_sha256": "fd8740ded4dd9c1c1570f65763ab5ae3291cd3e3c87a915f357add66e37d6463",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0013-p000",
+            "c0016-p000",
+            "c0021-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0029-p000"
+          ],
+          "chars": 4761
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0031-p000",
+            "c0032-p000",
+            "c0034-p000",
+            "c0036-p000",
+            "c0037-p000",
+            "c0042-p000",
+            "c0044-p000"
+          ],
+          "chars": 3371
+        }
+      ],
+      "chars": 8132,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0016-p000",
+        "c0021-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0031-p000",
+        "c0032-p000",
+        "c0034-p000",
+        "c0036-p000",
+        "c0037-p000",
+        "c0042-p000",
+        "c0044-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "40429415ce6aba0c8005128ab70bc73cef1b7980f606a88ce8cf53616cfd824c",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**76** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**407** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**96** 份；翻譯中：**3** 份；已翻完待組裝：**0** 份
+- 未開始：**384** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -82,29 +82,29 @@
 | `07_defining_the_learning_task/07_multiple_testing.ipynb` | 30/30 | 5/5 | 已組裝／驗證通過 |  |
 | `07_defining_the_learning_task/08_causal_sanity_checks.ipynb` | 40/40 | 7/7 | 已組裝／驗證通過 |  |
 | `07_defining_the_learning_task/10_ml4t_library_ecosystem.ipynb` | 20/20 | 2/2 | 已組裝／驗證通過 |  |
-| `08_financial_features/01_price_volume_features.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/02_microstructure_features.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/03_structural_cross_instrument_features.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/04_fundamentals_macro_calendar.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/05_feature_selection.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/06_robustness_sensitivity.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/07_event_studies.ipynb` | — | 0/0 | 未開始 |  |
-| `08_financial_features/case_study_feature_summary.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/01_visual_diagnostics.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/02_structural_breaks.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/03_fractional_differencing.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/04_kalman_filter.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/05_spectral_features.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/06_path_signatures.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/07_arima_features.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/08_garch_volatility.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/09_har_rough_volatility.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/10_uncertainty_features.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/11_hmm_regimes.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/12_wasserstein_regimes.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/13_regime_as_feature.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/14_panel_features.ipynb` | — | 0/0 | 未開始 |  |
-| `09_model_based_features/case_study_temporal_summary.ipynb` | — | 0/0 | 未開始 |  |
+| `08_financial_features/01_price_volume_features.ipynb` | 51/51 | 5/5 | 已組裝／驗證通過 |  |
+| `08_financial_features/02_microstructure_features.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `08_financial_features/03_structural_cross_instrument_features.ipynb` | 32/32 | 3/3 | 已組裝／驗證通過 |  |
+| `08_financial_features/04_fundamentals_macro_calendar.ipynb` | 30/30 | 3/3 | 已組裝／驗證通過 |  |
+| `08_financial_features/05_feature_selection.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `08_financial_features/06_robustness_sensitivity.ipynb` | 19/19 | 2/2 | 已組裝／驗證通過 |  |
+| `08_financial_features/07_event_studies.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `08_financial_features/case_study_feature_summary.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `09_model_based_features/01_visual_diagnostics.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/02_structural_breaks.ipynb` | 31/31 | 6/6 | 已組裝／驗證通過 |  |
+| `09_model_based_features/03_fractional_differencing.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `09_model_based_features/04_kalman_filter.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/05_spectral_features.ipynb` | 26/26 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/06_path_signatures.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/07_arima_features.ipynb` | 16/16 | 3/3 | 已組裝／驗證通過 |  |
+| `09_model_based_features/08_garch_volatility.ipynb` | 19/19 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/09_har_rough_volatility.ipynb` | 33/33 | 6/6 | 已組裝／驗證通過 |  |
+| `09_model_based_features/10_uncertainty_features.ipynb` | 19/19 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/11_hmm_regimes.ipynb` | 23/23 | 4/4 | 已組裝／驗證通過 |  |
+| `09_model_based_features/12_wasserstein_regimes.ipynb` | 25/25 | 5/5 | 已組裝／驗證通過 |  |
+| `09_model_based_features/13_regime_as_feature.ipynb` | 0/18 | 0/3 | 翻譯中 |  |
+| `09_model_based_features/14_panel_features.ipynb` | 0/24 | 0/5 | 翻譯中 |  |
+| `09_model_based_features/case_study_temporal_summary.ipynb` | 0/9 | 0/2 | 翻譯中 |  |
 | `10_text_feature_engineering/01_word2vec_training.ipynb` | — | 0/0 | 未開始 |  |
 | `10_text_feature_engineering/02_asset_embeddings.ipynb` | — | 0/0 | 未開始 |  |
 | `10_text_feature_engineering/03_sentiment_evolution.ipynb` | — | 0/0 | 未開始 |  |

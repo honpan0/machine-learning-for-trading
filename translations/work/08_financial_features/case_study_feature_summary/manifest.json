@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "source": "08_financial_features/case_study_feature_summary.ipynb",
+  "source_sha256": "547cc382803891118644a1f88a1b65b63b08961fe9eace6eb15820d501c94e80",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1537,
+      "source_sha256": "e9a8ffdb760e4690a282b776125d8b461d5f6c3714cba2594dddabead9a462fe",
+      "chars": 1537
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 218,
+      "source_sha256": "90e574d9eab7af6babcb8d3c908238fc88069fbddecaab5c37c8cb013ccdf553",
+      "chars": 218
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 277,
+      "source_sha256": "98196c433da102270907960de08b1560d66d4334f2ba0f07c8f34e0ffe312aea",
+      "chars": 277
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 171,
+      "source_sha256": "a50ed4589b6a7be4fa794b91c94696fb293f456c353c6aa4d0399fb4af9a1928",
+      "chars": 171
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 1151,
+      "source_sha256": "b501b6ac7658e388b56f563df844f227d9a61961b22faca2a129968f5507b2e2",
+      "chars": 1151
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 290,
+      "source_sha256": "406f529b0f54e5bdac0b613d28955d673513962fa73dd08328be36b960ff7786",
+      "chars": 290
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 478,
+      "source_sha256": "e9dc408b8a941097ec0a92eb65987bc6c819d92a371860945672530fd0e59024",
+      "chars": 478
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 1269,
+      "source_sha256": "1c60770daa8eac08d7e01900d3f0052577b6641d4151538bd2afd67f7f2ab987",
+      "chars": 1269
+    },
+    {
+      "id": "c0019-p000",
+      "cell_index": 19,
+      "start": 0,
+      "end": 837,
+      "source_sha256": "175fe50d6ffe0779b3ce561f058ff4f324141288e83d76f2a43438855a409a18",
+      "chars": 837
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0003-p000",
+      "c0006-p000",
+      "c0008-p000",
+      "c0010-p000",
+      "c0012-p000",
+      "c0014-p000"
+    ],
+    [
+      "c0018-p000",
+      "c0019-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}
