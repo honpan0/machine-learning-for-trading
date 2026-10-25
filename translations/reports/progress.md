@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**35** 份；翻譯中：**7** 份；已翻完待組裝：**0** 份
-- 未開始：**441** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**56** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**427** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -38,30 +38,30 @@
 | `03_market_microstructure/06_itch_intraday_patterns.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
 | `03_market_microstructure/07_itch_stylized_facts.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
 | `03_market_microstructure/08_databento_lob_reconstruction.ipynb` | 25/25 | 2/2 | 已組裝／驗證通過 |  |
-| `03_market_microstructure/09_databento_mbo_analysis.ipynb` | 0/17 | 0/3 | 翻譯中 |  |
+| `03_market_microstructure/09_databento_mbo_analysis.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
 | `03_market_microstructure/10_iex_lob_reconstruction.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
 | `03_market_microstructure/11_algoseek_taq_eda.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
 | `03_market_microstructure/12_algoseek_taq_lob_reconstruction.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
-| `03_market_microstructure/13_algoseek_minute_bars_eda.ipynb` | 0/28 | 0/4 | 翻譯中 |  |
-| `03_market_microstructure/14_itch_bar_sampling.ipynb` | 0/20 | 0/2 | 翻譯中 |  |
-| `03_market_microstructure/15_itch_lee_ready.ipynb` | 0/12 | 0/2 | 翻譯中 |  |
-| `03_market_microstructure/16_itch_information_bars.ipynb` | 0/10 | 0/2 | 翻譯中 |  |
-| `03_market_microstructure/17_databento_bar_sampling.ipynb` | 0/32 | 0/2 | 翻譯中 |  |
-| `03_market_microstructure/18_algoseek_jump_detection.ipynb` | 0/15 | 0/3 | 翻譯中 |  |
-| `04_fundamental_alternative_data/01_academic_characteristics.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/02_sec_filing_explorer.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/03_sec_form4_insider_transactions.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/04_sec_xbrl_fundamentals.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/05_entity_resolution.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/06_fred_macro_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/07_macro_data_alignment.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/08_futures_positioning.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/09_onchain_fundamentals.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/10_institutional_holdings_13f.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/11_defi_tvl_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/12_kalshi_prediction_markets.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/13_polymarket_prediction_markets.ipynb` | — | 0/0 | 未開始 |  |
-| `04_fundamental_alternative_data/14_text_data_extraction.ipynb` | — | 0/0 | 未開始 |  |
+| `03_market_microstructure/13_algoseek_minute_bars_eda.ipynb` | 28/28 | 4/4 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/14_itch_bar_sampling.ipynb` | 20/20 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/15_itch_lee_ready.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/16_itch_information_bars.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/17_databento_bar_sampling.ipynb` | 32/32 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/18_algoseek_jump_detection.ipynb` | 15/15 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/01_academic_characteristics.ipynb` | 22/22 | 4/4 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/02_sec_filing_explorer.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/03_sec_form4_insider_transactions.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/04_sec_xbrl_fundamentals.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/05_entity_resolution.ipynb` | 22/22 | 4/4 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/06_fred_macro_eda.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/07_macro_data_alignment.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/08_futures_positioning.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/09_onchain_fundamentals.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/10_institutional_holdings_13f.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/11_defi_tvl_evaluation.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/12_kalshi_prediction_markets.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/13_polymarket_prediction_markets.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `04_fundamental_alternative_data/14_text_data_extraction.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
 | `05_synthetic_data/00_classical_simulation.ipynb` | — | 0/0 | 未開始 |  |
 | `05_synthetic_data/01_timegan.ipynb` | — | 0/0 | 未開始 |  |
 | `05_synthetic_data/02_tailgan_tail_risk.ipynb` | — | 0/0 | 未開始 |  |

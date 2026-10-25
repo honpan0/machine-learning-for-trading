@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/13_algoseek_minute_bars_eda.ipynb",
+  "source_sha256": "501241fca2b68ef268aaa90fb0c5466019b68d7a8ffe42685a4e03523feff00c",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0014-p000",
+            "c0017-p000",
+            "c0019-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0029-p000"
+          ],
+          "chars": 4989
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0031-p000",
+            "c0034-p000",
+            "c0036-p000",
+            "c0038-p000",
+            "c0040-p000",
+            "c0041-p000"
+          ],
+          "chars": 4933
+        }
+      ],
+      "chars": 9922,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0014-p000",
+        "c0017-p000",
+        "c0019-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0031-p000",
+        "c0034-p000",
+        "c0036-p000",
+        "c0038-p000",
+        "c0040-p000",
+        "c0041-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "3072ba7f142ad04d6a9c4329c37cfea5c65dbfe28c1d153a531048eef8e6b02d",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0043-p000",
+            "c0045-p000",
+            "c0047-p000",
+            "c0049-p000",
+            "c0051-p000",
+            "c0054-p000"
+          ],
+          "chars": 3300
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0057-p000",
+            "c0057-p001",
+            "c0058-p000",
+            "c0058-p001"
+          ],
+          "chars": 4874
+        }
+      ],
+      "chars": 8174,
+      "number": 2,
+      "ids": [
+        "c0043-p000",
+        "c0045-p000",
+        "c0047-p000",
+        "c0049-p000",
+        "c0051-p000",
+        "c0054-p000",
+        "c0057-p000",
+        "c0057-p001",
+        "c0058-p000",
+        "c0058-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "a008e586eb7247594e18bb9ae1865cbbafff517a899a4b46e5c8db90c07f24ea",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

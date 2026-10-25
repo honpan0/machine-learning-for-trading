@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/15_itch_lee_ready.ipynb",
+  "source_sha256": "65d6dccdd41214f30a751bab5ec49d70b67279cebe4dae9236e6b3a18401e49a",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0005-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0019-p000",
+            "c0022-p000",
+            "c0025-p000"
+          ],
+          "chars": 3774
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0027-p000"
+          ],
+          "chars": 1337
+        }
+      ],
+      "chars": 5111,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0005-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0022-p000",
+        "c0025-p000",
+        "c0027-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "5faa79239f9cd396d948d34f7b91a2b8e67c79dbd4ddd64886c89a208f813ddc",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "version": "1.0",
+  "source": "04_fundamental_alternative_data/01_academic_characteristics.ipynb",
+  "source_sha256": "64af302d6890b14da96bb830f66648d5fdc2fb74679f445611bc5a0df11313cf",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1788,
+      "source_sha256": "765220ac8fbbac35593a297d4bd13776e482e638eadd65a6a049e3602fc1be64",
+      "chars": 1788
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1788,
+      "end": 3119,
+      "source_sha256": "fb2f498bebc4080bb8231f64e946dc1af77b3cd1c8c55595c0d27995f097bf95",
+      "chars": 1331
+    },
+    {
+      "id": "c0000-p002",
+      "cell_index": 0,
+      "start": 3119,
+      "end": 4339,
+      "source_sha256": "c79cb609c4cbcdfeb46009aa57307bbea6c49e59042698211fed4c01e27308d8",
+      "chars": 1220
+    },
+    {
+      "id": "c0000-p003",
+      "cell_index": 0,
+      "start": 4339,
+      "end": 5703,
+      "source_sha256": "c42ab1e0c3054ae6e4f0d1c6dfcf029a4018abba8df7e69969f30e273a25eed5",
+      "chars": 1364
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 301,
+      "source_sha256": "26ff31bbb134489adb6ebaa7f198eaa18445edaec67da3e94b5acb42bb3255fe",
+      "chars": 301
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 330,
+      "source_sha256": "86f77ec517f1db6076afd13d80726fc0a49be06eac765e8545ed2c54135b1fa8",
+      "chars": 330
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 737,
+      "source_sha256": "68d6802411a7963e32e3bc93de23729f262836b397e8275e94e8a7b9c10b26d7",
+      "chars": 737
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 272,
+      "source_sha256": "b8163828da1bda33fdbba0f93addd911d42787ce2dcd02f5010d9e16c989e28e",
+      "chars": 272
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 563,
+      "source_sha256": "4d39cf3ec94272694a229b10205bd470173fb5d0aa5359f01dd674fa1ea66d72",
+      "chars": 563
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 437,
+      "source_sha256": "e2b79d75a8b93d3a6da1b8f96176791289b72c9085312a87b4158a438a03fc9e",
+      "chars": 437
+    },
+    {
+      "id": "c0016-p000",
+      "cell_index": 16,
+      "start": 0,
+      "end": 568,
+      "source_sha256": "eddb437df63fd03e90ace61226abeed54b56a0f64f3a38c0d12f10f79cb3eb42",
+      "chars": 568
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 175,
+      "source_sha256": "2ff33e941e45cdafa65976d68a28d305131c07c5920073bc87e97e68e129eaee",
+      "chars": 175
+    },
+    {
+      "id": "c0020-p000",
+      "cell_index": 20,
+      "start": 0,
+      "end": 694,
+      "source_sha256": "549938d83df83df79616ccd5f6a112662480c4969f1f18a2c540e4097d1e855f",
+      "chars": 694
+    },
+    {
+      "id": "c0022-p000",
+      "cell_index": 22,
+      "start": 0,
+      "end": 215,
+      "source_sha256": "71d6f28cce1c1ed7a8d88af3a825f75b3511ac24c4420a2da2b190dc91ca7436",
+      "chars": 215
+    },
+    {
+      "id": "c0024-p000",
+      "cell_index": 24,
+      "start": 0,
+      "end": 1037,
+      "source_sha256": "3204726c7499bfa99d666c08b95ebfbc577b9834b18987a8c6e757a9b73f0a0d",
+      "chars": 1037
+    },
+    {
+      "id": "c0026-p000",
+      "cell_index": 26,
+      "start": 0,
+      "end": 754,
+      "source_sha256": "9153b22a56e3932a6fe61030c4aece383300a4a4dda14d6767bc3ca274c095ce",
+      "chars": 754
+    },
+    {
+      "id": "c0028-p000",
+      "cell_index": 28,
+      "start": 0,
+      "end": 219,
+      "source_sha256": "02e99bb051deb9d5bc5533f341a65e584523ef53a0af471348ef910e65e801fd",
+      "chars": 219
+    },
+    {
+      "id": "c0030-p000",
+      "cell_index": 30,
+      "start": 0,
+      "end": 451,
+      "source_sha256": "901e11d21c7ca5f8806382d817e6c8114a053c0ce401dcc12ae181ffbf329260",
+      "chars": 451
+    },
+    {
+      "id": "c0032-p000",
+      "cell_index": 32,
+      "start": 0,
+      "end": 483,
+      "source_sha256": "243a47ffe31d60a4436f27547f349a11911e3251db54ac16fb30d371af801eb5",
+      "chars": 483
+    },
+    {
+      "id": "c0034-p000",
+      "cell_index": 34,
+      "start": 0,
+      "end": 462,
+      "source_sha256": "0624aef94a7d2ca3b8ddab3866253157eb1219e5d5e8dab165ccf82bae730a7a",
+      "chars": 462
+    },
+    {
+      "id": "c0036-p000",
+      "cell_index": 36,
+      "start": 0,
+      "end": 1619,
+      "source_sha256": "af958053f024319a3481aeecd052df5070845c1036a16e502be2cca60f7f5d04",
+      "chars": 1619
+    },
+    {
+      "id": "c0037-p000",
+      "cell_index": 37,
+      "start": 0,
+      "end": 1778,
+      "source_sha256": "574a662b90ee2596f10a2646c5c6805635d24ff666ac264e3c33e696e5022170",
+      "chars": 1778
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0000-p002"
+    ],
+    [
+      "c0000-p003",
+      "c0004-p000",
+      "c0006-p000",
+      "c0008-p000",
+      "c0010-p000",
+      "c0012-p000",
+      "c0014-p000",
+      "c0016-p000",
+      "c0018-p000"
+    ],
+    [
+      "c0020-p000",
+      "c0022-p000",
+      "c0024-p000",
+      "c0026-p000",
+      "c0028-p000",
+      "c0030-p000",
+      "c0032-p000",
+      "c0034-p000"
+    ],
+    [
+      "c0036-p000",
+      "c0037-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

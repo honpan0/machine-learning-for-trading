@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "source": "04_fundamental_alternative_data/07_macro_data_alignment.ipynb",
+  "source_sha256": "02c24f1c5465656651324d615813346108a0ba95325d76ed184637e32bc706d2",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0002-p000",
+            "c0004-p000",
+            "c0005-p000",
+            "c0007-p000"
+          ],
+          "chars": 4829
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0009-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0027-p000"
+          ],
+          "chars": 4833
+        }
+      ],
+      "chars": 9662,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0002-p000",
+        "c0004-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0027-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "b6f67a4f1f58b44e5e2ff2d44de4dde5e94e95a51ba515519d290f6611592b65",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0029-p000",
+            "c0031-p000",
+            "c0033-p000"
+          ],
+          "chars": 2790
+        }
+      ],
+      "chars": 2790,
+      "number": 2,
+      "ids": [
+        "c0029-p000",
+        "c0031-p000",
+        "c0033-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "0d00e67c6baa3bf94d225e2f1881d7363f873a8a3e4e903142611b0b04c6f281",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

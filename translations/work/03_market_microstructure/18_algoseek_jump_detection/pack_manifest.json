@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/18_algoseek_jump_detection.ipynb",
+  "source_sha256": "8dd1c26d9eeb30388ad06db128b9669398bbcd0de1be0bcf6207c8b777b4cc1f",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0002-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 4264
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0020-p000",
+            "c0023-p000",
+            "c0025-p000",
+            "c0027-p000",
+            "c0029-p000"
+          ],
+          "chars": 4124
+        }
+      ],
+      "chars": 8388,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0002-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0020-p000",
+        "c0023-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0029-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "e11fb94551ac0d5d23646e4834dc6646af0c88ccd7699460779d266e9d11bcc5",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0031-p000"
+          ],
+          "chars": 1016
+        }
+      ],
+      "chars": 1016,
+      "number": 2,
+      "ids": [
+        "c0031-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "40e856fabec8c047c383757ffa6809fb16d6230e10ae4b496b4e1c8467b5edae",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

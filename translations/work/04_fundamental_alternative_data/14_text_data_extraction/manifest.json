@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "source": "04_fundamental_alternative_data/14_text_data_extraction.ipynb",
+  "source_sha256": "8ad92efd0bcb65546492032b0dbd2f3042f0d19ea1897155710ece1d373c93e9",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1151,
+      "source_sha256": "6d2105b431ba5456a755816fac4d5866e489e09496481218013dc31f36b4cb90",
+      "chars": 1151
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1151,
+      "end": 2399,
+      "source_sha256": "be7c86261cf5fcb8bb65dd7fc361e4d4c97d0176938576bd6d26519172de4b6b",
+      "chars": 1248
+    },
+    {
+      "id": "c0000-p002",
+      "cell_index": 0,
+      "start": 2399,
+      "end": 2990,
+      "source_sha256": "6e3ab31d1d72166e86d3dc1c205eb462d87e49dbe5547293637499bf9211bad7",
+      "chars": 591
+    },
+    {
+      "id": "c0002-p000",
+      "cell_index": 2,
+      "start": 0,
+      "end": 238,
+      "source_sha256": "ea8e9c1cca69e8bb43d6a8465123483f6a5bc11987bd1e0be01901998ab97df9",
+      "chars": 238
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 954,
+      "source_sha256": "c66a44445ed9cb831bed04fa0527f69f64a3acc96f499b2e2442da64414ffda9",
+      "chars": 954
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 162,
+      "source_sha256": "ba335b39737d22bd2464072fc240457f5f8273cbb829064bb10832f24e9ab40e",
+      "chars": 162
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 262,
+      "source_sha256": "94d85ace33b7c3afdd3cc0170811665265c8df113b78a347549d249a790da3eb",
+      "chars": 262
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 325,
+      "source_sha256": "7673046b743f9a3470d63ea3715aeb1d5cdf745dca3800c40fa14c9fa89649f3",
+      "chars": 325
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 416,
+      "source_sha256": "6f18643e21d312765a8821fc1f572d30a15a84d82501298dd48548dc3af107fe",
+      "chars": 416
+    },
+    {
+      "id": "c0014-p000",
+      "cell_index": 14,
+      "start": 0,
+      "end": 514,
+      "source_sha256": "56492f99333afa8b85ba498c98a97516e94ab5093186d124f78436040e2435af",
+      "chars": 514
+    },
+    {
+      "id": "c0016-p000",
+      "cell_index": 16,
+      "start": 0,
+      "end": 355,
+      "source_sha256": "0fe8f7f00ac69f5dd6704cf7f470821188e07a72cc0dc2ca9ff9940584626f1b",
+      "chars": 355
+    },
+    {
+      "id": "c0018-p000",
+      "cell_index": 18,
+      "start": 0,
+      "end": 277,
+      "source_sha256": "58bd944ebe2ebacde4bc4273266b3f5977d26af2e8ede542c35e2065ece99e46",
+      "chars": 277
+    },
+    {
+      "id": "c0020-p000",
+      "cell_index": 20,
+      "start": 0,
+      "end": 287,
+      "source_sha256": "d67f8b481535f2c8354deed7558dd45e51decfc327f5c310758e308cb99aa4ef",
+      "chars": 287
+    },
+    {
+      "id": "c0021-p000",
+      "cell_index": 21,
+      "start": 0,
+      "end": 467,
+      "source_sha256": "2fa2ea506f9c197a14ae78eafd3b8007565258cb5ca775edcae11b64c1f19e3d",
+      "chars": 467
+    },
+    {
+      "id": "c0024-p000",
+      "cell_index": 24,
+      "start": 0,
+      "end": 588,
+      "source_sha256": "840cd301733b116da466d50559254e7e566b0cb17b57eb0138bc4d98c0e8ba53",
+      "chars": 588
+    },
+    {
+      "id": "c0026-p000",
+      "cell_index": 26,
+      "start": 0,
+      "end": 263,
+      "source_sha256": "b9960c3440f54c759273ab5dfadca496f747c745afda5210097ea49d2aa17537",
+      "chars": 263
+    },
+    {
+      "id": "c0028-p000",
+      "cell_index": 28,
+      "start": 0,
+      "end": 1463,
+      "source_sha256": "88d9e4846649fb8e023e30774f51f0c1a6e73eac2df9dfaba0255f2693557b76",
+      "chars": 1463
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0000-p002",
+      "c0002-p000",
+      "c0005-p000",
+      "c0007-p000",
+      "c0009-p000",
+      "c0010-p000"
+    ],
+    [
+      "c0012-p000",
+      "c0014-p000",
+      "c0016-p000",
+      "c0018-p000",
+      "c0020-p000",
+      "c0021-p000",
+      "c0024-p000",
+      "c0026-p000",
+      "c0028-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

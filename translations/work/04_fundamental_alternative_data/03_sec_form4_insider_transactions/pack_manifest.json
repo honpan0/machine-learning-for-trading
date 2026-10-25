@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "source": "04_fundamental_alternative_data/03_sec_form4_insider_transactions.ipynb",
+  "source_sha256": "db55ffcfd9a4b0a33d30eaa6d19216c62ae94edd110be4a616ef2e7b1bcecc53",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000"
+          ],
+          "chars": 4541
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0011-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0019-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000"
+          ],
+          "chars": 4693
+        }
+      ],
+      "chars": 9234,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0019-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "fbd4d38172c3fb28dcfbebca36adc9c18cdde95b14626e8ec88aed08ee0908af",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

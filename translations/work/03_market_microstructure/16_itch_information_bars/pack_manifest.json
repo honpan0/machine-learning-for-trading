@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/16_itch_information_bars.ipynb",
+  "source_sha256": "585821ab6a0f81c345a8f0cd4392c79a5ee79bf42b6f932ce0284884d2ba3ed5",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0019-p000"
+          ],
+          "chars": 4749
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0020-p000",
+            "c0026-p000"
+          ],
+          "chars": 2139
+        }
+      ],
+      "chars": 6888,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0020-p000",
+        "c0026-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "a8195283d7f376f31f0df80c1ab31faed74c9b86254b0630c350fcd8dad710da",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

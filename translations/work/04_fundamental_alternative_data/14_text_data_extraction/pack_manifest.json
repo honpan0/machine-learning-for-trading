@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "source": "04_fundamental_alternative_data/14_text_data_extraction.ipynb",
+  "source_sha256": "8ad92efd0bcb65546492032b0dbd2f3042f0d19ea1897155710ece1d373c93e9",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0000-p002",
+            "c0002-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0010-p000"
+          ],
+          "chars": 4931
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0021-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0028-p000"
+          ],
+          "chars": 4630
+        }
+      ],
+      "chars": 9561,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0000-p002",
+        "c0002-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0021-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0028-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "622ab1c65a36aeb14aa067071d2ce2a7d66e0d9edb286a5bd8cbc6c54de36b46",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
