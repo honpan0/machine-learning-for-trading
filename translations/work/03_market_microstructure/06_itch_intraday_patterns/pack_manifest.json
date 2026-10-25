@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/06_itch_intraday_patterns.ipynb",
+  "source_sha256": "682452b3a0908e25b8c5deef59ca6fc075135cd7c166047c2c4e6c1de26ec025",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0003-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0015-p000",
+            "c0019-p000"
+          ],
+          "chars": 4921
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0019-p001"
+          ],
+          "chars": 237
+        }
+      ],
+      "chars": 5158,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0003-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0015-p000",
+        "c0019-p000",
+        "c0019-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "938f5048a6cb329b561e87a5246fefbf7b2a2aa570baab503b5805b51c5e7c0a",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

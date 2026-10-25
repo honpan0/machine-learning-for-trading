@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**12** 份；翻譯中：**12** 份；已翻完待組裝：**0** 份
-- 未開始：**459** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**35** 份；翻譯中：**7** 份；已翻完待組裝：**0** 份
+- 未開始：**441** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -18,36 +18,36 @@
 | `02_financial_data_universe/08_options_greeks_computation.ipynb` | 40/40 | 5/5 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/09_options_continuous.ipynb` | 29/29 | 5/5 | 已組裝／驗證通過 |  |
 | `02_financial_data_universe/10_crypto_perps_eda.ipynb` | 20/20 | 4/4 | 已組裝／驗證通過 |  |
-| `02_financial_data_universe/11_crypto_premium_analysis.ipynb` | 0/22 | 0/4 | 翻譯中 |  |
-| `02_financial_data_universe/12_fx_pairs_eda.ipynb` | 0/17 | 0/2 | 翻譯中 |  |
-| `02_financial_data_universe/13_data_quality_framework.ipynb` | 0/27 | 0/4 | 翻譯中 |  |
-| `02_financial_data_universe/14_point_in_time_validation.ipynb` | 0/18 | 0/3 | 翻譯中 |  |
-| `02_financial_data_universe/15_survivorship_bias_detection.ipynb` | 0/28 | 0/4 | 翻譯中 |  |
-| `02_financial_data_universe/16_provider_comparison.ipynb` | 0/16 | 0/2 | 翻譯中 |  |
-| `02_financial_data_universe/17_complete_pipeline.ipynb` | 0/22 | 0/3 | 翻譯中 |  |
-| `02_financial_data_universe/18_data_management.ipynb` | 0/27 | 0/3 | 翻譯中 |  |
-| `02_financial_data_universe/19_incremental_updates.ipynb` | 0/16 | 0/2 | 翻譯中 |  |
-| `02_financial_data_universe/20_storage_benchmark_file.ipynb` | 0/15 | 0/2 | 翻譯中 |  |
-| `02_financial_data_universe/21_storage_benchmark_database.ipynb` | 0/42 | 0/5 | 翻譯中 |  |
-| `02_financial_data_universe/22_pandas_polars_benchmark.ipynb` | 0/51 | 0/4 | 翻譯中 |  |
-| `03_market_microstructure/01_itch_parser.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/02_itch_lob_reconstruction.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/03_itch_lob_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/04_itch_order_lifecycle_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/05_itch_trading_activity.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/06_itch_intraday_patterns.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/07_itch_stylized_facts.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/08_databento_lob_reconstruction.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/09_databento_mbo_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/10_iex_lob_reconstruction.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/11_algoseek_taq_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/12_algoseek_taq_lob_reconstruction.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/13_algoseek_minute_bars_eda.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/14_itch_bar_sampling.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/15_itch_lee_ready.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/16_itch_information_bars.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/17_databento_bar_sampling.ipynb` | — | 0/0 | 未開始 |  |
-| `03_market_microstructure/18_algoseek_jump_detection.ipynb` | — | 0/0 | 未開始 |  |
+| `02_financial_data_universe/11_crypto_premium_analysis.ipynb` | 22/22 | 4/4 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/12_fx_pairs_eda.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/13_data_quality_framework.ipynb` | 27/27 | 4/4 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/14_point_in_time_validation.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/15_survivorship_bias_detection.ipynb` | 28/28 | 4/4 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/16_provider_comparison.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/17_complete_pipeline.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/18_data_management.ipynb` | 27/27 | 3/3 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/19_incremental_updates.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/20_storage_benchmark_file.ipynb` | 15/15 | 2/2 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/21_storage_benchmark_database.ipynb` | 42/42 | 5/5 | 已組裝／驗證通過 |  |
+| `02_financial_data_universe/22_pandas_polars_benchmark.ipynb` | 51/51 | 4/4 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/01_itch_parser.ipynb` | 16/16 | 3/3 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/02_itch_lob_reconstruction.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/03_itch_lob_analysis.ipynb` | 26/26 | 3/3 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/04_itch_order_lifecycle_analysis.ipynb` | 31/31 | 3/3 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/05_itch_trading_activity.ipynb` | 21/21 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/06_itch_intraday_patterns.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/07_itch_stylized_facts.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/08_databento_lob_reconstruction.ipynb` | 25/25 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/09_databento_mbo_analysis.ipynb` | 0/17 | 0/3 | 翻譯中 |  |
+| `03_market_microstructure/10_iex_lob_reconstruction.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/11_algoseek_taq_eda.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/12_algoseek_taq_lob_reconstruction.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `03_market_microstructure/13_algoseek_minute_bars_eda.ipynb` | 0/28 | 0/4 | 翻譯中 |  |
+| `03_market_microstructure/14_itch_bar_sampling.ipynb` | 0/20 | 0/2 | 翻譯中 |  |
+| `03_market_microstructure/15_itch_lee_ready.ipynb` | 0/12 | 0/2 | 翻譯中 |  |
+| `03_market_microstructure/16_itch_information_bars.ipynb` | 0/10 | 0/2 | 翻譯中 |  |
+| `03_market_microstructure/17_databento_bar_sampling.ipynb` | 0/32 | 0/2 | 翻譯中 |  |
+| `03_market_microstructure/18_algoseek_jump_detection.ipynb` | 0/15 | 0/3 | 翻譯中 |  |
 | `04_fundamental_alternative_data/01_academic_characteristics.ipynb` | — | 0/0 | 未開始 |  |
 | `04_fundamental_alternative_data/02_sec_filing_explorer.ipynb` | — | 0/0 | 未開始 |  |
 | `04_fundamental_alternative_data/03_sec_form4_insider_transactions.ipynb` | — | 0/0 | 未開始 |  |

@@ -22,6 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
+MASK_VERSION = 4
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -32,9 +33,23 @@ MATH = re.compile(
     r"|(?<!\\)\$\$.*?(?<!\\)\$\$"
     r"|(?<!\\)(?<!\$)\$(?!\$)[^\n$]+?(?<!\\)\$(?!\$)"
 )
+# Keep MATH unchanged: unversioned, already-issued packs depend on its exact spans.
+MATH_V2 = re.compile(MATH.pattern.replace(r"[^\n$]+?", r"(?:\\.|[^$\\])+?"))
+# v3 scans paired dollars separately; this regex handles only fixed delimiters.
+MATH_FIXED_V3 = re.compile(
+    r"(?s)\\begin\{(equation\*?|align\*?|gather\*?|multline\*?|split|math|displaymath)\}.*?\\end\{\1\}"
+    r"|\\\[.*?\\\]"
+    r"|\\\(.*?\\\)"
+)
 IMAGE = re.compile(r"!\[[^\]\n]*\]\([^\n)]*\)")
 URL = re.compile(r"https?://[^\s<>\])]+")
 PRICE = re.compile(r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?(?![A-Za-z0-9$+\-*/^_{\\])")
+# v4 only: $10/symbol/mo and $2/GB/day are prices, NOT dollar math.
+# Refuse a trailing / or $ to prevent partial currency matching inside $10/x$.
+PRICE_PER_UNIT = re.compile(
+    r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
+    r"(?:/[A-Za-z][A-Za-z0-9_-]*)+(?![/A-Za-z0-9_$])"
+)
 HTML = re.compile(r"</?[A-Za-z][^<>\n]*?>")
 DANGEROUS = re.compile(r"\\(?:frac|dfrac|tfrac|sqrt|mathcal|displaystyle|begin|end|sum|int|left|right|Gamma|Theta|Delta)\b")
 PROMPT = """# ML4T A3 Universal Pack — 固定翻譯規則
@@ -77,8 +92,108 @@ def iter_sources(root: Path, target: str) -> list[str]:
             if not q.stem.endswith("_zh") and ".ipynb_checkpoints" not in q.parts]
 
 
-def mask_text(raw: str, with_sources: bool = False):
-    """Mask protected spans by precedence without replacing substrings inside them."""
+def _is_escaped_dollar(raw: str, index: int) -> bool:
+    """A dollar sign preceded by an odd number of backslashes is escaped."""
+    count = 0
+    while index > count and raw[index - count - 1] == "\\":
+        count += 1
+    return count % 2 == 1
+
+
+def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_version: int = 3):
+    """Tokenize dollars outside protected spans. Never pair prices as math."""
+    occupied = bytearray(len(raw))
+    for start, end, _ in spans:
+        occupied[start:end] = b"\x01" * (end - start)
+
+    def closing_dollar(start: int, double: bool) -> int | None:
+        j = start + (2 if double else 1)
+        while j < len(raw):
+            if occupied[j]:
+                return None   # Formula must not jump over fenced/inline code or links.
+            if raw[j] == "$" and not _is_escaped_dollar(raw, j):
+                if double:
+                    if raw.startswith("$$", j):
+                        return j
+                elif not raw.startswith("$$", j):
+                    return j
+            j += 1
+        return None
+
+    def add_span(start: int, end: int, kind: str):
+        spans.append((start, end, kind))
+        occupied[start:end] = b"\x01" * (end - start)
+
+    i = 0
+    while i < len(raw):
+        if occupied[i] or raw[i] != "$" or _is_escaped_dollar(raw, i):
+            i += 1
+            continue
+        double = raw.startswith("$$", i)
+        close = closing_dollar(i, double)
+        if double:
+            if close is None:
+                raise A3Error("未閉合的雙美元公式；停止產生翻譯 Pack")
+            end = close + 2
+            add_span(i, end, "math")
+            i = end
+            continue
+
+        # A numerical dollar amount followed by prose is not the opening of
+        # a math expression. In particular, '$50.00; next is $60.00' must
+        # protect TWO prices without swallowing 'next is'.
+        unit_price = PRICE_PER_UNIT.match(raw, i) if mask_version >= 4 else None
+        price = unit_price or PRICE.match(raw, i)
+        if price is not None:
+            numeric_formula = False
+            # In v4, numeric currency/unit notation is normally a price, but
+            # $10/x + y$ is still math when an arithmetic expression follows
+            # and the closing $ is not introducing another numeric price.
+            if unit_price is not None and close is not None:
+                tail = raw[unit_price.end():close]
+                if (not re.match(r"\d", raw[close + 1:]) and
+                    re.fullmatch(r"\s*[+*/=^\-]\s*(?:[A-Za-z_\\][\w\\{}^]*|\d+(?:\.\d+)?)\s*", tail)):
+                    numeric_formula = True
+            if close is not None and unit_price is None:
+                inside = raw[i + 1:close]
+                tail = inside[len(price.group(0)) - 1:]
+                # $2 + 3$, $2 x$, $2\\times x$ and $100$ are maths;
+                # $10 and $20 and $50.00; next is $60.00 are prices.
+                # A second '$' followed by another price starts a NEW
+                # currency amount (including '$5 + $10'), not a math closer.
+                if re.match(r"\d", raw[close + 1:]) and close != price.end():
+                    numeric_formula = False
+                elif close == price.end():
+                    numeric_formula = True
+                elif re.search(r"[\\{}^_=|*/+]", inside):
+                    numeric_formula = True
+                elif re.fullmatch(r"\s+[A-Za-z]\s*", tail):
+                    numeric_formula = True
+            if not numeric_formula:
+                add_span(i, price.end(), "price")
+                i = price.end()
+                continue
+
+        if close is None:
+            raise A3Error("未閉合或歧義的單美元公式；停止產生翻譯 Pack")
+        inner = raw[i + 1:close]
+        if re.search(r"\n\s*\n", inner):
+            raise A3Error("單美元公式跨越段落；拒絕遮蔽可能的英文說明")
+        # Unescaped prose or punctuation across dollars indicates probable
+        # incorrect pairing. Fail closed instead of hiding English in a token.
+        if not re.search(r"[\\{}^_=|*/+]", inner):
+            words = re.findall(r"[A-Za-z]{2,}", inner)
+            if len(words) >= 2 or ";" in inner or ". " in inner:
+                raise A3Error("單美元公式疑似包含自然語言；請先檢查公式邊界")
+        end = close + 1
+        add_span(i, end, "math")
+        i = end
+
+
+def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
+    """Mask protected spans while preserving the exact historical v1/v2 spans."""
+    if mask_version not in (1, 2, 3, 4):
+        raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")
     spans: list[tuple[int, int, str]] = []
@@ -101,30 +216,40 @@ def mask_text(raw: str, with_sources: bool = False):
             raise A3Error("來源含未閉合程式碼區塊，不產生可能損壞的翻譯 Pack")
         add(opener.start(), ending.end(), "codeblock")
 
-    # Inline code beats math, so backslash commands inside code stay untouched.
     for match in INLINE_CODE.finditer(raw):
         add(match.start(), match.end(), "inline-code")
-    # Currency ranges such as "$10 and $20" contain two money amounts, not
-    # a single $...$ formula. Don't mask English words between those amounts.
-    for match in MATH.finditer(raw):
-        value = match.group(0)
-        if value.startswith("$") and not value.startswith("$$"):
-            inner = value[1:-1]
-            # $10 and $20 is currency; $2 x$ is still mathematical text.
-            currency_words = re.findall(r"[A-Za-z]+", inner)
-            looks_like_currency_prose = (
-                re.match(r"^\d[\d,.]*\s+[A-Za-z]", inner) and
-                not re.search(r"[+*/=^_\\{}]", inner) and
-                (len(currency_words) >= 2 or any(w.lower() in
-                 {"and", "to", "for", "from", "or", "per", "vs", "through"} for w in currency_words))
-            )
-            if looks_like_currency_prose:
-                continue
-        add(match.start(), match.end(), "math")
-    for pattern, kind in ((PRICE, "price"), (IMAGE, "image"),
-                          (URL, "url"), (HTML, "html")):
-        for match in pattern.finditer(raw):
-            add(match.start(), match.end(), kind)
+
+    if mask_version in (3, 4):
+        # Fixed-delimiter math, code, links and markup are barriers for the
+        # dollar tokenizer. Old versions retain their original precedence.
+        for match in MATH_FIXED_V3.finditer(raw):
+            add(match.start(), match.end(), "math")
+        for pattern, kind in ((IMAGE, "image"), (URL, "url"), (HTML, "html")):
+            for match in pattern.finditer(raw):
+                add(match.start(), match.end(), kind)
+        _mask_dollars_v3(raw, spans, mask_version=mask_version)
+    else:
+        # Historical v1/v2 behavior is deliberately byte-for-byte unchanged.
+        for match in (MATH if mask_version == 1 else MATH_V2).finditer(raw):
+            value = match.group(0)
+            if value.startswith("$") and not value.startswith("$$"):
+                inner = value[1:-1]
+                currency_words = re.findall(r"[A-Za-z]+", inner)
+                looks_like_currency_prose = (
+                    re.match(r"^\d[\d,.]*\s+[A-Za-z]", inner) and
+                    not re.search(r"[+*/=^_\\{}]", inner) and
+                    (len(currency_words) >= 2 or any(w.lower() in
+                     {"and", "to", "for", "from", "or", "per", "vs", "through"} for w in currency_words))
+                )
+                if looks_like_currency_prose:
+                    continue
+                if mask_version == 2 and re.search(r"\n\s*\n", inner):
+                    raise A3Error("單美元公式跨越段落，拒絕遮蔽可能的英文說明")
+            add(match.start(), match.end(), "math")
+        for pattern, kind in ((PRICE, "price"), (IMAGE, "image"),
+                              (URL, "url"), (HTML, "html")):
+            for match in pattern.finditer(raw):
+                add(match.start(), match.end(), kind)
 
     spans.sort(key=lambda item: item[0])
     out: list[str] = []
@@ -142,9 +267,17 @@ def mask_text(raw: str, with_sources: bool = False):
         pos = e
     out.append(raw[pos:])
     masked = "".join(out)
-    # We refuse to send source which still contains risky unsupported TeX.
     if DANGEROUS.search(masked) or "$$" in masked:
         raise A3Error("來源存在未被安全遮蔽的 LaTeX（如不成對的公式），請檢查來源")
+    if mask_version == 2 and re.search(r"(?<!\\)\$", masked):
+        raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
+    if mask_version in (3, 4) and any(
+        ch == "$" and not _is_escaped_dollar(masked, pos)
+        for pos, ch in enumerate(masked)
+    ):
+        raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
+    if mask_version in (3, 4) and re.search(r"\\[\[(]", masked):
+        raise A3Error("來源含未閉合的 LaTeX 括號公式")
     if with_sources:
         return masked, replacements, protected_source
     return masked, replacements
@@ -163,7 +296,8 @@ def work_context(root: Path, source: str):
 def prepared_unit(nb: dict, units: dict, uid: str, a2_number: int) -> dict:
     original = packing.english(nb, units[uid])
     masked, replacement = mask_text(original)
-    return {"id": uid, "a2_pack": a2_number, "source_sha256": units[uid]["source_sha256"],
+    return {"id": uid, "a2_pack": a2_number, "mask_version": MASK_VERSION,
+            "source_sha256": units[uid]["source_sha256"],
             "masked_sha256": sha(masked.encode("utf-8")), "masked": masked, "tokens": replacement}
 
 
@@ -230,7 +364,8 @@ def write_exact(path: Path, raw: bytes):
         path.write_bytes(raw)
 
 
-def do_prepare(root: Path, source: str, max_chars: int, max_units: int):
+def do_prepare(root: Path, source: str, max_chars: int, max_units: int,
+               remask_legacy: bool = False):
     work, manifest, pack_info, units, nb, assigned = work_context(root, source)
     data = load_a3(root, source, work, manifest, pack_info)
     if "config" not in data:
@@ -241,7 +376,14 @@ def do_prepare(root: Path, source: str, max_chars: int, max_units: int):
     for entry in data["packs"]:
         inbox = work / "inbox" / f"a3_pack_{entry['number']:03d}.txt"
         if not inbox.is_file() or entry.get("processed_sha256") is None:
-            in_flight.update(u["id"] for u in entry["units"])
+            for u in entry["units"]:
+                # Explicit migration appends a new task; never edits legacy hashes.
+                if remask_legacy and u.get("mask_version", 1) < MASK_VERSION:
+                    original = packing.english(nb, units[u["id"]])
+                    masked, tokens = mask_text(original)
+                    if sha(masked.encode("utf-8")) != u["masked_sha256"] or tokens != u["tokens"]:
+                        continue
+                in_flight.add(u["id"])
     needed = []
     for p in pack_info["packs"]:
         for uid in p["ids"]:
@@ -328,7 +470,8 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         if uid not in answers:
             continue
         original = packing.english(nb, units[uid])
-        masked, tokens, protected_source = mask_text(original, with_sources=True)
+        masked, tokens, protected_source = mask_text(
+            original, with_sources=True, mask_version=u.get("mask_version", 1))
         if (u["source_sha256"] != units[uid]["source_sha256"] or
             u["masked_sha256"] != sha(masked.encode("utf-8")) or tokens != u["tokens"]):
             raise A3Error(f"{uid} 的原始文本、遮蔽內容或對照表不一致")
@@ -336,7 +479,11 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         keys = [x["key"] for x in tokens]
         present = TOKEN.findall(translated)
         if (present != keys or "[[ML4T_A3_" in TOKEN.sub("", translated) or
-            DANGEROUS.search(translated) or "$$" in translated):
+            DANGEROUS.search(translated) or "$$" in translated or
+            (u.get("mask_version", 1) == 2 and re.search(r"(?<!\\)\$", translated)) or
+            (u.get("mask_version", 1) in (3, 4) and any(
+                char == "$" and not _is_escaped_dollar(translated, pos)
+                for pos, char in enumerate(translated)))):
             rejected.append(uid)
             continue
         for item in tokens:
@@ -351,7 +498,7 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
     return outputs, rejected, fixes, joins, truncated
 
 
-def finalize(root: Path, source: str, work: Path, manifest: dict):
+def finalize(root: Path, source: str, work: Path, manifest: dict, reports: bool = True):
     missing = [u["id"] for u in manifest["units"] if not packing.is_complete(work, u["id"])]
     if missing:
         print(f"{source}：尚缺 {len(missing)} 個翻譯單元；完成後自動產生 Notebook。")
@@ -362,7 +509,7 @@ def finalize(root: Path, source: str, work: Path, manifest: dict):
         nb_zh.build(argparse.Namespace(source=source, replace=False))
     nb_zh.verify(argparse.Namespace(source=source))
     dash = root / "translation_tools/progress_dashboard.py"
-    if dash.is_file():
+    if reports and dash.is_file():
         import subprocess
         proc = subprocess.run([sys.executable, str(dash), "--write"], cwd=root,
                               capture_output=True, text=True, encoding="utf-8")
@@ -372,7 +519,7 @@ def finalize(root: Path, source: str, work: Path, manifest: dict):
             print("全專案進度報表已更新。")
 
 
-def do_collect(root: Path, source: str):
+def do_collect(root: Path, source: str, reports: bool = True):
     work, manifest, pack_info, units, nb, assigned = work_context(root, source)
     data = load_a3(root, source, work, manifest, pack_info)
     touched = False
@@ -411,7 +558,7 @@ def do_collect(root: Path, source: str):
               f"無效佔位符 {len(rejected)}，待補 {len(missing)}" +
               ("（末尾截斷，已保留完整單元）" if truncated else ""))
     if touched:
-        finalize(root, source, work, manifest)
+        finalize(root, source, work, manifest, reports=reports)
         # The SAME A3 workflow generates new tasks automatically for skipped,
         # truncated, or invalid units; users never need a different retry tool.
         cfg = data.get("config", {"max_chars": 6500, "max_units": 14})
@@ -430,6 +577,51 @@ def do_status(root: Path, source: str):
                not p.get("processed_sha256") for p in data["packs"])
     print(f"{source}：{complete}/{total} 個單元完成；A3 Pack {len(data['packs'])} 份；待回收 {wait} 份。")
 
+
+
+def do_audit(root: Path, source: str):
+    """Read-only scan of pending historical packs for current masking differences.
+
+    This is a risk report, NOT automatic migration. It deliberately leaves
+    manifests, packs, translation replies, and shared progress files alone.
+    """
+    work, manifest, pack_info, units, nb, assigned = work_context(root, source)
+    data = load_a3(root, source, work, manifest, pack_info)
+    checked, changed, blocked = 0, [], []
+    seen = set()
+    for entry in data["packs"]:
+        if entry.get("processed_sha256"):
+            continue
+        for u in entry["units"]:
+            uid = u["id"]
+            if uid in seen or packing.is_complete(work, uid):
+                continue
+            seen.add(uid)
+            previous_version = u.get("mask_version", 1)
+            if previous_version >= MASK_VERSION:
+                continue
+            checked += 1
+            original = packing.english(nb, units[uid])
+            try:
+                old_mask, old_tokens = mask_text(original, mask_version=previous_version)
+                if (u["masked_sha256"] != sha(old_mask.encode("utf-8")) or
+                        u["tokens"] != old_tokens):
+                    raise A3Error("歷史 Pack 與來源對照不一致")
+                new_mask, new_tokens = mask_text(original, mask_version=MASK_VERSION)
+                if (old_mask != new_mask or old_tokens != new_tokens):
+                    changed.append(uid)
+            except A3Error as exc:
+                blocked.append((uid, str(exc)))
+    print(f"{source}：歷史待翻譯單元 {checked}；"
+          f"v{MASK_VERSION} 遮蔽差異 {len(changed)}；需人工檢查 {len(blocked)}。")
+    if changed:
+        print("  遮蔽差異：" + ", ".join(changed[:30]) +
+              (" …" if len(changed) > 30 else ""))
+        print("  需要時可用 prepare <目標> --remask-legacy 追加新版 Pack；"
+              "請先停止舊 Pack 的翻譯，避免重複工作。")
+    for uid, reason in blocked[:10]:
+        print(f"  無法安全轉成 v{MASK_VERSION}：{uid} — {reason}")
+    return checked, len(changed), len(blocked)
 
 
 def write_queue(root: Path, chapter: str, sources: list[str]):
@@ -514,9 +706,14 @@ def main(argv: list[str] | None = None):
     prep.add_argument("target", help="英文 .ipynb 或章節目錄")
     prep.add_argument("--max-chars", type=int, default=6500, help="每 Pack 最大遮蔽後英文文字量")
     prep.add_argument("--max-units", type=int, default=14, help="每 Pack 最多翻譯單元")
+    prep.add_argument("--remask-legacy", action="store_true",
+                      help="對遮蔽結果改變的未完成舊單元追加新版任務，不改寫舊 Pack")
+    subs.add_parser("audit", help="唯讀檢查待翻譯舊 Pack 的公式遮蔽風險").add_argument("target", help="英文 .ipynb 或章節目錄")
     for action in ("collect", "status"):
         p = subs.add_parser(action)
         p.add_argument("target", help="英文 .ipynb 或章節目錄")
+    for p in (prep, subs.choices["collect"]):
+        p.add_argument("--no-reports", action="store_true", help="不更新共用進度報表與佇列")
     args = ap.parse_args(argv)
     if args.action == "prepare" and (args.max_chars < 500 or args.max_units < 1):
         ap.error("--max-chars 至少 500；--max-units 大於 0")
@@ -535,17 +732,21 @@ def main(argv: list[str] | None = None):
                 continue
             try:
                 if args.action == "prepare":
-                    count += do_prepare(root, source, args.max_chars, args.max_units)
+                    count += do_prepare(root, source, args.max_chars, args.max_units,
+                                        remask_legacy=args.remask_legacy)
                 elif args.action == "collect":
-                    count += bool(do_collect(root, source))
+                    count += bool(do_collect(root, source, reports=not args.no_reports))
+                elif args.action == "audit":
+                    do_audit(root, source)
                 else:
                     do_status(root, source)
             except (A3Error, nb_zh.PipelineError, a2.CollectError, repair.RepairError,
                     ValueError, OSError, KeyError, TypeError, IndexError) as exc:
                 errors.append(f"{source}：{exc}")
-        if args.action != "status":
+        if args.action not in ("status", "audit"):
             chapter = Path(args.target).stem if (root / args.target).is_dir() else Path(targets[0]).parent.as_posix()
-            write_queue(root, chapter, targets)
+            if not args.no_reports:
+                write_queue(root, chapter, targets)
             print(f"A3 {args.action}：已處理 {count} 份任務或 Notebook。")
         if errors:
             for err in errors:

@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/10_iex_lob_reconstruction.ipynb",
+  "source_sha256": "b50bb1d2af9bce08a4adc6be3df2c112694317fffe49e7f6ac360881e4d3c324",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0029-p000",
+            "c0031-p000"
+          ],
+          "chars": 4810
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0036-p000",
+            "c0037-p000"
+          ],
+          "chars": 1626
+        }
+      ],
+      "chars": 6436,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0031-p000",
+        "c0036-p000",
+        "c0037-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "c88e5add71d8bf8d2e7d12a96cd172d1f7ed6babe4c0b8f7801fe5e89f77465e",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -203,7 +203,8 @@
         }
       ],
       "masked_chars": 6480,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "1eb54435c70e06f7bdb8b3db2af664fdc2d1510a0a04c31e3dcb3bf7804a9f08"
     },
     {
       "number": 2,
@@ -332,7 +333,8 @@
         }
       ],
       "masked_chars": 6483,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "176bcb3033aefedcce665bd14ce76f071987fd85c9f1c00d036ee4d82b14156d"
     },
     {
       "number": 3,
@@ -368,7 +370,114 @@
         }
       ],
       "masked_chars": 3012,
+      "oversize": false,
+      "processed_sha256": "ff1cd4fc9f322b10ee904ee993fe008b78ea35897a1f88cd00158a86c556a2e6"
+    },
+    {
+      "number": 4,
+      "file": "a3_pack_004.md",
+      "task_sha256": "58a5baf4705f21df8da962e55a6ea9c12db5dfbc846cb41c18101cefe0064ba1",
+      "units": [
+        {
+          "id": "c0014-p000",
+          "a2_pack": 1,
+          "source_sha256": "b432ef9f995bce9ac96cdb396f2c0ef41b52b38193391f4840a91c5863e300d1",
+          "masked_sha256": "7410269381c703faf8f38ebe237b515402287ae8f016f9b6ef4630998dfea78d",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "math",
+              "sha256": "2d0fe504f3a8bd021217d28870a1e172dc4c1ccda11f6bc087682e6f3a04b116"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "math",
+              "sha256": "510d05b9f003ae97e59bdc0e3efb6791fcd650bc551e66da40cbf044f1d4005f"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "inline-code",
+              "sha256": "675e7d101f2c2d002bf3422f041ab29637a18ce860195a5b261c0e31d06f4cda"
+            },
+            {
+              "key": "[[ML4T_A3_0004]]",
+              "kind": "math",
+              "sha256": "e15edb43c0308d673f1f5c8a0e8bc4518fb36d00241673f4355fbf9ee67f39d6"
+            },
+            {
+              "key": "[[ML4T_A3_0005]]",
+              "kind": "math",
+              "sha256": "31f29c7d0a9d00decf3eb3c302a4d0495b44fd7cda069697a910071b44fc2b3d"
+            },
+            {
+              "key": "[[ML4T_A3_0006]]",
+              "kind": "math",
+              "sha256": "37302f193f71c732206e00d58395145f0e185f84e4d56bef95a84bcc297600a0"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 885,
       "oversize": false
+    },
+    {
+      "number": 5,
+      "file": "a3_pack_005.md",
+      "task_sha256": "12bce38d8eef3fa4dfd222c53d72a377643badfc7bef15f330901ddf3f112b9a",
+      "units": [
+        {
+          "id": "c0014-p000",
+          "a2_pack": 1,
+          "mask_version": 2,
+          "source_sha256": "b432ef9f995bce9ac96cdb396f2c0ef41b52b38193391f4840a91c5863e300d1",
+          "masked_sha256": "f80457c6b9a341f2255bdfe49bfbf6da6c22d400685cb44ed5d0cf41557ef636",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "math",
+              "sha256": "2d0fe504f3a8bd021217d28870a1e172dc4c1ccda11f6bc087682e6f3a04b116"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "math",
+              "sha256": "dc04171eb5920fa655e6ea312406af5cb014b73a54afe0585552f3d069addc0a"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "math",
+              "sha256": "5568a4aa4ef3108c8947e1f3c6a7015eb309d3c080f9e4d6b253ae763b45f858"
+            },
+            {
+              "key": "[[ML4T_A3_0004]]",
+              "kind": "inline-code",
+              "sha256": "675e7d101f2c2d002bf3422f041ab29637a18ce860195a5b261c0e31d06f4cda"
+            },
+            {
+              "key": "[[ML4T_A3_0005]]",
+              "kind": "math",
+              "sha256": "e15edb43c0308d673f1f5c8a0e8bc4518fb36d00241673f4355fbf9ee67f39d6"
+            },
+            {
+              "key": "[[ML4T_A3_0006]]",
+              "kind": "math",
+              "sha256": "31f29c7d0a9d00decf3eb3c302a4d0495b44fd7cda069697a910071b44fc2b3d"
+            },
+            {
+              "key": "[[ML4T_A3_0007]]",
+              "kind": "math",
+              "sha256": "37302f193f71c732206e00d58395145f0e185f84e4d56bef95a84bcc297600a0"
+            },
+            {
+              "key": "[[ML4T_A3_0008]]",
+              "kind": "math",
+              "sha256": "f2650c446f9d0775a5ecf15729ebe735fa4267d24534e9c9b2e1970fab1b0a7a"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 883,
+      "oversize": false,
+      "processed_sha256": "363cd99140cc068963423938e23bae156118284aba60dd81feaaff43d85cc48a"
     }
   ],
   "config": {

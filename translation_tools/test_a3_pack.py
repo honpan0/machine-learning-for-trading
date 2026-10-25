@@ -6,11 +6,215 @@ import json
 import os
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 import a3_pack as a3
 import nb_zh
 import pack_translation as a2
+
+
+# Verbatim boundary regression from notebook 13, c0014-p000.
+BOUNDARY_CASE = r"""- **MAD** flags a return when $|r - \mathrm{median}|$ exceeds $\tau \cdot \mathrm{MAD} /
+  c$, where MAD is the median absolute deviation from the median and $c$, declared as
+  `MAD_NORMAL_SCALE`, is the MAD of a standard normal.
+- **Z-score** flags it when $|r - \mathrm{mean}|$ exceeds $\tau \cdot \sigma$.
+- **IQR** flags it when $r$ falls outside $[Q_1 - \tau \cdot \mathrm{IQR},\ Q_3 + \tau \cdot
+  \mathrm{IQR}]$."""
+
+
+class MaskVersionTests(unittest.TestCase):
+    def test_multiline_math_keeps_explanation_visible_and_restores_exactly(self):
+        masked, tokens, parts = a3.mask_text(BOUNDARY_CASE, True)
+        self.assertEqual(len(tokens), 8)
+        self.assertIn("where MAD is the median absolute deviation from the median and", masked)
+        self.assertIn("is the MAD of a standard normal", masked)
+        self.assertNotIn("where MAD", "".join(parts.values()))
+        self.assertNotIn(r"\tau", masked)
+        self.assertNotIn("$", masked)
+        self.assertEqual(list(parts.values()), [
+            r"$|r - \mathrm{median}|$", "$\\tau \\cdot \\mathrm{MAD} /\n  c$",
+            "$c$", "`MAD_NORMAL_SCALE`", r"$|r - \mathrm{mean}|$",
+            r"$\tau \cdot \sigma$", "$r$",
+            "$[Q_1 - \\tau \\cdot \\mathrm{IQR},\\ Q_3 + \\tau \\cdot\n  \\mathrm{IQR}]$",
+        ])
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, BOUNDARY_CASE)
+
+    def test_unversioned_entry_uses_legacy_boundaries_and_rejects_tampering(self):
+        masked, tokens = a3.mask_text(BOUNDARY_CASE, mask_version=1)
+        self.assertEqual(len(tokens), 6)
+        unit = {"id": "c0014-p000", "source_sha256": a3.sha(BOUNDARY_CASE.encode()),
+                "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        reply = (f"<<<ML4T-ZH-BEGIN:{unit['id']}>>>\n{masked}\n"
+                 f"<<<ML4T-ZH-END:{unit['id']}>>>\n").encode()
+        with mock.patch.object(a3.packing, "english", return_value=BOUNDARY_CASE):
+            restored, rejected, _, _, _ = a3.restore_one(
+                Path(), "", Path(), {}, {unit['id']: unit}, {}, {"units": [unit]}, reply)
+            self.assertFalse(rejected)
+            self.assertEqual(restored[unit['id']], BOUNDARY_CASE)
+            unit['masked_sha256'] = 'tampered'
+            with self.assertRaises(a3.A3Error):
+                a3.restore_one(Path(), "", Path(), {}, {unit['id']: unit}, {},
+                               {"units": [unit]}, reply)
+
+    def test_fail_closed_unbalanced_and_paragraph_crossing_math(self):
+        for text in ("Compute $x + y", "$x\n\nEnglish explanation$", "Compute $x$ then $y"):
+            with self.subTest(text=text), self.assertRaises(a3.A3Error):
+                a3.mask_text(text)
+        with self.assertRaises(a3.A3Error):
+            a3.mask_text("$x$", mask_version=99)
+
+    def test_v2_collect_restores_multiline_math_and_rejects_extra_formula(self):
+        # Explicitly exercise the issued v2 Pack protocol, not current v3 defaults.
+        masked, tokens = a3.mask_text(BOUNDARY_CASE, mask_version=2)
+        unit = {"id": "c0014-p000", "mask_version": 2,
+                "source_sha256": a3.sha(BOUNDARY_CASE.encode()),
+                "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        phrase = 'where MAD is the median absolute deviation from the median and'
+        translated = masked.replace(phrase, '其中 MAD 是相對於中位數的絕對偏差中位數，而')
+        with mock.patch.object(a3.packing, 'english', return_value=BOUNDARY_CASE):
+            for extra in ('', ' $x$'):
+                reply = (f"<<<ML4T-ZH-BEGIN:{unit['id']}>>>\n{translated}{extra}\n"
+                         f"<<<ML4T-ZH-END:{unit['id']}>>>\n").encode()
+                out, rejected, _, _, _ = a3.restore_one(
+                    Path(), '', Path(), {}, {unit['id']: unit}, {}, {'units': [unit]}, reply)
+                if extra:
+                    self.assertEqual(rejected, [unit['id']])
+                    self.assertFalse(out)
+                else:
+                    self.assertEqual(out[unit['id']], BOUNDARY_CASE.replace(
+                        phrase, '其中 MAD 是相對於中位數的絕對偏差中位數，而'))
+
+
+class MaskV3Tests(unittest.TestCase):
+    def test_price_prose_never_swallowed_in_currency_pairs(self):
+        examples = [
+            ("The price is $50.00; next is $60.00.",
+             ["$50.00", "$60.00"], "; next is "),
+            ("Cost $10; alpha is $x$ and beta is $y$.",
+             ["$10", "$x$", "$y$"], "; alpha is "),
+            ("Currency $100 and `inline` with math $\\beta$.",
+             ["$100", "`inline`", "$\\beta$"], " with math "),
+            ("Costs $5 + $10 today.", ["$5", "$10"], " + "),
+            ("Amounts $1,000 per year and $2,500 per year.",
+             ["$1,000", "$2,500"], " per year and "),
+        ]
+        for source, expected, prose in examples:
+            with self.subTest(source=source):
+                masked, tokens, pieces = a3.mask_text(source, True)
+                self.assertEqual(list(pieces.values()), expected)
+                self.assertIn(prose, masked)
+                self.assertEqual(len(tokens), len(expected))
+                restored = masked
+                for key, value in pieces.items():
+                    restored = restored.replace(key, value)
+                self.assertEqual(restored, source)
+
+    def test_numeric_math_and_multiline_latex(self):
+        source = ("Examples $2 + 3$, $2 x$, $100$, "
+                  "and $\\tau \\cdot \\mathrm{MAD} /\n  c$. "
+                  "Display $$\\frac{a}{b}$$ ends here.")
+        masked, tokens, pieces = a3.mask_text(source, True)
+        self.assertEqual([t['kind'] for t in tokens], ["math"] * 5)
+        self.assertNotIn("\\frac", masked)
+        self.assertNotIn("$", masked)
+        result = masked
+        for k, v in pieces.items():
+            result = result.replace(k, v)
+        self.assertEqual(result, source)
+
+    def test_dollar_does_not_pair_over_protected_inline_code(self):
+        source = "Cost $10 and `code $x$` then price $20, formula $y$."
+        masked, _, pieces = a3.mask_text(source, True)
+        self.assertEqual(list(pieces.values()),
+                         ["$10", "`code $x$`", "$20", "$y$"])
+        self.assertIn(" and ", masked)
+        self.assertIn(" then price ", masked)
+
+    def test_ambiguous_math_fails_closed(self):
+        examples = ["$x\n\nEnglish explanation$", "Compute $x + y",
+                    "$some English phrase$", "Cost $5 but math $x",
+                    "$$\\frac{a}{b} missing end"]
+        for source in examples:
+            with self.subTest(source=source), self.assertRaises(a3.A3Error):
+                a3.mask_text(source)
+
+    def test_v3_restore_preserves_prose_and_rejects_added_dollars(self):
+        source = "The price is $50.00; next is $60.00. Compute $x + 1$."
+        masked, tokens = a3.mask_text(source)
+        u = {"id": "c0001-p000", "mask_version": 3,
+             "source_sha256": a3.sha(source.encode()),
+             "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        for extra in ("", " $new$"):
+            translated = masked.replace("next is", "接著為") + extra
+            reply = (f"<<<ML4T-ZH-BEGIN:{u['id']}>>>\n{translated}\n"
+                     f"<<<ML4T-ZH-END:{u['id']}>>>\n").encode()
+            with mock.patch.object(a3.packing, "english", return_value=source):
+                outputs, rejected, _, _, _ = a3.restore_one(
+                    Path(), "", Path(), {}, {u['id']: u}, {},
+                    {"units": [u]}, reply)
+            if extra:
+                self.assertEqual(rejected, [u['id']])
+                self.assertFalse(outputs)
+            else:
+                self.assertFalse(rejected)
+                self.assertEqual(outputs[u['id']], source.replace("next is", "接著為"))
+
+    def test_audit_is_read_only_and_reports_old_span_risk(self):
+        source = "The price is $50.00; next is $60.00."
+        old, tokens = a3.mask_text(source, mask_version=2)
+        u = {"id": "c0001-p000", "mask_version": 2,
+             "source_sha256": a3.sha(source.encode()),
+             "masked_sha256": a3.sha(old.encode()), "tokens": tokens}
+        data = {"packs": [{"processed_sha256": None, "units": [u]}]}
+        root = Path("/unreal")
+        with mock.patch.object(a3, "work_context", return_value=(
+                root, {}, {}, {u['id']: u}, {}, {})), \
+             mock.patch.object(a3, "load_a3", return_value=data), \
+             mock.patch.object(a3.packing, "is_complete", return_value=False), \
+             mock.patch.object(a3.packing, "english", return_value=source):
+            checked, changed, blocked = a3.do_audit(root, "demo.ipynb")
+        self.assertEqual((checked, changed, blocked), (1, 1, 0))
+
+
+class MaskV4UnitPricesTests(unittest.TestCase):
+    def test_databento_dollar_price_with_per_symbol_per_month(self):
+        source = "ITCH (Free) | DataBento (~$10/symbol/mo), with notes."
+        masked, tokens, originals = a3.mask_text(source, True)
+        self.assertEqual([t['kind'] for t in tokens], ['price'])
+        self.assertEqual(list(originals.values()), ['$10/symbol/mo'])
+        self.assertIn('DataBento (~', masked)
+        self.assertIn('), with notes.', masked)
+        restored = masked
+        for key, value in originals.items():
+            restored = restored.replace(key, value)
+        self.assertEqual(restored, source)
+
+    def test_multiple_currency_units_are_distinct_from_latex(self):
+        source = 'Price $2/GB/day and $20/month; mathematical value $x$.'
+        masked, tokens, originals = a3.mask_text(source, True)
+        self.assertEqual(list(originals.values()), ['$2/GB/day', '$20/month', '$x$'])
+        self.assertEqual([t['kind'] for t in tokens], ['price', 'price', 'math'])
+        self.assertIn(' and ', masked)
+        self.assertIn('; mathematical value ', masked)
+
+    def test_numeric_math_not_misread_as_unit_price(self):
+        for source in ('$10/x$', '$10/GB$', '$10/x + y$', '$10/x = 5$'):
+            with self.subTest(source=source):
+                _, tokens, originals = a3.mask_text(source, True)
+                self.assertEqual([t['kind'] for t in tokens], ['math'])
+                self.assertEqual(list(originals.values()), [source])
+
+    def test_v3_behavior_is_preserved_for_issued_packs(self):
+        source = 'DataBento costs ~$10/symbol/mo.'
+        with self.assertRaises(a3.A3Error):
+            a3.mask_text(source, mask_version=3)
+        masked, tokens, originals = a3.mask_text(source, True, mask_version=4)
+        self.assertEqual(list(originals.values()), ['$10/symbol/mo'])
+        self.assertEqual(tokens[0]['kind'], 'price')
+        self.assertNotIn('$', masked)
 
 
 class Tests(unittest.TestCase):
@@ -130,6 +334,38 @@ class Tests(unittest.TestCase):
         task.write_text(task.read_text('utf-8')+'tamper\n',encoding='utf-8')
         with self.assertRaises(a3.A3Error):
             a3.do_prepare(self.root,self.source,6500,14)
+
+    def test_explicit_remask_appends_without_changing_legacy_pack(self):
+        # Install the real defective source into this isolated test project.
+        cells = json.loads(self.src.read_text())
+        cells['cells'][0]['source'] = BOUNDARY_CASE
+        self.src.write_text(json.dumps(cells))
+        # Recreate only this test's scratch preparation, before any A3 tasks exist.
+        import shutil
+        shutil.rmtree(self.work)
+        nb_zh.prepare(argparse.Namespace(source=self.source, max_chars=4000, batch_chars=5000))
+        a2.pack_all(self.root, self.source, 2, 6000, 25, False, False)
+        current_mask = a3.mask_text
+        current_prepare = a3.prepared_unit
+        def legacy_unit(*args):
+            result = current_prepare(*args)
+            result.pop('mask_version')
+            return result
+        with mock.patch.object(a3, 'mask_text', side_effect=lambda raw, **kw:
+                               current_mask(raw, mask_version=1, **kw)), \
+             mock.patch.object(a3, 'prepared_unit', side_effect=legacy_unit):
+            a3.do_prepare(self.root, self.source, 6500, 14)
+        old = json.loads(a3.map_file(self.work).read_text())['packs']
+        old_files = {e['file']: (self.work/'packs'/e['file']).read_bytes() for e in old}
+        self.assertEqual(a3.do_prepare(self.root, self.source, 6500, 14), 0)
+        self.assertEqual(a3.do_prepare(self.root, self.source, 6500, 14, remask_legacy=True), 1)
+        entries = json.loads(a3.map_file(self.work).read_text())['packs']
+        self.assertEqual(entries[:-1], old)
+        self.assertEqual(len(entries[-1]['units']), 1)
+        self.assertEqual(entries[-1]['units'][0]['mask_version'], a3.MASK_VERSION)
+        for file, raw in old_files.items():
+            self.assertEqual((self.work/'packs'/file).read_bytes(), raw)
+        self.assertEqual(a3.do_prepare(self.root, self.source, 6500, 14, remask_legacy=True), 0)
 
 
     def test_price_math_and_repeated_protected_spans(self):

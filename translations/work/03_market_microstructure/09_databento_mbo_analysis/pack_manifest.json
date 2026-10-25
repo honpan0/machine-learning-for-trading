@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/09_databento_mbo_analysis.ipynb",
+  "source_sha256": "7b498d5b86301cea429ba23d760662b3bcb7cb71704835380d11bddf236443c9",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0006-p000",
+            "c0009-p000",
+            "c0010-p000",
+            "c0013-p000",
+            "c0014-p000",
+            "c0018-p000"
+          ],
+          "chars": 4944
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0019-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0025-p000",
+            "c0026-p000"
+          ],
+          "chars": 4636
+        }
+      ],
+      "chars": 9580,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0006-p000",
+        "c0009-p000",
+        "c0010-p000",
+        "c0013-p000",
+        "c0014-p000",
+        "c0018-p000",
+        "c0019-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0025-p000",
+        "c0026-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "c9e8152e07d1a0af5d2713c03500e61d620ce0658bca649c4b6f4fc411368bdd",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0028-p000",
+            "c0029-p000",
+            "c0031-p000",
+            "c0031-p001"
+          ],
+          "chars": 3752
+        }
+      ],
+      "chars": 3752,
+      "number": 2,
+      "ids": [
+        "c0028-p000",
+        "c0029-p000",
+        "c0031-p000",
+        "c0031-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "e30f78766d22ca10b817899842a6b169fe00a4677f5e810304ceec6bda61cce2",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

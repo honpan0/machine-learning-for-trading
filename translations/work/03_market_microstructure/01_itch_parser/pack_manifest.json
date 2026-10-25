@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/01_itch_parser.ipynb",
+  "source_sha256": "2b04a8947f8ae56c7fc7b3ea843914858454627bd7f57dbc3d23b713a86d4881",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0009-p000"
+          ],
+          "chars": 4964
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0015-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0024-p000",
+            "c0028-p000",
+            "c0028-p001"
+          ],
+          "chars": 3795
+        }
+      ],
+      "chars": 8759,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0009-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0024-p000",
+        "c0028-p000",
+        "c0028-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "625ff093995ca46b3755f294087d51e304a9f660548c5cf1478a694d49f9f9c3",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0029-p000",
+            "c0029-p001"
+          ],
+          "chars": 1906
+        }
+      ],
+      "chars": 1906,
+      "number": 2,
+      "ids": [
+        "c0029-p000",
+        "c0029-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "523393b3b3c78e92f78033cb4c58b9e9c24ed5b5ad0c6e5658be7b972e547154",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

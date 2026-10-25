@@ -210,7 +210,8 @@
         }
       ],
       "masked_chars": 4968,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "4759ff28b51f66cebd25dbfe62299db9c7da423a80d1f3bd57fbbc6938f32bc7"
     },
     {
       "number": 2,
@@ -249,7 +250,8 @@
         }
       ],
       "masked_chars": 1819,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "39d2712e63d4ba58e2d938fdc5276b2dae79014157d259d53aefea6820b11834"
     }
   ],
   "config": {

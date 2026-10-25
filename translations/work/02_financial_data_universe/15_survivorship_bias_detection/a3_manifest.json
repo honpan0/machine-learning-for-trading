@@ -154,7 +154,8 @@
         }
       ],
       "masked_chars": 6044,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "b879361083dd5fdb71aebba7da6ed923a00027b5d2eb9be7db605769905f0d17"
     },
     {
       "number": 2,
@@ -291,7 +292,8 @@
         }
       ],
       "masked_chars": 6464,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "197d16a3b3eff7c609627d03aef6551838466fb4f6a65f6b6287c07063821681"
     },
     {
       "number": 3,
@@ -382,7 +384,8 @@
         }
       ],
       "masked_chars": 4619,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "03f9eff69b5938f29f66762df296c2f783c3834993775bb89ac2f77cc1ff5c35"
     }
   ],
   "config": {

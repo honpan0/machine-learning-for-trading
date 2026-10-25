@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "source": "03_market_microstructure/02_itch_lob_reconstruction.ipynb",
+  "source_sha256": "a5271ac7d863dfc6d24c25521c7b986e0689a326dcc130e0c300f3a10d49eec6",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0008-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 4638
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0021-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0028-p000",
+            "c0030-p000",
+            "c0032-p000",
+            "c0034-p000"
+          ],
+          "chars": 4909
+        }
+      ],
+      "chars": 9547,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0008-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0021-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0028-p000",
+        "c0030-p000",
+        "c0032-p000",
+        "c0034-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "ba516ca509ec2a96baa8ab4b7b852e6966b1a48a22e5bd55511108977b6c87ce",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0037-p000",
+            "c0038-p000",
+            "c0040-p000",
+            "c0040-p001"
+          ],
+          "chars": 2667
+        }
+      ],
+      "chars": 2667,
+      "number": 2,
+      "ids": [
+        "c0037-p000",
+        "c0038-p000",
+        "c0040-p000",
+        "c0040-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "f6459492d9de4d6bab41935dee9194ffa51a3bc276040ebca2db7a05b93cab92",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

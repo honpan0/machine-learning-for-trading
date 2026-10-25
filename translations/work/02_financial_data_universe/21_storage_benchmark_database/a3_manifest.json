@@ -180,7 +180,8 @@
         }
       ],
       "masked_chars": 5963,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "ee9343518ccec819635ea93a02c78ccfc436fb513187fd192d68879760014aa5"
     },
     {
       "number": 2,
@@ -374,7 +375,8 @@
         }
       ],
       "masked_chars": 4898,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "19807e58808298c1d991a49d4e864408e0532d89011ca110af1337e89b4d9d17"
     },
     {
       "number": 3,
@@ -604,7 +606,8 @@
         }
       ],
       "masked_chars": 5089,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "f3cc3720e414c26b15855959067580d3d554782b3525c5bc8e4e6e21a4933b28"
     },
     {
       "number": 4,
@@ -719,7 +722,8 @@
         }
       ],
       "masked_chars": 5417,
-      "oversize": false
+      "oversize": false,
+      "processed_sha256": "8baa18dfd9bce89b07adc5d1c87b3781848def5b75bed4c6df5b70f21cd3bc67"
     }
   ],
   "config": {
