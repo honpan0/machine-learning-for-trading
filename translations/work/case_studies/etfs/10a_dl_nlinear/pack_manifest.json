@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/10a_dl_nlinear.ipynb",
+  "source_sha256": "a31d94184a805698b4f78688a7f6388edcad29d8c2410da01811e23fafc47976",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000"
+          ],
+          "chars": 4040
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0010-p001",
+            "c0012-p000",
+            "c0014-p000"
+          ],
+          "chars": 4828
+        }
+      ],
+      "chars": 8868,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0010-p001",
+        "c0012-p000",
+        "c0014-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "d6ec1bd8133f5e84db1f4c31bc5499384c91e8be635c75c8fe38b9e6be46409e",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0028-p000"
+          ],
+          "chars": 3832
+        }
+      ],
+      "chars": 3832,
+      "number": 2,
+      "ids": [
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0028-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "c808b45e79ffc2516fec637c12c2ce867466e79b8d90050ead60de25222e5c8e",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/02_labels.ipynb",
+  "source_sha256": "d156154467b99e112cea34d30a8f287fa767d0cea0ffab107864ce0c04fb263d",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0002-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0007-p000",
+            "c0009-p000"
+          ],
+          "chars": 4945
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0011-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0019-p000",
+            "c0021-p000",
+            "c0022-p000",
+            "c0023-p000",
+            "c0025-p000"
+          ],
+          "chars": 4271
+        }
+      ],
+      "chars": 9216,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0002-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0019-p000",
+        "c0021-p000",
+        "c0022-p000",
+        "c0023-p000",
+        "c0025-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "ac25313d671f8e0b60d1ba2f9cd94dcf23b6cf18ec63e05dc5ec410e16a06ebf",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0026-p000",
+            "c0027-p000",
+            "c0029-p000",
+            "c0032-p000",
+            "c0033-p000",
+            "c0036-p000"
+          ],
+          "chars": 4410
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0038-p000",
+            "c0039-p000",
+            "c0039-p001"
+          ],
+          "chars": 2959
+        }
+      ],
+      "chars": 7369,
+      "number": 2,
+      "ids": [
+        "c0026-p000",
+        "c0027-p000",
+        "c0029-p000",
+        "c0032-p000",
+        "c0033-p000",
+        "c0036-p000",
+        "c0038-p000",
+        "c0039-p000",
+        "c0039-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "696e6b1a451b639d0ee1695ff0691fcf455900e20bfdac243b67abc9c296158e",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

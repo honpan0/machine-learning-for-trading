@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/11_latent_factors.ipynb",
+  "source_sha256": "aab303a1b75ebf5a0f5343b4911bca2e9ff7e669da9f5ec88f400c986cfe2861",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0000-p002",
+            "c0004-p000",
+            "c0007-p000"
+          ],
+          "chars": 4467
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0012-p000",
+            "c0013-p000",
+            "c0014-p000"
+          ],
+          "chars": 3001
+        }
+      ],
+      "chars": 7468,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0000-p002",
+        "c0004-p000",
+        "c0007-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0013-p000",
+        "c0014-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "8f60bdb73b8a5ac5c7b1c29e8e7b5e2424e6c327f3bc8af37dcc017785fb6e7a",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

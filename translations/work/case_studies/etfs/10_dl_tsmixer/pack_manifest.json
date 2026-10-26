@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/10_dl_tsmixer.ipynb",
+  "source_sha256": "f1c3af15fd68c882d963cd1757436abffaa3ed19b0fa45cf77530e388b3f0d02",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000"
+          ],
+          "chars": 4202
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0010-p001",
+            "c0012-p000",
+            "c0014-p000"
+          ],
+          "chars": 4828
+        }
+      ],
+      "chars": 9030,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0010-p001",
+        "c0012-p000",
+        "c0014-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "90ac5cb8b51914e4ddea4a1685937133ecb2dbed57e3d355e32f35030ab9bc48",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000"
+          ],
+          "chars": 1955
+        }
+      ],
+      "chars": 1955,
+      "number": 2,
+      "ids": [
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "630d341b78ef815bc6f5f8ccfbaffab18a185a6f299d9bfa975a4d5a4a1a8375",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

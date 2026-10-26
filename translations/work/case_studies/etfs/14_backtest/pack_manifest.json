@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/14_backtest.ipynb",
+  "source_sha256": "f76e752e9586a6dc2743e936b9808ca734f33bd1dd9f80fa6dda72ea8036c0a7",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000"
+          ],
+          "chars": 4073
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0008-p000",
+            "c0008-p001",
+            "c0010-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0016-p000",
+            "c0018-p000"
+          ],
+          "chars": 4652
+        }
+      ],
+      "chars": 8725,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0008-p000",
+        "c0008-p001",
+        "c0010-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0016-p000",
+        "c0018-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "1480610c8e4d803514ef6b6e5acef03507a7367bb29715db2e92f16f4bb23ea6",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0022-p000",
+            "c0023-p000",
+            "c0025-p000",
+            "c0027-p000",
+            "c0028-p000"
+          ],
+          "chars": 3989
+        }
+      ],
+      "chars": 3989,
+      "number": 2,
+      "ids": [
+        "c0022-p000",
+        "c0023-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0028-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "5305a07cad335589f1f993e4df9ee94ecbe1bc0b6732a24690e52db0f0998b12",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

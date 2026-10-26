@@ -1,0 +1,13 @@
+case_studies/etfs/01_feasibility_analysis.ipynb
+case_studies/etfs/02_labels.ipynb
+case_studies/etfs/03_financial_features.ipynb
+case_studies/etfs/04_model_based_features.ipynb
+case_studies/etfs/05_evaluation.ipynb
+case_studies/etfs/06_linear.ipynb
+case_studies/etfs/07_gbm.ipynb
+case_studies/etfs/08_tabular_dl.ipynb
+case_studies/etfs/09_dl_lstm.ipynb
+case_studies/etfs/10_dl_tsmixer.ipynb
+case_studies/etfs/10a_dl_nlinear.ipynb
+case_studies/etfs/11_latent_factors.ipynb
+case_studies/etfs/11a_pca.ipynb

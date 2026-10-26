@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/12_causal_dml.ipynb",
+  "source_sha256": "d02c0b0c094622daf62e9d79c3f3998b390c78a2ff06f6c23f983cfa70b3f1d1",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0001-p000",
+            "c0004-p000"
+          ],
+          "chars": 4684
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0006-p000",
+            "c0006-p001",
+            "c0009-p000",
+            "c0009-p001"
+          ],
+          "chars": 4514
+        }
+      ],
+      "chars": 9198,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0001-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0006-p001",
+        "c0009-p000",
+        "c0009-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "e2f5e1ed1707ad06e5f37e37d4d95e4e704552e9f3ee9404766408c66d705b5b",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0016-p001"
+          ],
+          "chars": 4973
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0017-p000"
+          ],
+          "chars": 234
+        }
+      ],
+      "chars": 5207,
+      "number": 2,
+      "ids": [
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0016-p001",
+        "c0017-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "e9655ccc934d975f03e8aa88e210a940bda5db13116bd48d3ba1cda36780b40d",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
