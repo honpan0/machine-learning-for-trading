@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "source": "12_gradient_boosting/01_ensemble_foundations.ipynb",
+  "source_sha256": "0bf57f60b58e08ee57e5796f972ed70965284ee0a18c8debdd161308cda01fe9",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0022-p000",
+            "c0023-p000"
+          ],
+          "chars": 4213
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0027-p000",
+            "c0028-p000",
+            "c0030-p000"
+          ],
+          "chars": 2476
+        }
+      ],
+      "chars": 6689,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0022-p000",
+        "c0023-p000",
+        "c0027-p000",
+        "c0028-p000",
+        "c0030-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "dbe1f65414c2a370573ace1f678f0c70d3f34d5060708ccdac560ae661cd57c7",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

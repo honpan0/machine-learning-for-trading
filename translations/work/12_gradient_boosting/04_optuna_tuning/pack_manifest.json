@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "source": "12_gradient_boosting/04_optuna_tuning.ipynb",
+  "source_sha256": "dc901bd3373245663e57cd4855af2ecb14b5d5dab587cdc11283cb7121eef139",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0008-p000",
+            "c0011-p000",
+            "c0013-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0019-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000"
+          ],
+          "chars": 4947
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0025-p000",
+            "c0027-p000",
+            "c0031-p000",
+            "c0033-p000",
+            "c0033-p001",
+            "c0034-p000"
+          ],
+          "chars": 4684
+        }
+      ],
+      "chars": 9631,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0008-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0031-p000",
+        "c0033-p000",
+        "c0033-p001",
+        "c0034-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "2b6d431f0bd9733a0685028c6ebf7ae24a3d5042693829bc028f0d0c459aadf2",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0034-p001"
+          ],
+          "chars": 483
+        }
+      ],
+      "chars": 483,
+      "number": 2,
+      "ids": [
+        "c0034-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "bab1b81baf84bec2a81a6501eccafd805ea1a8d47b3cc9321a10d6765ce22353",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

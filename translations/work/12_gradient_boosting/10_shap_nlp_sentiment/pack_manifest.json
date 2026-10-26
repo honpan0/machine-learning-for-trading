@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source": "12_gradient_boosting/10_shap_nlp_sentiment.ipynb",
+  "source_sha256": "da80a5cbdd57abf5384afb5a6dad88a86cf05dc9d8fa56d14964145c150c3af7",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0017-p000",
+            "c0020-p000",
+            "c0021-p000"
+          ],
+          "chars": 4709
+        }
+      ],
+      "chars": 4709,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0017-p000",
+        "c0020-p000",
+        "c0021-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "0425c409e78f65e3bd40f763bffc20b3ae3ec18dea77af9ef25555fe6b06f1ed",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

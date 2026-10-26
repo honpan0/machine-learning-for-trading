@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "source": "12_gradient_boosting/06_optuna_multi_asset.ipynb",
+  "source_sha256": "6d7379288d0e4912bb3331692d78f64f1d4d0280386ff6c6ce91df7155aba325",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0019-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0025-p000",
+            "c0028-p000",
+            "c0030-p000",
+            "c0031-p000"
+          ],
+          "chars": 3583
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0033-p000"
+          ],
+          "chars": 1461
+        }
+      ],
+      "chars": 5044,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0025-p000",
+        "c0028-p000",
+        "c0030-p000",
+        "c0031-p000",
+        "c0033-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "46aeaf1c5c06586cdf684123b76a0e9af908831eb80b2bc90c33e2547bf38dbf",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

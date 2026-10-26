@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**116** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**367** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**136** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**343** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -122,30 +122,30 @@
 | `11_ml_pipeline/06_conformal_prediction.ipynb` | 30/30 | 5/5 | 已組裝／驗證通過 |  |
 | `11_ml_pipeline/07_case_study_insights.ipynb` | 30/30 | 3/3 | 已組裝／驗證通過 |  |
 | `11_ml_pipeline/08_ml_backtest_intro.ipynb` | 11/11 | 2/2 | 已組裝／驗證通過 |  |
-| `12_gradient_boosting/01_ensemble_foundations.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/02_gbm_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/03_dl_vs_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/04_optuna_tuning.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/05_cross_library_hpo.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/06_optuna_multi_asset.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/07_hpo_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/08_shap_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/09_xai_limitations.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/10_shap_nlp_sentiment.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/11_conformal_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `12_gradient_boosting/12_case_study_insights.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/01_core_architectures.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/02_nbeats_interpretable.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/03_great_debate.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/04_transformers.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/05_tcn.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/06_tsmixer.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/07_mamba_ssm.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/08_cnn_image_encoding.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/09_foundation_models.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/10_uncertainty.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/11_library_landscape.ipynb` | — | 0/0 | 未開始 |  |
-| `13_dl_time_series/12_case_study_insights.ipynb` | — | 0/0 | 未開始 |  |
+| `12_gradient_boosting/01_ensemble_foundations.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/02_gbm_comparison.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/03_dl_vs_gbm.ipynb` | 19/19 | 2/2 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/04_optuna_tuning.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/05_cross_library_hpo.ipynb` | 22/22 | 2/2 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/06_optuna_multi_asset.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/07_hpo_comparison.ipynb` | 19/19 | 2/2 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/08_shap_analysis.ipynb` | 26/26 | 2/2 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/09_xai_limitations.ipynb` | 10/10 | 1/1 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/10_shap_nlp_sentiment.ipynb` | 10/10 | 1/1 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/11_conformal_gbm.ipynb` | 33/33 | 3/3 | 已組裝／驗證通過 |  |
+| `12_gradient_boosting/12_case_study_insights.ipynb` | 45/45 | 3/3 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/01_core_architectures.ipynb` | 31/31 | 7/7 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/02_nbeats_interpretable.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/03_great_debate.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/04_transformers.ipynb` | 24/24 | 4/4 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/05_tcn.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/06_tsmixer.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/07_mamba_ssm.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/08_cnn_image_encoding.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/09_foundation_models.ipynb` | 0/20 | 0/4 | 翻譯中 |  |
+| `13_dl_time_series/10_uncertainty.ipynb` | 0/40 | 0/5 | 翻譯中 |  |
+| `13_dl_time_series/11_library_landscape.ipynb` | 0/27 | 0/3 | 翻譯中 |  |
+| `13_dl_time_series/12_case_study_insights.ipynb` | 0/32 | 0/3 | 翻譯中 |  |
 | `14_latent_factors/01_pca_equity_sectors.ipynb` | — | 0/0 | 未開始 |  |
 | `14_latent_factors/02_eigenportfolios.ipynb` | — | 0/0 | 未開始 |  |
 | `14_latent_factors/03_yield_curve_decomposition.ipynb` | — | 0/0 | 未開始 |  |

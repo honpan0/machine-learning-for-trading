@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "source": "12_gradient_boosting/10_shap_nlp_sentiment.ipynb",
+  "source_sha256": "da80a5cbdd57abf5384afb5a6dad88a86cf05dc9d8fa56d14964145c150c3af7",
+  "a2_pack_manifest_sha256": "6b6edfc7900567c989013d20dd99aec39943a53287bbedbaa553558950746520",
+  "packs": [
+    {
+      "number": 1,
+      "file": "a3_pack_001.md",
+      "task_sha256": "0403c21b33301977724d6e0512b813971357ef384530f396453d5c269d55f09c",
+      "units": [
+        {
+          "id": "c0000-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "b9012af670a0a77fe5082875f78c3d88af5063f35475b5e07493af988f204553",
+          "masked_sha256": "b9012af670a0a77fe5082875f78c3d88af5063f35475b5e07493af988f204553",
+          "tokens": []
+        },
+        {
+          "id": "c0004-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "8fa47e7ae1f08ffa53dc42943ab8995ba421d762bdcc15650d14d960c44aed3c",
+          "masked_sha256": "8fa47e7ae1f08ffa53dc42943ab8995ba421d762bdcc15650d14d960c44aed3c",
+          "tokens": []
+        },
+        {
+          "id": "c0006-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "d78fceda5867d76d7295dc7eab16489c9eff3b27427df03bf8e30aacf089049b",
+          "masked_sha256": "d78fceda5867d76d7295dc7eab16489c9eff3b27427df03bf8e30aacf089049b",
+          "tokens": []
+        },
+        {
+          "id": "c0008-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "6436f2f15290660b9fcac0c536dd0e5879ebff064e3afaaebccc8e8ea6ab5e62",
+          "masked_sha256": "6436f2f15290660b9fcac0c536dd0e5879ebff064e3afaaebccc8e8ea6ab5e62",
+          "tokens": []
+        },
+        {
+          "id": "c0010-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "469a2b251323feb88cd07df7f04277ef6b75af82500d85329a211f498f2d9264",
+          "masked_sha256": "469a2b251323feb88cd07df7f04277ef6b75af82500d85329a211f498f2d9264",
+          "tokens": []
+        },
+        {
+          "id": "c0012-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "b84ca87fff238a57acb525eaa9fe217659d54269b96ca90dba6b67c150e75166",
+          "masked_sha256": "b84ca87fff238a57acb525eaa9fe217659d54269b96ca90dba6b67c150e75166",
+          "tokens": []
+        },
+        {
+          "id": "c0014-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "2670229ad700c3274f3241199d750e7f392e4423297a614b40cc6cc2b6759ff3",
+          "masked_sha256": "2670229ad700c3274f3241199d750e7f392e4423297a614b40cc6cc2b6759ff3",
+          "tokens": []
+        },
+        {
+          "id": "c0017-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "1d4b6ce6c5981cb7dfd51636bb51591b28f3270ce82b833e373d72c0b109e102",
+          "masked_sha256": "1d4b6ce6c5981cb7dfd51636bb51591b28f3270ce82b833e373d72c0b109e102",
+          "tokens": []
+        },
+        {
+          "id": "c0020-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "69c1fa9a48bba012fa9b0fb820a6720f08df18f1b44430256cf68fc1453f3a15",
+          "masked_sha256": "69c1fa9a48bba012fa9b0fb820a6720f08df18f1b44430256cf68fc1453f3a15",
+          "tokens": []
+        },
+        {
+          "id": "c0021-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "99684d63e195f58f11ba13de4fb681e28cfb9a77a7d96e381c934f2ea84c1566",
+          "masked_sha256": "e5567abadfdd4497186cb302089fdd444659491c3bc06a2b5c618e6609c2b897",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "71e5085ba1f2e296f99636c1d759024d29ad12583de3eee0539a46efbbc0db68"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 4707,
+      "oversize": false,
+      "processed_sha256": "d71d6690b5dd41fcf6ca9d71f19556732e233d7a6e32d1d1e0a1ede990f396fe"
+    }
+  ],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

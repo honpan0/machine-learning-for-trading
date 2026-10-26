@@ -1,0 +1,8 @@
+13_dl_time_series/01_core_architectures.ipynb
+13_dl_time_series/02_nbeats_interpretable.ipynb
+13_dl_time_series/03_great_debate.ipynb
+13_dl_time_series/04_transformers.ipynb
+13_dl_time_series/05_tcn.ipynb
+13_dl_time_series/06_tsmixer.ipynb
+13_dl_time_series/07_mamba_ssm.ipynb
+13_dl_time_series/08_cnn_image_encoding.ipynb

@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "source": "13_dl_time_series/07_mamba_ssm.ipynb",
+  "source_sha256": "c99dc777b8a88e4b4d87b044af454b57da810a197ee397742ca57934d7942584",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000"
+          ],
+          "chars": 4843
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0014-p000",
+            "c0015-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0023-p000",
+            "c0025-p000",
+            "c0027-p000",
+            "c0029-p000",
+            "c0031-p000"
+          ],
+          "chars": 4177
+        }
+      ],
+      "chars": 9020,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0015-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0023-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0029-p000",
+        "c0031-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "40edd7329ff697b2ffbc50e7d454332a46d6185f367371700cc48215e808200e",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0033-p000",
+            "c0034-p000",
+            "c0034-p001"
+          ],
+          "chars": 3449
+        }
+      ],
+      "chars": 3449,
+      "number": 2,
+      "ids": [
+        "c0033-p000",
+        "c0034-p000",
+        "c0034-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "e9afa713a86732183bc33076371183dbc5044a8c8a94b92e1755af833cf4f027",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
