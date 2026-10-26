@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "source": "09_model_based_features/13_regime_as_feature.ipynb",
+  "source_sha256": "349e20e69338a0429158f28747648eb453d45a98c8eda3b28d0d8540aab72251",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0001-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000"
+          ],
+          "chars": 4427
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0013-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0020-p000",
+            "c0021-p000",
+            "c0023-p000"
+          ],
+          "chars": 4248
+        }
+      ],
+      "chars": 8675,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0001-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0010-p000",
+        "c0013-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0020-p000",
+        "c0021-p000",
+        "c0023-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "2cccd633e960178a5246b306d0fdeb9e7fb11d78f3d8731a79ad7c111b65df6e",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0024-p000",
+            "c0026-p000",
+            "c0028-p000",
+            "c0029-p000",
+            "c0029-p001"
+          ],
+          "chars": 4667
+        }
+      ],
+      "chars": 4667,
+      "number": 2,
+      "ids": [
+        "c0024-p000",
+        "c0026-p000",
+        "c0028-p000",
+        "c0029-p000",
+        "c0029-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "789bcdfa4614e414e3c5210ca56d3c71e0364aee7774603f4abfad22105f853e",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

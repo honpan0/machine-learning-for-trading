@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "source": "10_text_feature_engineering/01_word2vec_training.ipynb",
+  "source_sha256": "4f17b47b96007039256a1e5249ec96978adefaddd0725409a6b381f994cb0a4c",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0004-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 4962
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0015-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0021-p000",
+            "c0023-p000"
+          ],
+          "chars": 4036
+        }
+      ],
+      "chars": 8998,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0004-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0021-p000",
+        "c0023-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "3ebd1c62db2a9229c56828a6e4a3238ade0b8716d56a103fc64216a9c1c34b96",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0026-p000",
+            "c0026-p001",
+            "c0026-p002",
+            "c0027-p000"
+          ],
+          "chars": 4955
+        }
+      ],
+      "chars": 4955,
+      "number": 2,
+      "ids": [
+        "c0026-p000",
+        "c0026-p001",
+        "c0026-p002",
+        "c0027-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "b43ad450a8ef4fe58635ec5ff5c47b6568f6401b00687eb3e43b08be2f33dd38",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

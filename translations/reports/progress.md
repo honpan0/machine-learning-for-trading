@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**96** 份；翻譯中：**3** 份；已翻完待組裝：**0** 份
-- 未開始：**384** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**116** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**367** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -102,26 +102,26 @@
 | `09_model_based_features/10_uncertainty_features.ipynb` | 19/19 | 4/4 | 已組裝／驗證通過 |  |
 | `09_model_based_features/11_hmm_regimes.ipynb` | 23/23 | 4/4 | 已組裝／驗證通過 |  |
 | `09_model_based_features/12_wasserstein_regimes.ipynb` | 25/25 | 5/5 | 已組裝／驗證通過 |  |
-| `09_model_based_features/13_regime_as_feature.ipynb` | 0/18 | 0/3 | 翻譯中 |  |
-| `09_model_based_features/14_panel_features.ipynb` | 0/24 | 0/5 | 翻譯中 |  |
-| `09_model_based_features/case_study_temporal_summary.ipynb` | 0/9 | 0/2 | 翻譯中 |  |
-| `10_text_feature_engineering/01_word2vec_training.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/02_asset_embeddings.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/03_sentiment_evolution.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/04_bert_finetuning.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/05_financial_ner_finetuning.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/06_finbert_cross_dataset.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/07_news_return_signals.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/08_text_feature_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `10_text_feature_engineering/09_filing_text_signals.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/01_ols_inference.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/02_regularization_paths.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/03_logistic_classification.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/04_nested_cv_hpo.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/05_shap_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/06_conformal_prediction.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/07_case_study_insights.ipynb` | — | 0/0 | 未開始 |  |
-| `11_ml_pipeline/08_ml_backtest_intro.ipynb` | — | 0/0 | 未開始 |  |
+| `09_model_based_features/13_regime_as_feature.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `09_model_based_features/14_panel_features.ipynb` | 24/24 | 5/5 | 已組裝／驗證通過 |  |
+| `09_model_based_features/case_study_temporal_summary.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/01_word2vec_training.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/02_asset_embeddings.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/03_sentiment_evolution.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/04_bert_finetuning.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/05_financial_ner_finetuning.ipynb` | 13/13 | 2/2 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/06_finbert_cross_dataset.ipynb` | 11/11 | 2/2 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/07_news_return_signals.ipynb` | 28/28 | 3/3 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/08_text_feature_evaluation.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `10_text_feature_engineering/09_filing_text_signals.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/01_ols_inference.ipynb` | 28/28 | 5/5 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/02_regularization_paths.ipynb` | 36/36 | 4/4 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/03_logistic_classification.ipynb` | 47/47 | 3/3 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/04_nested_cv_hpo.ipynb` | 27/27 | 3/3 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/05_shap_analysis.ipynb` | 34/34 | 4/4 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/06_conformal_prediction.ipynb` | 30/30 | 5/5 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/07_case_study_insights.ipynb` | 30/30 | 3/3 | 已組裝／驗證通過 |  |
+| `11_ml_pipeline/08_ml_backtest_intro.ipynb` | 11/11 | 2/2 | 已組裝／驗證通過 |  |
 | `12_gradient_boosting/01_ensemble_foundations.ipynb` | — | 0/0 | 未開始 |  |
 | `12_gradient_boosting/02_gbm_comparison.ipynb` | — | 0/0 | 未開始 |  |
 | `12_gradient_boosting/03_dl_vs_gbm.ipynb` | — | 0/0 | 未開始 |  |

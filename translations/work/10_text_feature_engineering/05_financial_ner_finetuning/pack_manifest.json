@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "source": "10_text_feature_engineering/05_financial_ner_finetuning.ipynb",
+  "source_sha256": "6fe7d8a3764cc3566b243ee39150382336940e5c9ec64244156bf25c5440c7bd",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000"
+          ],
+          "chars": 4979
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0020-p000",
+            "c0021-p000",
+            "c0023-p000",
+            "c0026-p000",
+            "c0028-p000"
+          ],
+          "chars": 4478
+        }
+      ],
+      "chars": 9457,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0020-p000",
+        "c0021-p000",
+        "c0023-p000",
+        "c0026-p000",
+        "c0028-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "206a292bfa1ccc49647dd2a3fa43b358332b8dc18b61f440601fc79f34e35911",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

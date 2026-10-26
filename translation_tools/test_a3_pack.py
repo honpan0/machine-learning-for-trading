@@ -325,7 +325,7 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
         for version in (4, 5):
             with self.subTest(version=version), self.assertRaises(a3.A3Error):
                 a3.mask_text("$1/c(u)$", mask_version=version)
-        self.assertEqual(a3.MASK_VERSION, 6)
+        self.assertEqual(a3.MASK_VERSION, 7)
 
     def test_v6_ratio_restore_and_extra_dollar_rejection(self):
         source = "Weighted uniqueness $1/c(u)$ remains well-defined."
@@ -348,6 +348,75 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
                 self.assertEqual(outputs[uid], source.replace(
                     "remains well-defined", "仍有明確定義"))
 
+
+
+
+class MaskV7MagnitudeCurrencyTests(unittest.TestCase):
+    TEXT = ("Every institutional investor managing over $100M must file quarterly "
+            "13F-HR disclosures with the SEC. We use the bulk 2024Q3 filing window.")
+
+    def test_chapter_10_magnitude_dollar_and_prose(self):
+        masked, tokens, spans = a3.mask_text(self.TEXT, True, mask_version=7)
+        self.assertEqual([t["kind"] for t in tokens], ["price"])
+        self.assertEqual(list(spans.values()), ["$100M"])
+        self.assertIn("Every institutional investor managing over ", masked)
+        self.assertIn(" must file quarterly 13F-HR disclosures", masked)
+        self.assertIn(" We use the bulk 2024Q3 filing window.", masked)
+        self.assertEqual(masked.replace(next(iter(spans)), "$100M"), self.TEXT)
+
+    def test_other_financial_magnitudes_with_math(self):
+        text = ("Compare $50K, $2B and $1.25T to $\\theta$, "
+                "and display math $100M$ and $1/c(u)$.")
+        masked, tokens, spans = a3.mask_text(text, True, mask_version=7)
+        self.assertEqual([t["kind"] for t in tokens],
+                         ["price", "price", "price", "math", "math", "math"])
+        self.assertEqual(list(spans.values()),
+                         ["$50K", "$2B", "$1.25T", "$\\theta$", "$100M$", "$1/c(u)$"])
+        self.assertIn(" and display math ", masked)
+        for key, value in spans.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, text)
+
+    def test_does_not_loosen_other_unclosed_math(self):
+        examples = ["Something $X remains.", "Value $100Q is unclear.",
+                    "The symbol $100Mfoo is not money.", "Compute $x + 1"]
+        for text in examples:
+            with self.subTest(text=text), self.assertRaises(a3.A3Error):
+                a3.mask_text(text, mask_version=7)
+
+    def test_v1_to_v6_mask_behavior_is_preserved(self):
+        with self.assertRaises(a3.A3Error):
+            a3.mask_text(self.TEXT, mask_version=6)
+        for text in ("Cost $10/symbol/mo and formula $x$.",
+                     "| Dollar bars | Every $D traded | Variable |",
+                     "Formula $1/c(u)$."):
+            for ver in range(1, 7):
+                try:
+                    old = a3.mask_text(text, mask_version=ver)
+                except a3.A3Error:
+                    continue
+                self.assertEqual(old, a3.mask_text(text, mask_version=ver))
+
+    def test_v7_restore_preserves_100M_and_rejects_injected_math(self):
+        source = self.TEXT
+        masked, tokens = a3.mask_text(source, mask_version=7)
+        uid = "c0005-p000"
+        unit = {"id": uid, "mask_version": 7,
+                "source_sha256": a3.sha(source.encode()),
+                "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        for extra in ("", " $fake$"):
+            translated = masked.replace("Every institutional investor", "每一家機構投資人") + extra
+            reply = (f"<<<ML4T-ZH-BEGIN:{uid}>>>\n{translated}\n"
+                     f"<<<ML4T-ZH-END:{uid}>>>\n").encode()
+            with mock.patch.object(a3.packing, "english", return_value=source):
+                out, rejected, _, _, _ = a3.restore_one(
+                    Path(), "", Path(), {}, {uid: unit}, {}, {"units": [unit]}, reply)
+            if extra:
+                self.assertEqual(rejected, [uid])
+            else:
+                self.assertFalse(rejected)
+                self.assertEqual(out[uid],
+                                 source.replace("Every institutional investor", "每一家機構投資人"))
 
 class Tests(unittest.TestCase):
     def setUp(self):

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "09_model_based_features/case_study_temporal_summary.ipynb",
+  "source_sha256": "1d2d26c2ed39c5b8fb18a49aa0f79b390c5d91ef5f4017305b16cea1b2ed861e",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0001-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 4338
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0015-p000"
+          ],
+          "chars": 2312
+        }
+      ],
+      "chars": 6650,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0001-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "13d072d6472e2804ddc6cdd3d3093880dc43d0fc7871b7a8de0271d82afdf6c4",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

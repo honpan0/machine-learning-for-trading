@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "source": "10_text_feature_engineering/04_bert_finetuning.ipynb",
+  "source_sha256": "4fd24346635d3f1a9cce5c779d9af80fdc9d4eeeb3e7bff54a374bb87cba1261",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0002-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0013-p000"
+          ],
+          "chars": 4929
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0015-p000",
+            "c0017-p000",
+            "c0020-p000",
+            "c0023-p000",
+            "c0025-p000",
+            "c0027-p000",
+            "c0029-p000"
+          ],
+          "chars": 3229
+        }
+      ],
+      "chars": 8158,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0002-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0020-p000",
+        "c0023-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0029-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "fb03a3b22d1bbfc544a734c19944e1a1888a45121b52fa20fe2560d312007a38",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0029-p001",
+            "c0029-p002"
+          ],
+          "chars": 2600
+        }
+      ],
+      "chars": 2600,
+      "number": 2,
+      "ids": [
+        "c0029-p001",
+        "c0029-p002"
+      ],
+      "oversize": false,
+      "task_sha256": "7ed71f7b0bf2b9bb65900789910308fbb4ac8dcaef694a82e62bba83b9ae9c4c",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "source": "10_text_feature_engineering/06_finbert_cross_dataset.ipynb",
+  "source_sha256": "3a4f702d66a34fea7dc4e4b30788852a6a35a5ae1600813889fc5c5d90d18d09",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0004-p000",
+            "c0006-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0010-p000",
+            "c0013-p000"
+          ],
+          "chars": 4381
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0015-p000",
+            "c0017-p000",
+            "c0019-p000"
+          ],
+          "chars": 4321
+        }
+      ],
+      "chars": 8702,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0004-p000",
+        "c0006-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0010-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0019-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "9bc10b60fe8cc44c7faea2b283a58efee63eec6a376264223ba751e8c86386da",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
