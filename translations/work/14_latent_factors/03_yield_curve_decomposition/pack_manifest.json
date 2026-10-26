@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "source": "14_latent_factors/03_yield_curve_decomposition.ipynb",
+  "source_sha256": "f72c0a2323d608a248f5cde0a4efa7231a64c8bba0a90397cfdd1a715cec4014",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0001-p000",
+            "c0004-p000",
+            "c0009-p000",
+            "c0012-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0019-p000"
+          ],
+          "chars": 4600
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0022-p000",
+            "c0023-p000",
+            "c0025-p000",
+            "c0027-p000",
+            "c0031-p000",
+            "c0034-p000",
+            "c0035-p000",
+            "c0037-p000",
+            "c0038-p000",
+            "c0041-p000",
+            "c0042-p000",
+            "c0046-p000"
+          ],
+          "chars": 4524
+        }
+      ],
+      "chars": 9124,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0001-p000",
+        "c0004-p000",
+        "c0009-p000",
+        "c0012-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0019-p000",
+        "c0022-p000",
+        "c0023-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0031-p000",
+        "c0034-p000",
+        "c0035-p000",
+        "c0037-p000",
+        "c0038-p000",
+        "c0041-p000",
+        "c0042-p000",
+        "c0046-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "b3467c1a8c7d4b989be32b1072669afd4ac1bcc0f5d03daf72e5db78e2bb10fd",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0047-p000",
+            "c0048-p000",
+            "c0052-p000",
+            "c0053-p000"
+          ],
+          "chars": 2487
+        }
+      ],
+      "chars": 2487,
+      "number": 2,
+      "ids": [
+        "c0047-p000",
+        "c0048-p000",
+        "c0052-p000",
+        "c0053-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "b527de0a39f3dc335110b2ca547a49a821a5208651177c19a87285d2e4b14553",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

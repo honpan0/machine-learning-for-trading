@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "source": "15_causal_estimation/01_library_overview.ipynb",
+  "source_sha256": "1be1788813002b6fd4f759342bb6d058ce4eb1bcbb219ee6b0a81ac5f64a7273",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0000-p002",
+            "c0001-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000"
+          ],
+          "chars": 4981
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0012-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0016-p000",
+            "c0017-p000",
+            "c0019-p000"
+          ],
+          "chars": 3947
+        }
+      ],
+      "chars": 8928,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0000-p002",
+        "c0001-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0016-p000",
+        "c0017-p000",
+        "c0019-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "c245f47dd2c65779e63df371d0d64038c82d2e01e2c141659e337fca2231a8a5",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0020-p000",
+            "c0021-p000",
+            "c0023-p000",
+            "c0024-p000"
+          ],
+          "chars": 4460
+        }
+      ],
+      "chars": 4460,
+      "number": 2,
+      "ids": [
+        "c0020-p000",
+        "c0021-p000",
+        "c0023-p000",
+        "c0024-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "819272196f9cc660588061f3fe36a3b2c98ccdee4b83496b9653ebe82a3855b8",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

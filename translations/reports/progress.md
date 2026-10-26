@@ -1,7 +1,7 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**162** 份；翻譯中：**24** 份；已翻完待組裝：**0** 份
+- 已驗證：**182** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
 - 未開始：**297** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
@@ -142,26 +142,26 @@
 | `13_dl_time_series/06_tsmixer.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
 | `13_dl_time_series/07_mamba_ssm.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
 | `13_dl_time_series/08_cnn_image_encoding.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
-| `13_dl_time_series/09_foundation_models.ipynb` | 0/20 | 0/4 | 翻譯中 |  |
-| `13_dl_time_series/10_uncertainty.ipynb` | 0/40 | 0/5 | 翻譯中 |  |
-| `13_dl_time_series/11_library_landscape.ipynb` | 0/27 | 0/3 | 翻譯中 |  |
-| `13_dl_time_series/12_case_study_insights.ipynb` | 0/32 | 0/3 | 翻譯中 |  |
-| `14_latent_factors/01_pca_equity_sectors.ipynb` | 0/29 | 0/3 | 翻譯中 |  |
-| `14_latent_factors/02_eigenportfolios.ipynb` | 0/39 | 0/4 | 翻譯中 |  |
-| `14_latent_factors/03_yield_curve_decomposition.ipynb` | 0/25 | 0/3 | 翻譯中 |  |
-| `14_latent_factors/04_ipca.ipynb` | 0/15 | 0/2 | 翻譯中 |  |
-| `14_latent_factors/05_rp_pca.ipynb` | 0/13 | 0/2 | 翻譯中 |  |
-| `14_latent_factors/06_conditional_autoencoder.ipynb` | 0/29 | 0/2 | 翻譯中 |  |
-| `14_latent_factors/07_stochastic_discount_factor.ipynb` | 0/30 | 0/2 | 翻譯中 |  |
-| `14_latent_factors/08_supervised_autoencoder.ipynb` | 0/19 | 0/2 | 翻譯中 |  |
-| `14_latent_factors/09_case_study_insights.ipynb` | 0/19 | 0/2 | 翻譯中 |  |
-| `15_causal_estimation/01_library_overview.ipynb` | 0/18 | 0/3 | 翻譯中 |  |
-| `15_causal_estimation/02_dowhy_causal_graph.ipynb` | 0/39 | 0/6 | 翻譯中 |  |
-| `15_causal_estimation/03_econml_dml.ipynb` | 0/25 | 0/4 | 翻譯中 |  |
-| `15_causal_estimation/04_dml_crypto_regime.ipynb` | 0/24 | 0/4 | 翻譯中 |  |
-| `15_causal_estimation/05_momentum_causal_trading.ipynb` | 0/25 | 0/2 | 翻譯中 |  |
-| `15_causal_estimation/06_fed_announcement_bsts.ipynb` | 0/23 | 0/3 | 翻譯中 |  |
-| `15_causal_estimation/07_tigramite_time_series.ipynb` | 0/17 | 0/2 | 翻譯中 |  |
+| `13_dl_time_series/09_foundation_models.ipynb` | 20/20 | 4/4 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/10_uncertainty.ipynb` | 40/40 | 5/5 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/11_library_landscape.ipynb` | 27/27 | 3/3 | 已組裝／驗證通過 |  |
+| `13_dl_time_series/12_case_study_insights.ipynb` | 32/32 | 3/3 | 已組裝／驗證通過 |  |
+| `14_latent_factors/01_pca_equity_sectors.ipynb` | 29/29 | 3/3 | 已組裝／驗證通過 |  |
+| `14_latent_factors/02_eigenportfolios.ipynb` | 39/39 | 4/4 | 已組裝／驗證通過 |  |
+| `14_latent_factors/03_yield_curve_decomposition.ipynb` | 25/25 | 3/3 | 已組裝／驗證通過 |  |
+| `14_latent_factors/04_ipca.ipynb` | 15/15 | 2/2 | 已組裝／驗證通過 |  |
+| `14_latent_factors/05_rp_pca.ipynb` | 13/13 | 2/2 | 已組裝／驗證通過 |  |
+| `14_latent_factors/06_conditional_autoencoder.ipynb` | 29/29 | 2/2 | 已組裝／驗證通過 |  |
+| `14_latent_factors/07_stochastic_discount_factor.ipynb` | 30/30 | 2/2 | 已組裝／驗證通過 |  |
+| `14_latent_factors/08_supervised_autoencoder.ipynb` | 19/19 | 2/2 | 已組裝／驗證通過 |  |
+| `14_latent_factors/09_case_study_insights.ipynb` | 19/19 | 2/2 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/01_library_overview.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/02_dowhy_causal_graph.ipynb` | 39/39 | 6/6 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/03_econml_dml.ipynb` | 25/25 | 4/4 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/04_dml_crypto_regime.ipynb` | 24/24 | 4/4 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/05_momentum_causal_trading.ipynb` | 25/25 | 2/2 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/06_fed_announcement_bsts.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/07_tigramite_time_series.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
 | `15_causal_estimation/08_neural_causal_discovery.ipynb` | 0/28 | 0/2 | 翻譯中 |  |
 | `15_causal_estimation/09_adia_causal_benchmark.ipynb` | 0/26 | 0/3 | 翻譯中 |  |
 | `15_causal_estimation/10_case_study_insights.ipynb` | 0/14 | 0/2 | 翻譯中 |  |

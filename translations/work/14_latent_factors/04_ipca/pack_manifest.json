@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "source": "14_latent_factors/04_ipca.ipynb",
+  "source_sha256": "89b897dff55d293c9b7b6c1c9ee2f0d355db7bdc51f0ee61021d0095ce85e048",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0014-p000",
+            "c0017-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0028-p000",
+            "c0033-p000",
+            "c0035-p000"
+          ],
+          "chars": 4322
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0039-p000"
+          ],
+          "chars": 947
+        }
+      ],
+      "chars": 5269,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0017-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0028-p000",
+        "c0033-p000",
+        "c0035-p000",
+        "c0039-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "337eef6a35347ff0ef4f38975361e073a231b97c7ca89fbf673b049e7d0b75ea",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "source": "14_latent_factors/08_supervised_autoencoder.ipynb",
+  "source_sha256": "8d6312786dd740ab495db025f42093a7e59d847ee85db94d2a112b0beaf3702c",
+  "a2_pack_manifest_sha256": "c39b7dd1efea05be780c49e775db7800ef736399bb95dd796cd156651abb03c0",
+  "packs": [
+    {
+      "number": 1,
+      "file": "a3_pack_001.md",
+      "task_sha256": "afec2eda70de32692a27ae74da944b7a627ac908b0b828e3bd40840982160a1c",
+      "units": [
+        {
+          "id": "c0000-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "cf63c90870fce0bfa66f1e0998a48f5644f435548ff2ee4d716a1998580b7135",
+          "masked_sha256": "0e196a6d6ffc7505c9f6487517a1577ed822117cc83bd44b2809bd06f00559f6",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "7f93a05db5923ccdf45f1b8095317bc174f92a8ca78a7e6fa2ffa67594c0f98c"
+            }
+          ]
+        },
+        {
+          "id": "c0000-p001",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "341095a1019b237c943ef4112a2c52b0f387593d9dbeabac9714b69bbcecf94b",
+          "masked_sha256": "50702a20d3ce9bc1c53f74e6ac6bf4eabf5d57eb662b80078be7bd2185b932ac",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "math",
+              "sha256": "efdb0e330c744eddb21e9302ea91957609fd9b5be2d29b27811f713585aec1bd"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "a1c37c93519697c71d9c75c2aef0ef3f10552d12f037db0f259ef4fc27667883"
+            }
+          ]
+        },
+        {
+          "id": "c0001-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "bdffe99bd8af0eca9ff39345676b6a6ed484e7913dee0b4b234b6e75278321ad",
+          "masked_sha256": "bdffe99bd8af0eca9ff39345676b6a6ed484e7913dee0b4b234b6e75278321ad",
+          "tokens": []
+        },
+        {
+          "id": "c0005-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "368c3dfac5bb488dda7d94ce00ba16072fc2444f9135c2ebcf0f7ca57342ac97",
+          "masked_sha256": "368c3dfac5bb488dda7d94ce00ba16072fc2444f9135c2ebcf0f7ca57342ac97",
+          "tokens": []
+        },
+        {
+          "id": "c0007-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "91afaee4735d33b643f3fe1743fe7ce13346a597196435c0bc7b3af8b879693f",
+          "masked_sha256": "91afaee4735d33b643f3fe1743fe7ce13346a597196435c0bc7b3af8b879693f",
+          "tokens": []
+        },
+        {
+          "id": "c0009-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "d19ce66ff6dd24a1bea55aab8475c390744783b4da94523df68a384b9fc8b111",
+          "masked_sha256": "6199c26a63ecf52ec4360d9d3c38a7350a7417d44f94b69f5c1b6de03c2c6615",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "math",
+              "sha256": "3fb6e51f5163b0f3fe15a0e310bb03a3d144df7a6b203f8d95d68726c442c8ef"
+            }
+          ]
+        },
+        {
+          "id": "c0011-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "2b01110cb43f64d3e1c6205d0832ef8538474e9333a67c3a168e3933fd010250",
+          "masked_sha256": "2b01110cb43f64d3e1c6205d0832ef8538474e9333a67c3a168e3933fd010250",
+          "tokens": []
+        },
+        {
+          "id": "c0014-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "643db88bee4dc5adc7870f7e7f2b5e29a10a28c5e05f382e553ee2c94ebc120d",
+          "masked_sha256": "643db88bee4dc5adc7870f7e7f2b5e29a10a28c5e05f382e553ee2c94ebc120d",
+          "tokens": []
+        },
+        {
+          "id": "c0017-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "08ad145763d37ea1cf463d8e2287c005c40dcc21186990249b740aa0de27aa94",
+          "masked_sha256": "08ad145763d37ea1cf463d8e2287c005c40dcc21186990249b740aa0de27aa94",
+          "tokens": []
+        },
+        {
+          "id": "c0020-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "ef98e5661515e997bf44978da5a338eebc7918350c0690e7a3082064ae6f10f5",
+          "masked_sha256": "ef98e5661515e997bf44978da5a338eebc7918350c0690e7a3082064ae6f10f5",
+          "tokens": []
+        },
+        {
+          "id": "c0022-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "b5aefb2b5ee76610a46cc4c3a4203fe36b8615efec285026fed0edff0ff01459",
+          "masked_sha256": "b5aefb2b5ee76610a46cc4c3a4203fe36b8615efec285026fed0edff0ff01459",
+          "tokens": []
+        },
+        {
+          "id": "c0024-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "6145dae0bcfa89fd6e344fc3951ff28fabd82bf164be32a7f2ac54bcb733c9d7",
+          "masked_sha256": "2f63eca014a65a42aeaf93e3b853bf9f28c57a8f947505e9206347c262fb788b",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "35159abbf855715d9303be414ed158dcc3562c030fcb5c4e2a923f48bd187e19"
+            }
+          ]
+        },
+        {
+          "id": "c0026-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "fcf37cb09871aeecd7ab3e8d689d630b7ebd02f02bb1cc2f3202a5ba832c8c4b",
+          "masked_sha256": "fcf37cb09871aeecd7ab3e8d689d630b7ebd02f02bb1cc2f3202a5ba832c8c4b",
+          "tokens": []
+        },
+        {
+          "id": "c0030-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "9e84a12be096149afb2b46ce68d9a2e0d78fd36b7d37eef437ecb757d4b19ed7",
+          "masked_sha256": "9e84a12be096149afb2b46ce68d9a2e0d78fd36b7d37eef437ecb757d4b19ed7",
+          "tokens": []
+        }
+      ],
+      "masked_chars": 3283,
+      "oversize": false,
+      "processed_sha256": "95644d0cf44188bf5315841d53241c1987be3370c68f4661a36f2f0583b10067"
+    },
+    {
+      "number": 2,
+      "file": "a3_pack_002.md",
+      "task_sha256": "f0a4a2aef682e20be6acf274209e0ae816046d65625ae5be6e76fa15ca5319c2",
+      "units": [
+        {
+          "id": "c0033-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "f2fcbd47d9ffbc6560389e81393353332cd4d8336afbd39d232f63fedfc7094e",
+          "masked_sha256": "f2fcbd47d9ffbc6560389e81393353332cd4d8336afbd39d232f63fedfc7094e",
+          "tokens": []
+        },
+        {
+          "id": "c0035-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "32ca74616357fbf0c6302c4496c8771546f558cb5d537f1895475c2ff8876203",
+          "masked_sha256": "32ca74616357fbf0c6302c4496c8771546f558cb5d537f1895475c2ff8876203",
+          "tokens": []
+        },
+        {
+          "id": "c0038-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "b9fdb755ebf09a39701798a5fd13beb4cd77e620808efb07de90516954dd611a",
+          "masked_sha256": "b9fdb755ebf09a39701798a5fd13beb4cd77e620808efb07de90516954dd611a",
+          "tokens": []
+        },
+        {
+          "id": "c0041-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "e7f24a1d6c195372a16f1420cf421bb80bda71e3bf88d260774b7917da70d1ab",
+          "masked_sha256": "e7f24a1d6c195372a16f1420cf421bb80bda71e3bf88d260774b7917da70d1ab",
+          "tokens": []
+        },
+        {
+          "id": "c0043-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "f30c848a8e18be6f0254244beeeb63df21dab134481c5f5b412b5c949284c426",
+          "masked_sha256": "8548a103700a7a599d5efcabae28580d0d502f6930c7c0880eff532c41e659d8",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "61a372bdf96eeab9ba3f9e5f305b2750a59bab43d88722e81b13abf4e5370afd"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 1894,
+      "oversize": false,
+      "processed_sha256": "20a8ff8cc4b42979a9cc8c833e6d6d49391990c21b9b7efca832ce8b7f2e9ae5"
+    }
+  ],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

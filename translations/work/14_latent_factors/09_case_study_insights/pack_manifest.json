@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "source": "14_latent_factors/09_case_study_insights.ipynb",
+  "source_sha256": "a1b9f827aa0952eb0a3964d7d60f3d67c3ce7894bb04b979d1e0e0faa038eadb",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0014-p000",
+            "c0015-p000",
+            "c0018-p000",
+            "c0019-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0026-p000",
+            "c0029-p000",
+            "c0031-p000"
+          ],
+          "chars": 4707
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0032-p000",
+            "c0033-p000",
+            "c0039-p000",
+            "c0040-p000"
+          ],
+          "chars": 1564
+        }
+      ],
+      "chars": 6271,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0014-p000",
+        "c0015-p000",
+        "c0018-p000",
+        "c0019-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0026-p000",
+        "c0029-p000",
+        "c0031-p000",
+        "c0032-p000",
+        "c0033-p000",
+        "c0039-p000",
+        "c0040-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "b6abe8ec2db133d3d1abfdab55c3749f68bc394f2e5f838e07b9c0084eab3f8f",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
