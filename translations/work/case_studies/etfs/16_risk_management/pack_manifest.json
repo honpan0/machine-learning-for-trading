@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/16_risk_management.ipynb",
+  "source_sha256": "386c2798f68e2b8cb8337aa3e73821653a065ae822da34db77bf58a4ae6f3125",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 4909
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0018-p001",
+            "c0019-p000"
+          ],
+          "chars": 3757
+        }
+      ],
+      "chars": 8666,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0018-p001",
+        "c0019-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "7731a720447c0d78cb8e35defc9de2aaa045579105f89e0feff61baef1fb2246",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

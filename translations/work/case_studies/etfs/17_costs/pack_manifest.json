@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/17_costs.ipynb",
+  "source_sha256": "eddd66fb14c2fe99c282af02ad67cef5fc5602bf52eceac58c4f9e18c98e9c0b",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000",
+            "c0010-p000",
+            "c0014-p000"
+          ],
+          "chars": 4747
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0016-p000",
+            "c0019-p000",
+            "c0019-p001",
+            "c0020-p000"
+          ],
+          "chars": 2935
+        }
+      ],
+      "chars": 7682,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0010-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0019-p001",
+        "c0020-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "cf411f5173caccf63f8cbb1245cc4e7a27f7a46996ab252c954354550887da0e",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

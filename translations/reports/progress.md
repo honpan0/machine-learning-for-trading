@@ -1,7 +1,7 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**156** 份；翻譯中：**30** 份；已翻完待組裝：**0** 份
+- 已驗證：**162** 份；翻譯中：**24** 份；已翻完待組裝：**0** 份
 - 未開始：**297** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
@@ -343,12 +343,12 @@
 | `case_studies/etfs/12_causal_dml.ipynb` | 14/14 | 4/4 | 已組裝／驗證通過 |  |
 | `case_studies/etfs/13_model_analysis.ipynb` | 53/53 | 9/9 | 已組裝／驗證通過 |  |
 | `case_studies/etfs/14_backtest.ipynb` | 16/16 | 3/3 | 已組裝／驗證通過 |  |
-| `case_studies/etfs/15_portfolio_management.ipynb` | 0/14 | 0/2 | 翻譯中 |  |
-| `case_studies/etfs/16_risk_management.ipynb` | 0/11 | 0/2 | 翻譯中 |  |
-| `case_studies/etfs/17_costs.ipynb` | 0/10 | 0/2 | 翻譯中 |  |
-| `case_studies/etfs/18_holdout_predictions.ipynb` | 0/9 | 0/2 | 翻譯中 |  |
-| `case_studies/etfs/19_holdout_backtest.ipynb` | 0/6 | 0/2 | 翻譯中 |  |
-| `case_studies/etfs/20_strategy_analysis.ipynb` | 0/29 | 0/5 | 翻譯中 |  |
+| `case_studies/etfs/15_portfolio_management.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/etfs/16_risk_management.ipynb` | 11/11 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/etfs/17_costs.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/etfs/18_holdout_predictions.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/etfs/19_holdout_backtest.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/etfs/20_strategy_analysis.ipynb` | 29/29 | 5/5 | 已組裝／驗證通過 |  |
 | `case_studies/fx_pairs/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/fx_pairs/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/fx_pairs/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |

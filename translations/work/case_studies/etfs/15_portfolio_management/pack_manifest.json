@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/15_portfolio_management.ipynb",
+  "source_sha256": "1bff270c1d3e35c7cde9a76b62a69fb9cc75b48f5e1cc8e5c882d0df36d89765",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0011-p000"
+          ],
+          "chars": 4948
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0013-p000",
+            "c0015-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000",
+            "c0024-p000",
+            "c0025-p000"
+          ],
+          "chars": 4054
+        }
+      ],
+      "chars": 9002,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000",
+        "c0024-p000",
+        "c0025-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "55b02c3788e0beb780202e94cb57bd07e30b472521b1435bc6ed1b2766decf31",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

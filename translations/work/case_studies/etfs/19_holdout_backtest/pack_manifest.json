@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "source": "case_studies/etfs/19_holdout_backtest.ipynb",
+  "source_sha256": "4bd40e36afdf005a1472c84633aebe4f533c4793aa46bdcfec6749024e008321",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000"
+          ],
+          "chars": 3709
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000"
+          ],
+          "chars": 3400
+        }
+      ],
+      "chars": 7109,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "d10a790a45768cac527697516d5ad79fba122a009417438691dee2a3373303e3",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

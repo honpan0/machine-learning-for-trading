@@ -1,0 +1,6 @@
+case_studies/etfs/15_portfolio_management.ipynb
+case_studies/etfs/16_risk_management.ipynb
+case_studies/etfs/17_costs.ipynb
+case_studies/etfs/18_holdout_predictions.ipynb
+case_studies/etfs/19_holdout_backtest.ipynb
+case_studies/etfs/20_strategy_analysis.ipynb
