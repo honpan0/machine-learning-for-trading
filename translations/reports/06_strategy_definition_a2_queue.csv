@@ -1,0 +1,5 @@
+account,state,notebook,pack,task,reply,units,done,english_chars,batches
+B,待翻譯,06_strategy_definition/01_where_ideas_come_from.ipynb,1,translations/work/06_strategy_definition/01_where_ideas_come_from/packs/pack_001.md,translations/work/06_strategy_definition/01_where_ideas_come_from/inbox/pack_001.txt,13,0,9080,"001,002"
+A,待翻譯,06_strategy_definition/02_cv_foundations.ipynb,1,translations/work/06_strategy_definition/02_cv_foundations/packs/pack_001.md,translations/work/06_strategy_definition/02_cv_foundations/inbox/pack_001.txt,29,0,9601,"001,002"
+A,待翻譯,06_strategy_definition/02_cv_foundations.ipynb,2,translations/work/06_strategy_definition/02_cv_foundations/packs/pack_002.md,translations/work/06_strategy_definition/02_cv_foundations/inbox/pack_002.txt,9,0,4745,003
+B,待翻譯,06_strategy_definition/03_case_study_overview.ipynb,1,translations/work/06_strategy_definition/03_case_study_overview/packs/pack_001.md,translations/work/06_strategy_definition/03_case_study_overview/inbox/pack_001.txt,24,0,7209,"001,002"
