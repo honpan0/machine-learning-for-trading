@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/12_model_analysis.ipynb",
+  "source_sha256": "2394915189cbb41d121efbbeb5718b48ceac8ae5852e12b0aae346755625343d",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1356,
+      "source_sha256": "c4bea650cf218ed0133fac379708d68073950513db7532fdced3e6def7be1050",
+      "chars": 1356
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1356,
+      "end": 3053,
+      "source_sha256": "3b1bad42f776195ce76669e36e200f6b16bfcb75e648de8daaa2eeced04a3817",
+      "chars": 1697
+    },
+    {
+      "id": "c0000-p002",
+      "cell_index": 0,
+      "start": 3053,
+      "end": 3467,
+      "source_sha256": "cd832d247175abac98cb54b9b1ec19a96f4c87068b27b5d616732e028067382a",
+      "chars": 414
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 432,
+      "source_sha256": "f33105f1e02c1b88be4020790a31d11b6d63b142fdf2124ef8b8b46cc509a28d",
+      "chars": 432
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 191,
+      "source_sha256": "243286e46250d19e1b5e835e59bafdc94d27b35c99e3e397fa509967e98367db",
+      "chars": 191
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 1108,
+      "source_sha256": "a26d35186dac7b604d53de653ed89b482307125042080d72174c342f4e2c3f00",
+      "chars": 1108
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 185,
+      "source_sha256": "2dfd2cab1cf769480c009fc67e872cd786ae14bd5d13d08032c24ebace96211b",
+      "chars": 185
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 1159,
+      "source_sha256": "0e8f7017f49c08eafe0dcb4d855ea1cc79dc55e3d73237d1495dc2bb0b096e8b",
+      "chars": 1159
+    },
+    {
+      "id": "c0015-p000",
+      "cell_index": 15,
+      "start": 0,
+      "end": 1800,
+      "source_sha256": "082f35a8d5cc7995170b59c2e5983f1023b062d17def548eba359289b7376c66",
+      "chars": 1800
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0000-p002",
+      "c0003-p000",
+      "c0005-p000"
+    ],
+    [
+      "c0008-p000",
+      "c0010-p000",
+      "c0012-p000",
+      "c0015-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

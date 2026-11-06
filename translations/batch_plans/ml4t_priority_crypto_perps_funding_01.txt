@@ -1,0 +1,15 @@
+case_studies/crypto_perps_funding/01_feasibility_analysis.ipynb
+case_studies/crypto_perps_funding/02_labels.ipynb
+case_studies/crypto_perps_funding/03_financial_features.ipynb
+case_studies/crypto_perps_funding/04_model_based_features.ipynb
+case_studies/crypto_perps_funding/05_evaluation.ipynb
+case_studies/crypto_perps_funding/06_linear.ipynb
+case_studies/crypto_perps_funding/07_gbm.ipynb
+case_studies/crypto_perps_funding/08_tabular_dl.ipynb
+case_studies/crypto_perps_funding/09_dl_lstm.ipynb
+case_studies/crypto_perps_funding/10_dl_tcn.ipynb
+case_studies/crypto_perps_funding/11_causal_dml.ipynb
+case_studies/crypto_perps_funding/12_model_analysis.ipynb
+case_studies/crypto_perps_funding/13_backtest.ipynb
+case_studies/crypto_perps_funding/14_portfolio_management.ipynb
+case_studies/crypto_perps_funding/15_risk_management.ipynb

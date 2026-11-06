@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "source": "case_studies/crypto_perps_funding/05_evaluation.ipynb",
+  "source_sha256": "642227fa9f6c6d65914395393ccb7bb4ffd9e95fba0d053d519534815a48abb9",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000",
+            "c0005-p000"
+          ],
+          "chars": 4797
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0019-p000"
+          ],
+          "chars": 4946
+        }
+      ],
+      "chars": 9743,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0019-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "47e3034bd2b4f1aef6d4e6ea7a882a32e721e423a24b617afc8c46430d10e8ca",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0021-p000",
+            "c0023-p000",
+            "c0025-p000",
+            "c0027-p000",
+            "c0029-p000",
+            "c0030-p000"
+          ],
+          "chars": 3902
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0030-p001",
+            "c0033-p000",
+            "c0037-p000",
+            "c0039-p000",
+            "c0039-p001"
+          ],
+          "chars": 4936
+        }
+      ],
+      "chars": 8838,
+      "number": 2,
+      "ids": [
+        "c0021-p000",
+        "c0023-p000",
+        "c0025-p000",
+        "c0027-p000",
+        "c0029-p000",
+        "c0030-p000",
+        "c0030-p001",
+        "c0033-p000",
+        "c0037-p000",
+        "c0039-p000",
+        "c0039-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "487c2579df733aca3caa3c92ea66337d3519212546b5b5ad9ea0d6b5d554a31b",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 5,
+          "ids": [
+            "c0043-p000",
+            "c0044-p000",
+            "c0044-p001"
+          ],
+          "chars": 2944
+        }
+      ],
+      "chars": 2944,
+      "number": 3,
+      "ids": [
+        "c0043-p000",
+        "c0044-p000",
+        "c0044-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "f845082493328f6f787e6c2b8b56fb205248d8e4a0c57f8b4534f93905dcdd2c",
+      "file": "pack_003.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

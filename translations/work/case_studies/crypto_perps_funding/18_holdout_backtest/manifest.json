@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/18_holdout_backtest.ipynb",
+  "source_sha256": "75cb90693eb0f8aba3bdf1b8164c30d2fd0ce9f8ecd9093d27191ebc81a3ebbd",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 736,
+      "source_sha256": "0b01d719b2b401edd4817b9aceff4628f204c8102035851f2287b7ef66266a82",
+      "chars": 736
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 760,
+      "source_sha256": "b2b17784f1999095c84f62186c207140048a14c432709825edafb2b09218711d",
+      "chars": 760
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 1588,
+      "source_sha256": "6b29a85dd7aa156c3e5619607ee4535e56f609da9ee2557138c1c099c973de15",
+      "chars": 1588
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 1784,
+      "source_sha256": "74905704d62de8cf3f0c693d9bea174e6432358a5e12ed677f80e2931ff82ad3",
+      "chars": 1784
+    },
+    {
+      "id": "c0008-p001",
+      "cell_index": 8,
+      "start": 1784,
+      "end": 2396,
+      "source_sha256": "2707d3d5eb58fd87c1384e8484ff0db8e0427e6ba6620fe0e1d5dee06e259bb1",
+      "chars": 612
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 527,
+      "source_sha256": "7566660d65c2dca529577b822d449d55449d93b8eef0cb827abe4ea927a1a9f3",
+      "chars": 527
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 778,
+      "source_sha256": "f74a3675ad4c8fcd080ec4cfb132ce67ae0ddd1e0c730fdffde142e34850f9aa",
+      "chars": 778
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0004-p000",
+      "c0006-p000",
+      "c0008-p000"
+    ],
+    [
+      "c0008-p001",
+      "c0010-p000",
+      "c0012-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

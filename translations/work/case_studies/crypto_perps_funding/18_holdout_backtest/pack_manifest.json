@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source": "case_studies/crypto_perps_funding/18_holdout_backtest.ipynb",
+  "source_sha256": "75cb90693eb0f8aba3bdf1b8164c30d2fd0ce9f8ecd9093d27191ebc81a3ebbd",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000"
+          ],
+          "chars": 4868
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0008-p001",
+            "c0010-p000",
+            "c0012-p000"
+          ],
+          "chars": 1917
+        }
+      ],
+      "chars": 6785,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0008-p001",
+        "c0010-p000",
+        "c0012-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "71a75731b3a6e69315f577b5f23c013be2b8b13d6411623c0ec9c4d08ff6c269",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

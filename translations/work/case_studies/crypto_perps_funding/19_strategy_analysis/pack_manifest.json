@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "source": "case_studies/crypto_perps_funding/19_strategy_analysis.ipynb",
+  "source_sha256": "3adbd10c006a13ccefb60b8c800c84b8541cc9f7441f6dcd7315b9018f9d53b3",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000"
+          ],
+          "chars": 3510
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0012-p000",
+            "c0015-p000",
+            "c0017-p000",
+            "c0019-p000",
+            "c0021-p000"
+          ],
+          "chars": 4098
+        }
+      ],
+      "chars": 7608,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0015-p000",
+        "c0017-p000",
+        "c0019-p000",
+        "c0021-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "acdab950ffd664801772f497ef0eb70796f29d85150443218dc975c7a3f4a58a",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0023-p000",
+            "c0025-p000",
+            "c0026-p000"
+          ],
+          "chars": 3664
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0026-p001"
+          ],
+          "chars": 1563
+        }
+      ],
+      "chars": 5227,
+      "number": 2,
+      "ids": [
+        "c0023-p000",
+        "c0025-p000",
+        "c0026-p000",
+        "c0026-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "4bb649cd3178cbac0262536e26c39c6644affae1f549fa0bfd4a99439cc376aa",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

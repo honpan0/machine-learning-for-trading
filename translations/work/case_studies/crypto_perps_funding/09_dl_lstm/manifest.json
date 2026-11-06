@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/09_dl_lstm.ipynb",
+  "source_sha256": "1f20d56251cc2a5268c820d154c1198c11f453d35be87b45e6b6d2ccba267c97",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1196,
+      "source_sha256": "9b1641bf24327b5b655125494477f8d589f9bfea0857149afd202b67592b48d8",
+      "chars": 1196
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1196,
+      "end": 2621,
+      "source_sha256": "072cbd75af6a1616b26e4b02337ccd30e2d33c976495c43b7c52d96872a71e01",
+      "chars": 1425
+    },
+    {
+      "id": "c0000-p002",
+      "cell_index": 0,
+      "start": 2621,
+      "end": 3977,
+      "source_sha256": "243a037e9fec65fc571bc1fe97ac135806d4d1eb112b14416f9f0366e9b508cd",
+      "chars": 1356
+    },
+    {
+      "id": "c0000-p003",
+      "cell_index": 0,
+      "start": 3977,
+      "end": 5420,
+      "source_sha256": "64dba6f42a81f1ddf12e93dbdd0415821dbd8363ec0e08a1f52c38f2040b897f",
+      "chars": 1443
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 781,
+      "source_sha256": "30f80431ddf5f246848a64948d321edd0ce3810c9f5a5e6aea782d124e934335",
+      "chars": 781
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 500,
+      "source_sha256": "8f9cb1f5c6506359a1eb12f58ab8c41ad5f3ca1bb0d955954d7b8d93e1ba102e",
+      "chars": 500
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 258,
+      "source_sha256": "26ee293b476b42276ef6ee65a8f331fe137d0b2038499ec6b112a0453d893232",
+      "chars": 258
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 783,
+      "source_sha256": "cc9d5e9880e43d32c963fd86e8b178b285b7598a3be3087db5e0c56864ec5e99",
+      "chars": 783
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 1639,
+      "source_sha256": "7eca126a034c8e90790ff9fdc5bcef197f8f7fef1e9c40ac96e0e865c2621fa5",
+      "chars": 1639
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0000-p002"
+    ],
+    [
+      "c0000-p003",
+      "c0003-p000",
+      "c0005-p000",
+      "c0007-p000",
+      "c0009-p000"
+    ],
+    [
+      "c0011-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

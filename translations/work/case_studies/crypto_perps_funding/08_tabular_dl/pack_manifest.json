@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "case_studies/crypto_perps_funding/08_tabular_dl.ipynb",
+  "source_sha256": "9d01f0c88b2d6204fec8fa6adf4734a7f5b67c1471f9dcecc3a764876b2109ed",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0000-p002",
+            "c0000-p003"
+          ],
+          "chars": 4623
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0003-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0010-p000",
+            "c0010-p001"
+          ],
+          "chars": 4409
+        }
+      ],
+      "chars": 9032,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0000-p002",
+        "c0000-p003",
+        "c0003-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0010-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "423484c832826f673fe89683e690e6ee9726482743a7be4f4d22c79d95fcaa4d",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

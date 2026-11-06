@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/10_dl_tcn.ipynb",
+  "source_sha256": "8504dcf824630ec4e9cb6dbcc239a9cf727cc095f0ac926bb7befb0c8d08176b",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1766,
+      "source_sha256": "f09c6e9cdf80a587fd4fc1ad353f2f096244061a0704caea5e3f12f9b68ad8e7",
+      "chars": 1766
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1766,
+      "end": 3333,
+      "source_sha256": "cd1db485e8b6fe94f45ba01760af43f0c3004465735428673c3be948182abd22",
+      "chars": 1567
+    },
+    {
+      "id": "c0000-p002",
+      "cell_index": 0,
+      "start": 3333,
+      "end": 4523,
+      "source_sha256": "f010bc9d19d7851493782fc6dac1691401aac9977fbb3f9a177aea358b404909",
+      "chars": 1190
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 731,
+      "source_sha256": "ce99ecaf01fb231e3fb5f0e65c949b7aab03a1bcae6a294134e43d8ce3398670",
+      "chars": 731
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 258,
+      "source_sha256": "26ee293b476b42276ef6ee65a8f331fe137d0b2038499ec6b112a0453d893232",
+      "chars": 258
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 510,
+      "source_sha256": "9579b89cdeea6a3da20088aad8b699808e4b4fc3e60bbdee28195da47cf8bd7c",
+      "chars": 510
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 1626,
+      "source_sha256": "daf6dbed1a98978202895dff53e668623620f431b80bbb87508bc2941bdd122e",
+      "chars": 1626
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0000-p002"
+    ],
+    [
+      "c0003-p000",
+      "c0006-p000",
+      "c0008-p000",
+      "c0010-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

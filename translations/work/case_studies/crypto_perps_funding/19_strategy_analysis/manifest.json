@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/19_strategy_analysis.ipynb",
+  "source_sha256": "3adbd10c006a13ccefb60b8c800c84b8541cc9f7441f6dcd7315b9018f9d53b3",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1693,
+      "source_sha256": "61fea54dc7c860215e0b67bbf5326e902e9ede76676b21877c9f6586f372243b",
+      "chars": 1693
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1693,
+      "end": 1815,
+      "source_sha256": "a8a9f77f88e22a25a818dfa8e5b3a4f1718cd8543aff0f74f97196173a3a4be9",
+      "chars": 122
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 1095,
+      "source_sha256": "2fe80a27052748e3e1a7dca42dfeb40345631a6cc2bd7da4042fd82691fb2bd6",
+      "chars": 1095
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 175,
+      "source_sha256": "67e042b8549f6d1befe19a5286a8b85aba07a190821babfce4721f31a796aa04",
+      "chars": 175
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 219,
+      "source_sha256": "b4b0c3cd97d9ac7d336f35dbc0551bf7d28cbb1bdf8e13a7c05d767c1f39e91b",
+      "chars": 219
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 206,
+      "source_sha256": "a48c4b65fe7d39da459d616359cc71b33498e6b3b4641ea4d4751140937f6887",
+      "chars": 206
+    },
+    {
+      "id": "c0012-p000",
+      "cell_index": 12,
+      "start": 0,
+      "end": 1636,
+      "source_sha256": "bdf48c081c8854896ad8d32db7880acf33ed16545513db0c5083a08d90cd4615",
+      "chars": 1636
+    },
+    {
+      "id": "c0015-p000",
+      "cell_index": 15,
+      "start": 0,
+      "end": 1143,
+      "source_sha256": "b5d7d8def4e63778f47475fed49ad61bf95e2b7bc71333887c12d403de9642a0",
+      "chars": 1143
+    },
+    {
+      "id": "c0017-p000",
+      "cell_index": 17,
+      "start": 0,
+      "end": 266,
+      "source_sha256": "73a61e298705f31c8942d3c5082d9fdd85baa074b201bee89a256b0796280170",
+      "chars": 266
+    },
+    {
+      "id": "c0019-p000",
+      "cell_index": 19,
+      "start": 0,
+      "end": 291,
+      "source_sha256": "d0a2dc703a1f514f326b9df2abb2f24cbc81c5b5fd4d59fae64669177f2a1b68",
+      "chars": 291
+    },
+    {
+      "id": "c0021-p000",
+      "cell_index": 21,
+      "start": 0,
+      "end": 762,
+      "source_sha256": "52ab1b99c61e07ec36eefb64ac9b3bcd3ea0019e401278736854627aeb0754e8",
+      "chars": 762
+    },
+    {
+      "id": "c0023-p000",
+      "cell_index": 23,
+      "start": 0,
+      "end": 1016,
+      "source_sha256": "97f2461abf4e344a5b42445d9d3d2887769de941e91b30687f166e29d1105bf8",
+      "chars": 1016
+    },
+    {
+      "id": "c0025-p000",
+      "cell_index": 25,
+      "start": 0,
+      "end": 1105,
+      "source_sha256": "0fd1cc986e4b84b79e1f6bc924106d51dc070dcebac39fe44b4ca0e635b2d84d",
+      "chars": 1105
+    },
+    {
+      "id": "c0026-p000",
+      "cell_index": 26,
+      "start": 0,
+      "end": 1543,
+      "source_sha256": "66a802a1745506975d758ab92c2f174a53e52d6acffde94f7e1aa068ab0613fd",
+      "chars": 1543
+    },
+    {
+      "id": "c0026-p001",
+      "cell_index": 26,
+      "start": 1543,
+      "end": 3106,
+      "source_sha256": "21a79dba56348779b92583fa1c82149966aa6ad78ba9d01d772be292e3de5528",
+      "chars": 1563
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0004-p000",
+      "c0006-p000",
+      "c0008-p000",
+      "c0010-p000"
+    ],
+    [
+      "c0012-p000",
+      "c0015-p000",
+      "c0017-p000",
+      "c0019-p000",
+      "c0021-p000"
+    ],
+    [
+      "c0023-p000",
+      "c0025-p000",
+      "c0026-p000"
+    ],
+    [
+      "c0026-p001"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

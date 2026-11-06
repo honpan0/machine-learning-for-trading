@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/17_holdout_predictions.ipynb",
+  "source_sha256": "cb56e12fa229580dc26516680bc7f8b78490cb8f0646410d2a51a8f042b9e648",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1418,
+      "source_sha256": "1cbef92ce4f0ebbbea3f2cb515c6b5c5c561da62c8803c761222588f38685563",
+      "chars": 1418
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 842,
+      "source_sha256": "504292a511998e23232e48ace69d5b65afcdfd4cfdb851257b1e452e5e0f809e",
+      "chars": 842
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 440,
+      "source_sha256": "ddbb4d92bd41a700b25faa64dba2d50df0bc7c842aceb11bb6910c67e19005d1",
+      "chars": 440
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 1255,
+      "source_sha256": "38ad4ec198106665b6296b52cfc6aaf9de65b16349f8e75c82d01d4f0a554b40",
+      "chars": 1255
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 1707,
+      "source_sha256": "956ad69053d4718bd6de0de39671e02e9f045473836cccd434deeb59d233bbbe",
+      "chars": 1707
+    },
+    {
+      "id": "c0013-p000",
+      "cell_index": 13,
+      "start": 0,
+      "end": 505,
+      "source_sha256": "b392f8748bec455b5f13e0424805ccebade42aa91749048fc57488e08931affc",
+      "chars": 505
+    },
+    {
+      "id": "c0015-p000",
+      "cell_index": 15,
+      "start": 0,
+      "end": 244,
+      "source_sha256": "7d8ac46f91fa4fbab87db4a6e73be0900f9bb8893b322a4f41f568919ef6a882",
+      "chars": 244
+    },
+    {
+      "id": "c0017-p000",
+      "cell_index": 17,
+      "start": 0,
+      "end": 978,
+      "source_sha256": "a0b5c8f9175bd3fd9f3d03d9656c732285ab6334b904a8d15fd716680e65a8fc",
+      "chars": 978
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0004-p000",
+      "c0006-p000",
+      "c0008-p000"
+    ],
+    [
+      "c0010-p000",
+      "c0013-p000",
+      "c0015-p000",
+      "c0017-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

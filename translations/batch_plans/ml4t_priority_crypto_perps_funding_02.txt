@@ -1,0 +1,4 @@
+case_studies/crypto_perps_funding/16_costs.ipynb
+case_studies/crypto_perps_funding/17_holdout_predictions.ipynb
+case_studies/crypto_perps_funding/18_holdout_backtest.ipynb
+case_studies/crypto_perps_funding/19_strategy_analysis.ipynb

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "case_studies/crypto_perps_funding/12_model_analysis.ipynb",
+  "source_sha256": "2394915189cbb41d121efbbeb5718b48ceac8ae5852e12b0aae346755625343d",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0000-p002",
+            "c0003-p000",
+            "c0005-p000"
+          ],
+          "chars": 4090
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0008-p000",
+            "c0010-p000",
+            "c0012-p000",
+            "c0015-p000"
+          ],
+          "chars": 4252
+        }
+      ],
+      "chars": 8342,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0000-p002",
+        "c0003-p000",
+        "c0005-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0012-p000",
+        "c0015-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "6dc1fe965afec6149390a4024a1f53a4be4ae708352f7124223c76fc44653ab5",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

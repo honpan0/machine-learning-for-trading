@@ -1,0 +1,131 @@
+{
+  "version": "1.0",
+  "source": "case_studies/crypto_perps_funding/15_risk_management.ipynb",
+  "source_sha256": "c84b6dfdaca1793f6f41d6256794b9dcffe7984a3d72541309a398d8351e4acb",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1333,
+      "source_sha256": "6573a85a5cdd4832a6c237e80e2bb3a039b9b007d6ba3bdc44f9dd6740911a8a",
+      "chars": 1333
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1333,
+      "end": 2249,
+      "source_sha256": "bba1002b70dc7ce75fb0a1d02c5a08599d058f2c3ad99d562d562dc94d6a6c84",
+      "chars": 916
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 753,
+      "source_sha256": "84dc74fc30ba93064e3f59db250602603607d1ae3b34d81f0f8710da11cbffe4",
+      "chars": 753
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 134,
+      "source_sha256": "606e13f0844a11eaf98dbfe0238a08baa9eab9312e361756e6d7cc957616889b",
+      "chars": 134
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 1573,
+      "source_sha256": "ff1474303c057eca1a097c1d45e4e69ebd789987775f1f14600c2db5bfd0ed03",
+      "chars": 1573
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 737,
+      "source_sha256": "98e9175d894d25eeab0821200e139dadc58fd20129df8b47c2a49fd19e290085",
+      "chars": 737
+    },
+    {
+      "id": "c0013-p000",
+      "cell_index": 13,
+      "start": 0,
+      "end": 422,
+      "source_sha256": "a098a48395923eed41413cdbfc55681b9674197ff1206cc50548c608caa7fcd3",
+      "chars": 422
+    },
+    {
+      "id": "c0017-p000",
+      "cell_index": 17,
+      "start": 0,
+      "end": 951,
+      "source_sha256": "2087ea53b326451b4407f266580aa06d26ca938834bfe703b16673a86761d668",
+      "chars": 951
+    },
+    {
+      "id": "c0020-p000",
+      "cell_index": 20,
+      "start": 0,
+      "end": 325,
+      "source_sha256": "c1d5a0d74c367ea8583a74aa0d671cc3b4a1fa81fb80bd4528e5d7e6bbdf674b",
+      "chars": 325
+    },
+    {
+      "id": "c0022-p000",
+      "cell_index": 22,
+      "start": 0,
+      "end": 1384,
+      "source_sha256": "031dc681d3e46bbeace52e1507953180e2d6c9c7f9ffc11f40539412dea28290",
+      "chars": 1384
+    },
+    {
+      "id": "c0024-p000",
+      "cell_index": 24,
+      "start": 0,
+      "end": 1582,
+      "source_sha256": "d2ab2c5fafb0b50f04da97f7a7ffdc7c352459d9bcbbc5a2c959e418d4b4c5ce",
+      "chars": 1582
+    },
+    {
+      "id": "c0024-p001",
+      "cell_index": 24,
+      "start": 1582,
+      "end": 2257,
+      "source_sha256": "bc490323c2e8d96932387e37b8747e9c5f6219e17cf5e6353084e6b0b58c0d77",
+      "chars": 675
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0004-p000",
+      "c0006-p000",
+      "c0008-p000"
+    ],
+    [
+      "c0010-p000",
+      "c0013-p000",
+      "c0017-p000",
+      "c0020-p000",
+      "c0022-p000"
+    ],
+    [
+      "c0024-p000",
+      "c0024-p001"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}
