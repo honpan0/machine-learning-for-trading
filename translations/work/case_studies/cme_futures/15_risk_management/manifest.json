@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "source": "case_studies/cme_futures/15_risk_management.ipynb",
+  "source_sha256": "6eb7f61b0f3ff49c998773910671c1ae7e1418a73d3b0c1a05a740fb63ae9b59",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 659,
+      "source_sha256": "9b32959620f1f2582c4059293c27795ab354282f9ba79f0bc675b6d1553f1b73",
+      "chars": 659
+    },
+    {
+      "id": "c0001-p000",
+      "cell_index": 1,
+      "start": 0,
+      "end": 1598,
+      "source_sha256": "4fc4f85b036ccd242ec3d3de76214d81083b00b4beb01846246d7b75db401be9",
+      "chars": 1598
+    },
+    {
+      "id": "c0001-p001",
+      "cell_index": 1,
+      "start": 1598,
+      "end": 3079,
+      "source_sha256": "8a01b7ba1119f6467e86623072e5be36b9954c4a90fa14b957fb602cf1fcba33",
+      "chars": 1481
+    },
+    {
+      "id": "c0001-p002",
+      "cell_index": 1,
+      "start": 3079,
+      "end": 3434,
+      "source_sha256": "cc215ae48c309f54db36ea00423c97f1c991cb5e940b6445b4415846dce07b16",
+      "chars": 355
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 1400,
+      "source_sha256": "7578b26271f7aac93143058647c9aa39d3051d2d640f445ea8bf4447c15b7f60",
+      "chars": 1400
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 987,
+      "source_sha256": "02648efc0584e07dcdc9d1ee2c26e07857b7e51e69bdbefe1710ae5b08d8f45d",
+      "chars": 987
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 293,
+      "source_sha256": "e40a1468b5d16475041cc4d52367c507ef617731ac7a7c85928b7f126ba4c0a9",
+      "chars": 293
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 584,
+      "source_sha256": "759535fc8a199e0e6fd17d7e75fc063ae32072da07f7e478f7a9c28aeb25e32c",
+      "chars": 584
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0001-p000",
+      "c0001-p001",
+      "c0001-p002"
+    ],
+    [
+      "c0004-p000",
+      "c0007-p000",
+      "c0009-p000",
+      "c0011-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

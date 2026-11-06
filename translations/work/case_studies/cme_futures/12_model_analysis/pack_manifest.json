@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/12_model_analysis.ipynb",
+  "source_sha256": "120ff756f8e039e09f0f65031dba13f7bc03f60f958fa25a26fa67923a12bd20",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001"
+          ],
+          "chars": 4891
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000",
+            "c0011-p000",
+            "c0012-p000",
+            "c0012-p001"
+          ],
+          "chars": 4762
+        }
+      ],
+      "chars": 9653,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0011-p000",
+        "c0012-p000",
+        "c0012-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "c363e8bbdbbd96870bd5f5114cc6d4ceff5962870dfe4afe057ad2e2a45ab3d3",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0012-p002",
+            "c0016-p000"
+          ],
+          "chars": 1310
+        }
+      ],
+      "chars": 1310,
+      "number": 2,
+      "ids": [
+        "c0012-p002",
+        "c0016-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "5f9b022f74fb58bbf491f5e67f02591b28b64ee5cd6fe4e068fc524f91cfd802",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

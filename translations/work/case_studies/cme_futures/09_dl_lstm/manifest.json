@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "source": "case_studies/cme_futures/09_dl_lstm.ipynb",
+  "source_sha256": "97df1a28fe7f1c4ba2b78d26cede200e030d56769ff9944481cffea74d8a08b2",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 689,
+      "source_sha256": "2eee524a8e6783f3801bbb5b979cc5ac47ace9ec04bf3d7c2a5d1f1306e0518a",
+      "chars": 689
+    },
+    {
+      "id": "c0001-p000",
+      "cell_index": 1,
+      "start": 0,
+      "end": 1681,
+      "source_sha256": "dd5c00baf6fbacd353dd6ef151a4c5ddee0fdfc9b7e3ccdc3c015e0118fdd98f",
+      "chars": 1681
+    },
+    {
+      "id": "c0001-p001",
+      "cell_index": 1,
+      "start": 1681,
+      "end": 2633,
+      "source_sha256": "7a92971aa98583e2d0307110647eecfd63a4bddf6d64909455b72369dfe0b7e0",
+      "chars": 952
+    },
+    {
+      "id": "c0001-p002",
+      "cell_index": 1,
+      "start": 2633,
+      "end": 3674,
+      "source_sha256": "d1c08a48416efd041cde7e7066a3764e247af545acf763190eb94ac6c37f8e95",
+      "chars": 1041
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 1324,
+      "source_sha256": "c7ec394a6c97d4efd87b35ab17f1183947054592416243d4b767e7a313722b24",
+      "chars": 1324
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 1773,
+      "source_sha256": "ee760dcea746088f740384528bc13444fdb7b1f45eaa6a356c5d5a1866c3add5",
+      "chars": 1773
+    },
+    {
+      "id": "c0007-p001",
+      "cell_index": 7,
+      "start": 1773,
+      "end": 2161,
+      "source_sha256": "17315584bb80e1738b4ef0b63b3141ef561fed9dfb706f0464104536a3112c71",
+      "chars": 388
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0001-p000",
+      "c0001-p001",
+      "c0001-p002"
+    ],
+    [
+      "c0004-p000",
+      "c0007-p000",
+      "c0007-p001"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

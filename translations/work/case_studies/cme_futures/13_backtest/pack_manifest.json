@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/13_backtest.ipynb",
+  "source_sha256": "8101b3ebc9776bf5ef1fb608b4b59a91af73be052209af9aaa7e8af121b30f0e",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001",
+            "c0004-p000",
+            "c0007-p000",
+            "c0007-p001"
+          ],
+          "chars": 4912
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0009-p000",
+            "c0009-p001",
+            "c0011-p000",
+            "c0013-p000"
+          ],
+          "chars": 3510
+        }
+      ],
+      "chars": 8422,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0004-p000",
+        "c0007-p000",
+        "c0007-p001",
+        "c0009-p000",
+        "c0009-p001",
+        "c0011-p000",
+        "c0013-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "f1433c13a087f6677fc1f6c1c930a60c03d747ba62bcae4e725bbc904fe8a5f9",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

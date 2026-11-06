@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/10_latent_factors.ipynb",
+  "source_sha256": "a79c3f5bc3d19d5a796a768265b77679115c27c5809139585110a02aafde602a",
+  "a2_pack_manifest_sha256": "aea3c5c20d25f8b4a40ed2689b4818d61736bf1c9e3ee44c21c0391b81c43017",
+  "packs": [
+    {
+      "number": 1,
+      "file": "a3_pack_001.md",
+      "task_sha256": "9316e0ec3a755d9160e3c5d2898dc1cef3437f7f2293f5bf83c8bc46cbe696dd",
+      "units": [
+        {
+          "id": "c0000-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "06679bebbf03a55b6b9d11730a2b1927255544f345d9d4b7b23da2e0a244ddfc",
+          "masked_sha256": "0c3d83fcb9f68fa1ba48885350987a39a3dd66847d62279db2f3cf5fc6c7d70a",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "2fcc7409507cc34b65c19b4da53b686240dc59fde75cec91e9943829383344d8"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "4fdb9d7eaeb0c92cbcadab6d0c6f5c9b62e582d3d512ed1760ddc43ed76cc579"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "inline-code",
+              "sha256": "22a7cc01b23c71e05a2d5d03b2a4ad5ce54c35341d5ca3cd3450885c6e06e247"
+            }
+          ]
+        },
+        {
+          "id": "c0001-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "925551472949eec4eca48898288d73162aef4e223bf01ed2a3fba7a23e3b65ad",
+          "masked_sha256": "925551472949eec4eca48898288d73162aef4e223bf01ed2a3fba7a23e3b65ad",
+          "tokens": []
+        },
+        {
+          "id": "c0001-p001",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "7dd84ef15054dae84cb77ad5fc78c4d2e40662fa3c29bc399210ee6a797a2dbd",
+          "masked_sha256": "85fd8d5aa70f352a1fe12aa9fdc999934df17bb8188783e179450d12a591588d",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "2fcc7409507cc34b65c19b4da53b686240dc59fde75cec91e9943829383344d8"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "4fdb9d7eaeb0c92cbcadab6d0c6f5c9b62e582d3d512ed1760ddc43ed76cc579"
+            }
+          ]
+        },
+        {
+          "id": "c0001-p002",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "4dcde48d030917dbc39cf9519198fbce2aa2ae2db0d713b8621041e3f35bd99e",
+          "masked_sha256": "c4f5eff46f598c40517e727cd3f7ccc628d3c3767d9f2ae4b6250172965cd713",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "dc2176bbcb91f498145d08500d682ebf45d846feb8e5c887ecc5c56d9d4ef9a2"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "4181fc347a7c1cc8a7d57a490a23c6a94405c4e535638eeada2837bb396dcf59"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "inline-code",
+              "sha256": "b6d7842a48a82fb8c764b31ce8a0ec678e6617c9f05f83153ee57e68e6447fac"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 5587,
+      "oversize": false,
+      "processed_sha256": "1f6b06365c72ee5f465485ca3aa58338f6132953f3645cde449fd0f7821dc9a8"
+    },
+    {
+      "number": 2,
+      "file": "a3_pack_002.md",
+      "task_sha256": "9459f3075f101414324f7ac1dac29a209d9e5ec1fd7d6771980eea00f4e380df",
+      "units": [
+        {
+          "id": "c0001-p003",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "4bac289a989d1f07bcdca77965fd455d07f53ddcb5071c9a0c97398fba282094",
+          "masked_sha256": "297906e60db59325f34203e2934d07797ed54d3809264ee3dbc11e8be755d565",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "a05cd82f110e809ac1a785dbfe1cc7668d530fdae2eab051fdedb1e7bf4d2ccf"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "22a7cc01b23c71e05a2d5d03b2a4ad5ce54c35341d5ca3cd3450885c6e06e247"
+            }
+          ]
+        },
+        {
+          "id": "c0001-p004",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "e9e620a90e3f5d21ceac3175f8abd3f543cdc4ad3f61e2c0abcd75c8a2ae7c18",
+          "masked_sha256": "a60ad6ca06eb597aa661f0c171507348632d26147e3b70ac5bed84482e480776",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "22a7cc01b23c71e05a2d5d03b2a4ad5ce54c35341d5ca3cd3450885c6e06e247"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 2307,
+      "oversize": false,
+      "processed_sha256": "297748456ae706f1bfa6f13845e99401e1a6969b060eb238ffd330bb3bf3017d"
+    }
+  ],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/19_strategy_analysis.ipynb",
+  "source_sha256": "37d56f66800ab5d9b4c71792c44c9128030230441a123eb02a2fc9c11ebda19d",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0007-p001"
+          ],
+          "chars": 4700
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0014-p000",
+            "c0018-p000",
+            "c0022-p000"
+          ],
+          "chars": 4317
+        }
+      ],
+      "chars": 9017,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0007-p001",
+        "c0010-p000",
+        "c0014-p000",
+        "c0018-p000",
+        "c0022-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "df2801a5340f7bf561e84d1cea1b6e0c42b49d49fea7eae4bae2fbbe6a63eac4",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

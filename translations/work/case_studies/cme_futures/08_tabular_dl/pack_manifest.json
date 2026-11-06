@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/08_tabular_dl.ipynb",
+  "source_sha256": "917cbdb71aee11d83b3282bde64e06cbb2b3264b8e00eb26af143b4a1f5d3e70",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001",
+            "c0001-p002"
+          ],
+          "chars": 4483
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0004-p000",
+            "c0004-p001",
+            "c0007-p000"
+          ],
+          "chars": 3786
+        }
+      ],
+      "chars": 8269,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0001-p002",
+        "c0004-p000",
+        "c0004-p001",
+        "c0007-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "e66546c7ea235bed5f4f7faf168f28acabc1eb12e1d976c147a4a078726b646b",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

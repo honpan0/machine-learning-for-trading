@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/01_feasibility_analysis.ipynb",
+  "source_sha256": "874cfcd1568052a4f58e71181719b42f54629e49a9fc9078e36502dde21bf606",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000"
+          ],
+          "chars": 3332
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0005-p000",
+            "c0005-p001",
+            "c0006-p000",
+            "c0008-p000"
+          ],
+          "chars": 4531
+        }
+      ],
+      "chars": 7863,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0005-p001",
+        "c0006-p000",
+        "c0008-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "a16a2936cd08a2e222bbfd90967a5f53e48ad703c005c9badad46b421b38b526",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0008-p001",
+            "c0008-p002",
+            "c0008-p003",
+            "c0010-p000"
+          ],
+          "chars": 4858
+        },
+        {
+          "batch": 4,
+          "ids": [
+            "c0012-p000",
+            "c0014-p000",
+            "c0016-p000",
+            "c0018-p000",
+            "c0020-p000",
+            "c0022-p000"
+          ],
+          "chars": 4990
+        }
+      ],
+      "chars": 9848,
+      "number": 2,
+      "ids": [
+        "c0008-p001",
+        "c0008-p002",
+        "c0008-p003",
+        "c0010-p000",
+        "c0012-p000",
+        "c0014-p000",
+        "c0016-p000",
+        "c0018-p000",
+        "c0020-p000",
+        "c0022-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "97b7ad5ae4a5d9f3cd439cd19dfdbd6d750189fa9a199138cbfebc1942660782",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 5,
+          "ids": [
+            "c0023-p000",
+            "c0023-p001",
+            "c0024-p000",
+            "c0026-p000",
+            "c0026-p001",
+            "c0028-p000"
+          ],
+          "chars": 4895
+        },
+        {
+          "batch": 6,
+          "ids": [
+            "c0029-p000",
+            "c0029-p001",
+            "c0031-p000"
+          ],
+          "chars": 4305
+        }
+      ],
+      "chars": 9200,
+      "number": 3,
+      "ids": [
+        "c0023-p000",
+        "c0023-p001",
+        "c0024-p000",
+        "c0026-p000",
+        "c0026-p001",
+        "c0028-p000",
+        "c0029-p000",
+        "c0029-p001",
+        "c0031-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "5abc94ea535548dda05fa90caee67d943e695ca0e9e4a3011192eacd8dee0835",
+      "file": "pack_003.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 7,
+          "ids": [
+            "c0032-p000"
+          ],
+          "chars": 1566
+        }
+      ],
+      "chars": 1566,
+      "number": 4,
+      "ids": [
+        "c0032-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "23bc62670d8b6c0dd15f99dfdcae561b136b2f3378f757a7ad07ba3e45098a8a",
+      "file": "pack_004.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/15_risk_management.ipynb",
+  "source_sha256": "6eb7f61b0f3ff49c998773910671c1ae7e1418a73d3b0c1a05a740fb63ae9b59",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001",
+            "c0001-p002"
+          ],
+          "chars": 4093
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0004-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 3264
+        }
+      ],
+      "chars": 7357,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0001-p002",
+        "c0004-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "7b4d06d84a92dea428858c8eb62f797ebed195bff929841417abd4cf113577fd",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

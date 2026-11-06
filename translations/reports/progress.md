@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**182** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**297** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**203** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**276** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -283,27 +283,27 @@
 | `26_mlops_governance/05_feast_feature_store.ipynb` | — | 0/0 | 未開始 |  |
 | `26_mlops_governance/05b_feast_live.ipynb` | — | 0/0 | 未開始 |  |
 | `26_mlops_governance/06_mlflow_experiments.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/04_model_based_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/05_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/06_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/07_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/08_tabular_dl.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/09_dl_lstm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/10_latent_factors.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/10a_pca.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/10b_stochastic_discount_factor.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/11_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/12_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/13_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/14_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/15_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/16_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/17_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/18_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/cme_futures/19_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/cme_futures/01_feasibility_analysis.ipynb` | 26/26 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/02_labels.ipynb` | 28/28 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/03_financial_features.ipynb` | 36/36 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/04_model_based_features.ipynb` | 63/63 | 15/15 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/05_evaluation.ipynb` | 41/41 | 8/8 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/06_linear.ipynb` | 24/24 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/07_gbm.ipynb` | 24/24 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/08_tabular_dl.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/09_dl_lstm.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/10_latent_factors.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/10a_pca.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/10b_stochastic_discount_factor.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/11_causal_dml.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/12_model_analysis.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/13_backtest.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/14_portfolio_management.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/15_risk_management.ipynb` | 8/8 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/16_costs.ipynb` | 8/8 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/17_holdout_predictions.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/18_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/cme_futures/19_strategy_analysis.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/crypto_perps_funding/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/crypto_perps_funding/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/crypto_perps_funding/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |

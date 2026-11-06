@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/16_costs.ipynb",
+  "source_sha256": "452e10a5c0f29248bd00d303707650d1bf8587cd6fd8923bf79e8f4995df9335",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001",
+            "c0001-p002",
+            "c0004-p000"
+          ],
+          "chars": 4949
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 2581
+        }
+      ],
+      "chars": 7530,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0001-p002",
+        "c0004-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "de5074b77009ab51896d0719e935aaaf54023ea042e505c1b9d88a31ca848f1d",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

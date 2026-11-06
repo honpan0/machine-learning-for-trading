@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "source": "case_studies/cme_futures/10_latent_factors.ipynb",
+  "source_sha256": "a79c3f5bc3d19d5a796a768265b77679115c27c5809139585110a02aafde602a",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 533,
+      "source_sha256": "06679bebbf03a55b6b9d11730a2b1927255544f345d9d4b7b23da2e0a244ddfc",
+      "chars": 533
+    },
+    {
+      "id": "c0001-p000",
+      "cell_index": 1,
+      "start": 0,
+      "end": 1503,
+      "source_sha256": "925551472949eec4eca48898288d73162aef4e223bf01ed2a3fba7a23e3b65ad",
+      "chars": 1503
+    },
+    {
+      "id": "c0001-p001",
+      "cell_index": 1,
+      "start": 1503,
+      "end": 3272,
+      "source_sha256": "7dd84ef15054dae84cb77ad5fc78c4d2e40662fa3c29bc399210ee6a797a2dbd",
+      "chars": 1769
+    },
+    {
+      "id": "c0001-p002",
+      "cell_index": 1,
+      "start": 3272,
+      "end": 5054,
+      "source_sha256": "4dcde48d030917dbc39cf9519198fbce2aa2ae2db0d713b8621041e3f35bd99e",
+      "chars": 1782
+    },
+    {
+      "id": "c0001-p003",
+      "cell_index": 1,
+      "start": 5054,
+      "end": 6820,
+      "source_sha256": "4bac289a989d1f07bcdca77965fd455d07f53ddcb5071c9a0c97398fba282094",
+      "chars": 1766
+    },
+    {
+      "id": "c0001-p004",
+      "cell_index": 1,
+      "start": 6820,
+      "end": 7351,
+      "source_sha256": "e9e620a90e3f5d21ceac3175f8abd3f543cdc4ad3f61e2c0abcd75c8a2ae7c18",
+      "chars": 531
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0001-p000",
+      "c0001-p001"
+    ],
+    [
+      "c0001-p002",
+      "c0001-p003",
+      "c0001-p004"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

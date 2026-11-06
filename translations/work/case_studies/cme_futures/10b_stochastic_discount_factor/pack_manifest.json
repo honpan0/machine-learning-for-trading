@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/10b_stochastic_discount_factor.ipynb",
+  "source_sha256": "a1205b56d947b131c15a019fef5f93ef033da6faa6e33dc800727d6757e80a93",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001",
+            "c0004-p000"
+          ],
+          "chars": 4997
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0007-p000",
+            "c0007-p001"
+          ],
+          "chars": 2581
+        }
+      ],
+      "chars": 7578,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0004-p000",
+        "c0007-p000",
+        "c0007-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "89de19ede4a296a13a0e466ec2a30a69aa658908dacf80b7d19a097587136d4b",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

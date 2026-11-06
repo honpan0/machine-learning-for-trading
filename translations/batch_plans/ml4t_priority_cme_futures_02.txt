@@ -1,0 +1,7 @@
+case_studies/cme_futures/13_backtest.ipynb
+case_studies/cme_futures/14_portfolio_management.ipynb
+case_studies/cme_futures/15_risk_management.ipynb
+case_studies/cme_futures/16_costs.ipynb
+case_studies/cme_futures/17_holdout_predictions.ipynb
+case_studies/cme_futures/18_holdout_backtest.ipynb
+case_studies/cme_futures/19_strategy_analysis.ipynb

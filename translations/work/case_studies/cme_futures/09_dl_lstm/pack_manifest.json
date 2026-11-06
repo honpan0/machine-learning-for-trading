@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/09_dl_lstm.ipynb",
+  "source_sha256": "97df1a28fe7f1c4ba2b78d26cede200e030d56769ff9944481cffea74d8a08b2",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001",
+            "c0001-p002"
+          ],
+          "chars": 4363
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0004-p000",
+            "c0007-p000",
+            "c0007-p001"
+          ],
+          "chars": 3485
+        }
+      ],
+      "chars": 7848,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0001-p002",
+        "c0004-p000",
+        "c0007-p000",
+        "c0007-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "83b0a0c2b790fab0359f4618f7afbc588ac4387c913634333065ae0cdd59d4b5",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

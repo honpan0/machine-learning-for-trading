@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source": "case_studies/cme_futures/17_holdout_predictions.ipynb",
+  "source_sha256": "f8f464ac50a2150850e92161568b356dce7d4ce0d2ea58222681ee03631d0197",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0004-p000",
+            "c0006-p000",
+            "c0008-p000"
+          ],
+          "chars": 4537
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0010-p000",
+            "c0010-p001",
+            "c0013-p000",
+            "c0015-p000",
+            "c0017-p000"
+          ],
+          "chars": 3728
+        }
+      ],
+      "chars": 8265,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0004-p000",
+        "c0006-p000",
+        "c0008-p000",
+        "c0010-p000",
+        "c0010-p001",
+        "c0013-p000",
+        "c0015-p000",
+        "c0017-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "da9a54c9b825126baf47a6606203e74eb8ce97b59fe0284c81a9fa0ebadfc295",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

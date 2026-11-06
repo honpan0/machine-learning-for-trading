@@ -1,0 +1,14 @@
+case_studies/cme_futures/01_feasibility_analysis.ipynb
+case_studies/cme_futures/02_labels.ipynb
+case_studies/cme_futures/03_financial_features.ipynb
+case_studies/cme_futures/04_model_based_features.ipynb
+case_studies/cme_futures/05_evaluation.ipynb
+case_studies/cme_futures/06_linear.ipynb
+case_studies/cme_futures/07_gbm.ipynb
+case_studies/cme_futures/08_tabular_dl.ipynb
+case_studies/cme_futures/09_dl_lstm.ipynb
+case_studies/cme_futures/10_latent_factors.ipynb
+case_studies/cme_futures/10a_pca.ipynb
+case_studies/cme_futures/10b_stochastic_discount_factor.ipynb
+case_studies/cme_futures/11_causal_dml.ipynb
+case_studies/cme_futures/12_model_analysis.ipynb

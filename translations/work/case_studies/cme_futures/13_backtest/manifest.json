@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "source": "case_studies/cme_futures/13_backtest.ipynb",
+  "source_sha256": "8101b3ebc9776bf5ef1fb608b4b59a91af73be052209af9aaa7e8af121b30f0e",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 733,
+      "source_sha256": "c4ccec71b9fd4d0a0de633cecd9947fc1e321df5a0193e6df0d902878da128f3",
+      "chars": 733
+    },
+    {
+      "id": "c0001-p000",
+      "cell_index": 1,
+      "start": 0,
+      "end": 1338,
+      "source_sha256": "84e45286f51b213231a821ad40d9e84c64c33f5f9aae93f699e851d2069355bd",
+      "chars": 1338
+    },
+    {
+      "id": "c0001-p001",
+      "cell_index": 1,
+      "start": 1338,
+      "end": 1811,
+      "source_sha256": "d9e6b7c5ace48d0ad7f7c811d8416480bc610e467170aa8b63d9b1e130689bdb",
+      "chars": 473
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 388,
+      "source_sha256": "0c52fad8ba910f9b6465e4f18f5d3859e23ef74032461c66eda76dd8061b39f2",
+      "chars": 388
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 1148,
+      "source_sha256": "48991c6102ab4bab2ee24e4c3e34677548e85ecb7b3e9b00fbc22a71c3f2950c",
+      "chars": 1148
+    },
+    {
+      "id": "c0007-p001",
+      "cell_index": 7,
+      "start": 1148,
+      "end": 1980,
+      "source_sha256": "fde6542b7fe70c6a322b5560aceec5cd0b657643525fc323236995330b402455",
+      "chars": 832
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 1642,
+      "source_sha256": "d0f31592f3fbaadb0029f9573dcef87f17e4c0e1e9213377c245d215634858e7",
+      "chars": 1642
+    },
+    {
+      "id": "c0009-p001",
+      "cell_index": 9,
+      "start": 1642,
+      "end": 3060,
+      "source_sha256": "468ecfbf45ddbf000f4bb850bc728147a2d5931db8feb779f83ebf875a24012c",
+      "chars": 1418
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 293,
+      "source_sha256": "e40a1468b5d16475041cc4d52367c507ef617731ac7a7c85928b7f126ba4c0a9",
+      "chars": 293
+    },
+    {
+      "id": "c0013-p000",
+      "cell_index": 13,
+      "start": 0,
+      "end": 157,
+      "source_sha256": "a5da69dc950e1297bdfb49b9a17fe21dd6d8d104ba7b5f00a4bb385bc440adc2",
+      "chars": 157
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0001-p000",
+      "c0001-p001",
+      "c0004-p000",
+      "c0007-p000",
+      "c0007-p001"
+    ],
+    [
+      "c0009-p000",
+      "c0009-p001",
+      "c0011-p000",
+      "c0013-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}
