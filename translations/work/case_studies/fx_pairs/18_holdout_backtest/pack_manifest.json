@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/18_holdout_backtest.ipynb",
+  "source_sha256": "633c71038d4fa79ef9257819831b25b2f7f673b0fc5d7830ae1284bac8c7ea86",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000"
+          ],
+          "chars": 3753
+        }
+      ],
+      "chars": 3753,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "7528d3eafdf3d1581a11f7c1667e519ac09e635a549ecf7cb6925de348852951",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

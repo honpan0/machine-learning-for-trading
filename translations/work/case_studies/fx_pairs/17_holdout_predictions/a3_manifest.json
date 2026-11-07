@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/17_holdout_predictions.ipynb",
+  "source_sha256": "48667be6aeb6a4f65b9cc5bfc7221a45bc8cdd66c1c25e1a00663e034eda1864",
+  "a2_pack_manifest_sha256": "409bf62d457bf7b03980b7a36d410734e9d4c6028e8094f04a748cd046586e76",
+  "packs": [
+    {
+      "number": 1,
+      "file": "a3_pack_001.md",
+      "task_sha256": "2846b7e46a4db3cccafad28672caaf508e3c9ecc2a736160c06774964cc0bd67",
+      "units": [
+        {
+          "id": "c0000-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "fd6240c661c3350720e4cf1adc8a86d6dac6186f474b251d535d6a1c6f955ca7",
+          "masked_sha256": "02a7b6dbc51feaeca27e4540aed36e43505eb9f5ba641a0b9eb5f8cd85e5b08d",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "3f0009ca17589efa98ddfbb51e021c37139b1597c9002cc5e676d65300eb1dcf"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "cbfec28a88a974c43fb6118eae0919c6f5a5ce020ed6fe3b097b4285c524adf1"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "inline-code",
+              "sha256": "431dda3e8f876bf14d7f08ad0b2b0d142a26caa347fa43fd5b10c5f55b93f3f5"
+            },
+            {
+              "key": "[[ML4T_A3_0004]]",
+              "kind": "inline-code",
+              "sha256": "5f136c761f74806c7b013036f192fa75a1730ca9310bd20c40c4bf546e93fcb9"
+            }
+          ]
+        },
+        {
+          "id": "c0003-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "97a3ac43fb74f89e674e9ff23b82becb00241e1700bc3e9d898411e8bd1ccd4c",
+          "masked_sha256": "97a3ac43fb74f89e674e9ff23b82becb00241e1700bc3e9d898411e8bd1ccd4c",
+          "tokens": []
+        },
+        {
+          "id": "c0005-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "b3df92b26b49f2d5e74d8d9585239c7d59afa824d44e58d913b9b3c845a15946",
+          "masked_sha256": "b3df92b26b49f2d5e74d8d9585239c7d59afa824d44e58d913b9b3c845a15946",
+          "tokens": []
+        },
+        {
+          "id": "c0007-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "d6a075c9507028b14e705d4d44b978800108049a1b2a31ffcf1355d1c2e4e81e",
+          "masked_sha256": "d6a075c9507028b14e705d4d44b978800108049a1b2a31ffcf1355d1c2e4e81e",
+          "tokens": []
+        },
+        {
+          "id": "c0009-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "99c29db41c8a4560446f154827ba6c2547de48a2a89ef3f7ba5237eadca2179b",
+          "masked_sha256": "99c29db41c8a4560446f154827ba6c2547de48a2a89ef3f7ba5237eadca2179b",
+          "tokens": []
+        }
+      ],
+      "masked_chars": 4036,
+      "oversize": false,
+      "processed_sha256": "4c9c824104cefd788ea28e32d98866b3430e5fba7322f9c4995068fcf132a52d"
+    }
+  ],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

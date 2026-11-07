@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "source": "case_studies/fx_pairs/11_causal_dml.ipynb",
+  "source_sha256": "3761d8c1a443784a4637efc9e020bfa3da357b98ae0e067c2214e555e220c993",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1029,
+      "source_sha256": "b29450491b2a5a47beb98166eea2833e9bfe827c9e9d9256a1519d316e4b8c50",
+      "chars": 1029
+    },
+    {
+      "id": "c0001-p000",
+      "cell_index": 1,
+      "start": 0,
+      "end": 1750,
+      "source_sha256": "39e90a8580cb6760be432a2ce8d024fe09d26f714680add05880a86a4fd0c05a",
+      "chars": 1750
+    },
+    {
+      "id": "c0001-p001",
+      "cell_index": 1,
+      "start": 1750,
+      "end": 3538,
+      "source_sha256": "960dd9827826cd1e2b27c160ac1b9cb517862fea4b72a042afd59ca59ac7d8be",
+      "chars": 1788
+    },
+    {
+      "id": "c0001-p002",
+      "cell_index": 1,
+      "start": 3538,
+      "end": 3991,
+      "source_sha256": "beeb816cb286b294a4ffa212f0439f7add8c9e4ba7daf892e3ef420e1fbc579f",
+      "chars": 453
+    },
+    {
+      "id": "c0004-p000",
+      "cell_index": 4,
+      "start": 0,
+      "end": 183,
+      "source_sha256": "a8a4e9a1bbbb0ceb8c04673d60713a7f72a9f0c990a556ad03c2f063de9f8e36",
+      "chars": 183
+    },
+    {
+      "id": "c0006-p000",
+      "cell_index": 6,
+      "start": 0,
+      "end": 1530,
+      "source_sha256": "cc658088a348e2b0f49c19c06f6a4684b521e7b793c6ad12100d8b848eafd26c",
+      "chars": 1530
+    },
+    {
+      "id": "c0006-p001",
+      "cell_index": 6,
+      "start": 1530,
+      "end": 2020,
+      "source_sha256": "860b868f2406404fb220c0458d6efcd33a101e4fc0aa55e0db705afc445b56b4",
+      "chars": 490
+    },
+    {
+      "id": "c0008-p000",
+      "cell_index": 8,
+      "start": 0,
+      "end": 230,
+      "source_sha256": "a8461528025608b74798089574f5bfd634c21b39f82032e426ab7032be246574",
+      "chars": 230
+    },
+    {
+      "id": "c0010-p000",
+      "cell_index": 10,
+      "start": 0,
+      "end": 254,
+      "source_sha256": "1e2519c14cfa6ea06f656a13a45b4d1a7bee08014d1ddd4921243f3371f79e52",
+      "chars": 254
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0001-p000",
+      "c0001-p001"
+    ],
+    [
+      "c0001-p002",
+      "c0004-p000",
+      "c0006-p000",
+      "c0006-p001",
+      "c0008-p000",
+      "c0010-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

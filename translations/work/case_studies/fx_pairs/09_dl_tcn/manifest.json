@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "source": "case_studies/fx_pairs/09_dl_tcn.ipynb",
+  "source_sha256": "1603618e41f5d191ca7ff0c126915b6d95ec263505c772e8bc2d21eeb0d99184",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 859,
+      "source_sha256": "889ff8409dc374523d79914241cce513fc4c13265f5e868e4bbf5641e40327e2",
+      "chars": 859
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 330,
+      "source_sha256": "fdcea0dc1bea35c5e5a8c26f819ca0ea6943efc6bf608b5df67fdfc954477b82",
+      "chars": 330
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 242,
+      "source_sha256": "1f3dd2db27ac7183baa856c9e1b309549bcc4bf89b3fb9199c4aea722696d8ea",
+      "chars": 242
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 1315,
+      "source_sha256": "7b8f1e2da598f8fcb0594c9c631a3448a80ad315fabd38b3722f448223f92236",
+      "chars": 1315
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 219,
+      "source_sha256": "66c413ad94dc5a8aae8c81d1bd9be53cae11d8f836165dc95b31ad369607f10a",
+      "chars": 219
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 259,
+      "source_sha256": "47c932009c76b68817c904ea79c3c14ac95ec12baa3d1ddfbad9ebb76da31835",
+      "chars": 259
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0003-p000",
+      "c0005-p000",
+      "c0007-p000",
+      "c0009-p000",
+      "c0011-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

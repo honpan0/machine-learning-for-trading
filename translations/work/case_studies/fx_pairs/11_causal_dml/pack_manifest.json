@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/11_causal_dml.ipynb",
+  "source_sha256": "3761d8c1a443784a4637efc9e020bfa3da357b98ae0e067c2214e555e220c993",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0001-p000",
+            "c0001-p001"
+          ],
+          "chars": 4567
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0001-p002",
+            "c0004-p000",
+            "c0006-p000",
+            "c0006-p001",
+            "c0008-p000",
+            "c0010-p000"
+          ],
+          "chars": 3140
+        }
+      ],
+      "chars": 7707,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0001-p000",
+        "c0001-p001",
+        "c0001-p002",
+        "c0004-p000",
+        "c0006-p000",
+        "c0006-p001",
+        "c0008-p000",
+        "c0010-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "8ec034538a66e2b923892b6092b4dd17c1509390b7957b717306322db33e684a",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

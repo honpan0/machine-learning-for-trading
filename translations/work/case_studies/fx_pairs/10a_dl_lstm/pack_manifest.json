@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/10a_dl_lstm.ipynb",
+  "source_sha256": "349b5f9ca692c21cb847962c5019a9a9be8111f7f06ea8c0ccbc16b8da827f03",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 3341
+        }
+      ],
+      "chars": 3341,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "33e2a8ff986427b69528029affb04c6ee230e026bb43fdf9aa34857d15e70f35",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

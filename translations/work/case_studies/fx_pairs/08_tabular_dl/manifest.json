@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "source": "case_studies/fx_pairs/08_tabular_dl.ipynb",
+  "source_sha256": "7a6a7fa4bf8e4b50e872b560ba29033b97d48fe1948ce3b11f63bd3284c5c32b",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 805,
+      "source_sha256": "9b5b420e79a0a92948f5115568087d9a71d542c0c9e21b802c5d23f06dfb1ec3",
+      "chars": 805
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 602,
+      "source_sha256": "1755faf4f47e0aff22d298fd672ebaac3f28d7fee2b92254a795d4a9c9815a86",
+      "chars": 602
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 217,
+      "source_sha256": "eb40ca66bb72b5ad42d50b4b22e71aef9c6c34083f3b100ceae0f25e14d4ff00",
+      "chars": 217
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 301,
+      "source_sha256": "f1eac60e51a4e88c72225a3db5df7c8100af787523fcb221940a67cc3a1c0962",
+      "chars": 301
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 1449,
+      "source_sha256": "1c83a1c65c6a7ae1b4aa57fa6ab8ea8ed7fe6bc0ec9453f651b4b57225f3232c",
+      "chars": 1449
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 216,
+      "source_sha256": "3f9c74d19ef77f7bcbbe2a8d114d9ffdd188257fde856803ef254a83cbfddfa7",
+      "chars": 216
+    },
+    {
+      "id": "c0013-p000",
+      "cell_index": 13,
+      "start": 0,
+      "end": 264,
+      "source_sha256": "1135df683a70a1e105d264aaacbda1b77fb0f4569b4b0b7198769d3e79d98d75",
+      "chars": 264
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0003-p000",
+      "c0005-p000",
+      "c0007-p000",
+      "c0009-p000",
+      "c0011-p000",
+      "c0013-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

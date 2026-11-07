@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**222** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**257** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**242** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**237** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -349,26 +349,26 @@
 | `case_studies/etfs/18_holdout_predictions.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/etfs/19_holdout_backtest.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/etfs/20_strategy_analysis.ipynb` | 29/29 | 5/5 | 已組裝／驗證通過 |  |
-| `case_studies/fx_pairs/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/04_model_based_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/05_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/06_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/07_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/08_tabular_dl.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/09_dl_tcn.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/10_dl_nlinear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/10a_dl_lstm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/11_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/12_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/13_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/14_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/15_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/16_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/17_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/18_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/fx_pairs/19_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/fx_pairs/01_feasibility_analysis.ipynb` | 27/27 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/02_labels.ipynb` | 24/24 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/03_financial_features.ipynb` | 29/29 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/04_model_based_features.ipynb` | 67/67 | 12/12 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/05_evaluation.ipynb` | 30/30 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/06_linear.ipynb` | 23/23 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/07_gbm.ipynb` | 25/25 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/08_tabular_dl.ipynb` | 7/7 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/09_dl_tcn.ipynb` | 6/6 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/10_dl_nlinear.ipynb` | 6/6 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/10a_dl_lstm.ipynb` | 6/6 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/11_causal_dml.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/12_model_analysis.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/13_backtest.ipynb` | 8/8 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/14_portfolio_management.ipynb` | 9/9 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/15_risk_management.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/16_costs.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/17_holdout_predictions.ipynb` | 5/5 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/18_holdout_backtest.ipynb` | 5/5 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/fx_pairs/19_strategy_analysis.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/nasdaq100_microstructure/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/nasdaq100_microstructure/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/nasdaq100_microstructure/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |

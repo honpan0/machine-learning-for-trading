@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/09_dl_tcn.ipynb",
+  "source_sha256": "1603618e41f5d191ca7ff0c126915b6d95ec263505c772e8bc2d21eeb0d99184",
+  "a2_pack_manifest_sha256": "0fbb811775155298aae37b851a8e2d65116340055537e341c36ca02620233ab6",
+  "packs": [
+    {
+      "number": 1,
+      "file": "a3_pack_001.md",
+      "task_sha256": "0d22c713dd32e21ac54f0cc1a2fc6d6ab882287629b97408ebeefadaa1f708a8",
+      "units": [
+        {
+          "id": "c0000-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "889ff8409dc374523d79914241cce513fc4c13265f5e868e4bbf5641e40327e2",
+          "masked_sha256": "4974c5ddc6035c74a187ff5d394590beb34e428732d5f8e752039b6cd958cd6d",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "47067f59e39175b797b684aafdc039176f7736e7e5a72913bf1de0e3967cfe53"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "dcffac600904c35d29332906bc09ef906a55730a37459476c6d255f0e542e79c"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "inline-code",
+              "sha256": "34bbbf60c6d37bfcb3b363e421869ce8ac8c7169167eaf1b0570f3e2ccf0f698"
+            }
+          ]
+        },
+        {
+          "id": "c0003-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "fdcea0dc1bea35c5e5a8c26f819ca0ea6943efc6bf608b5df67fdfc954477b82",
+          "masked_sha256": "fdcea0dc1bea35c5e5a8c26f819ca0ea6943efc6bf608b5df67fdfc954477b82",
+          "tokens": []
+        },
+        {
+          "id": "c0005-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "1f3dd2db27ac7183baa856c9e1b309549bcc4bf89b3fb9199c4aea722696d8ea",
+          "masked_sha256": "1f3dd2db27ac7183baa856c9e1b309549bcc4bf89b3fb9199c4aea722696d8ea",
+          "tokens": []
+        },
+        {
+          "id": "c0007-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "7b8f1e2da598f8fcb0594c9c631a3448a80ad315fabd38b3722f448223f92236",
+          "masked_sha256": "c504265a04c9b5f180b162d792cc0a77e8218695b7b639f3be92fa641e17e80e",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "a1d43a885b0666fc34488da505ca944ca1e832a86759406c38e678fab8615234"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "4fc9f5a93b55bc84970b083767efc7dccc33932753b0bcafe1cdb3486fc871e6"
+            },
+            {
+              "key": "[[ML4T_A3_0003]]",
+              "kind": "inline-code",
+              "sha256": "e7650066af271d3117854239ebec512fec995c6610aabbc4afd52ba05c0cbd11"
+            },
+            {
+              "key": "[[ML4T_A3_0004]]",
+              "kind": "inline-code",
+              "sha256": "311ffc08cf624099b2b003a47c20c7d53e0b892475f819e026295f9391268b92"
+            }
+          ]
+        },
+        {
+          "id": "c0009-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "66c413ad94dc5a8aae8c81d1bd9be53cae11d8f836165dc95b31ad369607f10a",
+          "masked_sha256": "a4e684af66eb22358fcddb9dcb585917a410be04dce553f3b7757388776c687a",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "f1cf4637cbeb680298b4d6c359207ad249928d0e005354ca0d8dd009c7b429ec"
+            }
+          ]
+        },
+        {
+          "id": "c0011-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "47c932009c76b68817c904ea79c3c14ac95ec12baa3d1ddfbad9ebb76da31835",
+          "masked_sha256": "47c932009c76b68817c904ea79c3c14ac95ec12baa3d1ddfbad9ebb76da31835",
+          "tokens": []
+        }
+      ],
+      "masked_chars": 3201,
+      "oversize": false,
+      "processed_sha256": "1546236734ee556c0e19829b788b4e408036c134fc1fda44d4ff07f8eccf95e3"
+    }
+  ],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

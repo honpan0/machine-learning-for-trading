@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/16_costs.ipynb",
+  "source_sha256": "87af2fd6e4a4a3bb0eb933e989a3d90be282c00d1f13615082571c23ce4b0552",
+  "a2_pack_manifest_sha256": "2352759d4d4a160c75ee3f2d8e237d8fb78b30b15e1d1043abdefdd729817377",
+  "packs": [
+    {
+      "number": 1,
+      "file": "a3_pack_001.md",
+      "task_sha256": "a0dcb376cd2188cc190f6d7de31cc8c645a83a103fefd28bbf41f10df2e593e8",
+      "units": [
+        {
+          "id": "c0000-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "e618ad990b3e85f15e43aba03d9acbb8fc00eedcb83cccff8c13cf71830d8ca8",
+          "masked_sha256": "e618ad990b3e85f15e43aba03d9acbb8fc00eedcb83cccff8c13cf71830d8ca8",
+          "tokens": []
+        },
+        {
+          "id": "c0000-p001",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "1e59142df7be1c36412d754976392547f43faeef91dcc2c83cdc0ed44e437661",
+          "masked_sha256": "3a70a348238ad07d0ba4aaf82491f151a872236cb963e9b8c125d1f76ed333cd",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "032583c748a27df1f0331f646f97f80f212d62ec54d7b8a54d1ef6690215ac68"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "2662926e3c6591670229887f9a323dc930c0a248efe0e4cad2a1948a693e9cb7"
+            }
+          ]
+        },
+        {
+          "id": "c0003-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "7a310e9bbb2d0f30922055227d670f0ee1c97bad14ab92187982e539a3a1ae95",
+          "masked_sha256": "00ebd236870dbc3ced13f032d9a772e8259b29eba09d6e30e4b161461619d706",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "e8e3eee99d6f4e378143b20f152f142380da4848fa58a9d7c82b0bc0a8db7825"
+            },
+            {
+              "key": "[[ML4T_A3_0002]]",
+              "kind": "inline-code",
+              "sha256": "e8c1705d44855c7b209d493ff6092ad135d74503a0686f4c789ae2b854f7d3d0"
+            }
+          ]
+        },
+        {
+          "id": "c0005-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "23c7a4b4515f415b3c6d79af1cb8a78b660178e457744cf6cf0376af1996734a",
+          "masked_sha256": "f2ddf55c849d57adf7175ee2f9a2f33e6f1245b4d509f6624b22fc0f338213e5",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "7e5e979703456804f8506d2ca5f39690b4ae8ea471383b42bb80a2c52d36de22"
+            }
+          ]
+        }
+      ],
+      "masked_chars": 5432,
+      "oversize": false,
+      "processed_sha256": "ba0e5f4be2fe43ac547a8519fa2a07d913ebeb40832af84ec766a469ff47044a"
+    },
+    {
+      "number": 2,
+      "file": "a3_pack_002.md",
+      "task_sha256": "1ff5a7c99b6c91e7bd8dafd0ec8b8e443249a0b52dac63b7a5103ffef8cc1256",
+      "units": [
+        {
+          "id": "c0007-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "fae6cccfe997f9442a105847096a70e7db019beaa57ed7123bb92f8cfeae3bfb",
+          "masked_sha256": "671585108286f269c5bf2a21979b400b1f97ec14ac333dabe60bcaf3083ebc4c",
+          "tokens": [
+            {
+              "key": "[[ML4T_A3_0001]]",
+              "kind": "inline-code",
+              "sha256": "8693b360ae4bce533cd8602a5a5624e5537093db49fdb3d09bbdcfa9657fcc11"
+            }
+          ]
+        },
+        {
+          "id": "c0009-p000",
+          "a2_pack": 1,
+          "mask_version": 7,
+          "source_sha256": "7a217b8c740d4e9e267384b514c4a2bfc1663e09ba831e69159e96ca4438621a",
+          "masked_sha256": "7a217b8c740d4e9e267384b514c4a2bfc1663e09ba831e69159e96ca4438621a",
+          "tokens": []
+        }
+      ],
+      "masked_chars": 2259,
+      "oversize": false,
+      "processed_sha256": "baa686f2931b5ca85478d1a07dbdfe658484bfde67ef99591330ed22b8770e46"
+    }
+  ],
+  "config": {
+    "max_chars": 6500,
+    "max_units": 14
+  }
+}

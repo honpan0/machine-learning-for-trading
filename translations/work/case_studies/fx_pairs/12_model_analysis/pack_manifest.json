@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/12_model_analysis.ipynb",
+  "source_sha256": "255fc970504269487f6e936eb6c181b8d5d528f0f7c0c2fc8ef97c02bfe5bbe3",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0008-p000",
+            "c0011-p000",
+            "c0013-p000"
+          ],
+          "chars": 4215
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0016-p000",
+            "c0019-p000",
+            "c0019-p001",
+            "c0021-p000",
+            "c0023-p000",
+            "c0025-p000"
+          ],
+          "chars": 4718
+        }
+      ],
+      "chars": 8933,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0008-p000",
+        "c0011-p000",
+        "c0013-p000",
+        "c0016-p000",
+        "c0019-p000",
+        "c0019-p001",
+        "c0021-p000",
+        "c0023-p000",
+        "c0025-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "48775fcb9346f1a01ec4de5917c095226cf537a8d2bd7be894f662e559677611",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

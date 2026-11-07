@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "source": "case_studies/fx_pairs/15_risk_management.ipynb",
+  "source_sha256": "1dffd7da2aebb17d74d1ff4c4c3bfd627e6299b03254b23f30c9f8bfe3e74cf8",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1785,
+      "source_sha256": "059ee49afc5b9622f0b171e25761f3c25730131475e14e81c1e09e34b8ead0fb",
+      "chars": 1785
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 1462,
+      "source_sha256": "ab0a67f7d3b6aa4613c67a5a7b7d8a17084f470fca457061374ddf7c7ffde10d",
+      "chars": 1462
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 1556,
+      "source_sha256": "486c6d4e6350c612fbc5f9f61d3638f60a0a47652cb042f3b57b36024c23d62e",
+      "chars": 1556
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 259,
+      "source_sha256": "6036c09753aee8917c6db055c48f5ba057c7bf7f23df12b99509bb6d21e24850",
+      "chars": 259
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 1565,
+      "source_sha256": "cb0eae9ffc2b670940682aec2fd40d8495bfbb3bbb74c7d02cee8e453c6e2db5",
+      "chars": 1565
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 1142,
+      "source_sha256": "55368f009788d330fe60d087a37e44b9ccd22cafbdb58b15f2760b0809ed471d",
+      "chars": 1142
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0003-p000",
+      "c0005-p000"
+    ],
+    [
+      "c0007-p000",
+      "c0009-p000",
+      "c0011-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

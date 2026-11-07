@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "source": "case_studies/fx_pairs/13_backtest.ipynb",
+  "source_sha256": "450fbf843926aad63b5ab6c9c6ef741f681cb359d8f7ab63cfd7dccb588878b8",
+  "max_chars": 1800,
+  "batch_chars": 5000,
+  "units": [
+    {
+      "id": "c0000-p000",
+      "cell_index": 0,
+      "start": 0,
+      "end": 1389,
+      "source_sha256": "975026c018a51f283b9ee4aca03cb1273529b4f2852184ad67c547f66879c5b5",
+      "chars": 1389
+    },
+    {
+      "id": "c0000-p001",
+      "cell_index": 0,
+      "start": 1389,
+      "end": 2311,
+      "source_sha256": "59eaae3fe06cb153956aab48101e946553c48d461963d8353f60b2501a3b224b",
+      "chars": 922
+    },
+    {
+      "id": "c0003-p000",
+      "cell_index": 3,
+      "start": 0,
+      "end": 1418,
+      "source_sha256": "8bb866189152866757cf45984bc8a0f69b8b605a513d0e238a0fe473bfb770df",
+      "chars": 1418
+    },
+    {
+      "id": "c0003-p001",
+      "cell_index": 3,
+      "start": 1418,
+      "end": 2169,
+      "source_sha256": "791a94e7e5c10bc2eba0ab67f0af6f431146c84cc6ab7f362d85844bc231a275",
+      "chars": 751
+    },
+    {
+      "id": "c0005-p000",
+      "cell_index": 5,
+      "start": 0,
+      "end": 862,
+      "source_sha256": "6c752ccd912f5f645e04602b8a74d04e676b67c0aaf70bab475b48a33b8105ce",
+      "chars": 862
+    },
+    {
+      "id": "c0007-p000",
+      "cell_index": 7,
+      "start": 0,
+      "end": 954,
+      "source_sha256": "d035fc05d709fabb8697cb2a56efcc9722f4dbc715a2e0aae8ef2d87b525a815",
+      "chars": 954
+    },
+    {
+      "id": "c0009-p000",
+      "cell_index": 9,
+      "start": 0,
+      "end": 597,
+      "source_sha256": "17b83c619ac6e31eb36fc665f034082b2007a0053a57663e5e80d5fdc2c46129",
+      "chars": 597
+    },
+    {
+      "id": "c0011-p000",
+      "cell_index": 11,
+      "start": 0,
+      "end": 1215,
+      "source_sha256": "9870f600c1f33cf28948ad984ae9ab249e546cda18446cd70ea628677414de0d",
+      "chars": 1215
+    }
+  ],
+  "batches": [
+    [
+      "c0000-p000",
+      "c0000-p001",
+      "c0003-p000",
+      "c0003-p001"
+    ],
+    [
+      "c0005-p000",
+      "c0007-p000",
+      "c0009-p000",
+      "c0011-p000"
+    ]
+  ],
+  "glossary_info": {
+    "path": "translations/glossary_zh_TW.md",
+    "sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85",
+    "entries": 47,
+    "max_terms_per_batch": 25
+  }
+}

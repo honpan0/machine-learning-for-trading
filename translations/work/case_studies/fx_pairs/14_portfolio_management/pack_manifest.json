@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/14_portfolio_management.ipynb",
+  "source_sha256": "4f3c20149b7b1ef1cf2b0bc7b44c68f9228bc7894dd4e897b7ba9f2064ad32ce",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0000-p001",
+            "c0003-p000"
+          ],
+          "chars": 3625
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0005-p000",
+            "c0005-p001",
+            "c0007-p000",
+            "c0007-p001"
+          ],
+          "chars": 3685
+        }
+      ],
+      "chars": 7310,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0000-p001",
+        "c0003-p000",
+        "c0005-p000",
+        "c0005-p001",
+        "c0007-p000",
+        "c0007-p001"
+      ],
+      "oversize": false,
+      "task_sha256": "643329549a2e398ecb66b018d3ac8301f9ac6d06e4ccfbbabc48bd0d49559bec",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    },
+    {
+      "batches": [
+        {
+          "batch": 3,
+          "ids": [
+            "c0010-p000",
+            "c0012-p000"
+          ],
+          "chars": 2649
+        }
+      ],
+      "chars": 2649,
+      "number": 2,
+      "ids": [
+        "c0010-p000",
+        "c0012-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "f0f95156a0c3fb3faebcc5614c69756979f96a6145926b585494d995aa52a075",
+      "file": "pack_002.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

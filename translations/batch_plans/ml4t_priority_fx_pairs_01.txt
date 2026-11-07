@@ -1,0 +1,6 @@
+case_studies/fx_pairs/01_feasibility_analysis.ipynb
+case_studies/fx_pairs/02_labels.ipynb
+case_studies/fx_pairs/03_financial_features.ipynb
+case_studies/fx_pairs/04_model_based_features.ipynb
+case_studies/fx_pairs/05_evaluation.ipynb
+case_studies/fx_pairs/06_linear.ipynb

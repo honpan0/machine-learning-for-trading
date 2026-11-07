@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/08_tabular_dl.ipynb",
+  "source_sha256": "7a6a7fa4bf8e4b50e872b560ba29033b97d48fe1948ce3b11f63bd3284c5c32b",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0005-p000",
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000",
+            "c0013-p000"
+          ],
+          "chars": 3854
+        }
+      ],
+      "chars": 3854,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000",
+        "c0013-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "d65cc6d75ef485b814ca7e5c39c7a95eeef2186c4b9ac369fdc2d45f929ac187",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}

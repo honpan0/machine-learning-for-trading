@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "source": "case_studies/fx_pairs/15_risk_management.ipynb",
+  "source_sha256": "1dffd7da2aebb17d74d1ff4c4c3bfd627e6299b03254b23f30c9f8bfe3e74cf8",
+  "config": {
+    "max_batches": 2,
+    "max_chars": 10000,
+    "max_terms": 25
+  },
+  "packs": [
+    {
+      "batches": [
+        {
+          "batch": 1,
+          "ids": [
+            "c0000-p000",
+            "c0003-p000",
+            "c0005-p000"
+          ],
+          "chars": 4803
+        },
+        {
+          "batch": 2,
+          "ids": [
+            "c0007-p000",
+            "c0009-p000",
+            "c0011-p000"
+          ],
+          "chars": 2966
+        }
+      ],
+      "chars": 7769,
+      "number": 1,
+      "ids": [
+        "c0000-p000",
+        "c0003-p000",
+        "c0005-p000",
+        "c0007-p000",
+        "c0009-p000",
+        "c0011-p000"
+      ],
+      "oversize": false,
+      "task_sha256": "957b47d0c296cd82395ead198a6b231cd12724a0d2f689a24e30cff0f30bde21",
+      "file": "pack_001.md",
+      "glossary_sha256": "4df08eadab7b7d9f4a0b59a93c95f9f6f8652c8e8082097bbab3d36040c7de85"
+    }
+  ]
+}
