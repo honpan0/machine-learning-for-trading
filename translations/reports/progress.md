@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**262** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**217** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**287** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**192** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -389,31 +389,31 @@
 | `case_studies/nasdaq100_microstructure/18_holdout_predictions.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/nasdaq100_microstructure/19_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/nasdaq100_microstructure/20_strategy_analysis.ipynb` | 38/38 | 7/7 | 已組裝／驗證通過 |  |
-| `case_studies/sp500_equity_option_analytics/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/04_model_based_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/05_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/06_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/07_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/08_tabular_dl.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/09_dl_lstm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/10_dl_patchtst.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/11_latent_factors.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/11a_pca.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/11b_ipca.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/11c_conditional_autoencoder.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/11d_stochastic_discount_factor.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/11e_supervised_autoencoder.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/12_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/13_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/14_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/15_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/16_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/17_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/18_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/19_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_equity_option_analytics/20_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/sp500_equity_option_analytics/01_feasibility_analysis.ipynb` | 28/28 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/02_labels.ipynb` | 31/31 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/03_financial_features.ipynb` | 39/39 | 9/9 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/04_model_based_features.ipynb` | 34/34 | 9/9 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/05_evaluation.ipynb` | 30/30 | 8/8 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/06_linear.ipynb` | 20/20 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/07_gbm.ipynb` | 18/18 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/08_tabular_dl.ipynb` | 22/22 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/09_dl_lstm.ipynb` | 15/15 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/10_dl_patchtst.ipynb` | 9/9 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/11_latent_factors.ipynb` | 8/8 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/11a_pca.ipynb` | 18/18 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/11b_ipca.ipynb` | 18/18 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/11c_conditional_autoencoder.ipynb` | 17/17 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/11d_stochastic_discount_factor.ipynb` | 18/18 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/11e_supervised_autoencoder.ipynb` | 18/18 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/12_causal_dml.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/13_model_analysis.ipynb` | 65/65 | 9/9 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/14_backtest.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/15_portfolio_management.ipynb` | 15/15 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/16_risk_management.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/17_costs.ipynb` | 13/13 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/18_holdout_predictions.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/19_holdout_backtest.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_equity_option_analytics/20_strategy_analysis.ipynb` | 21/21 | 3/3 | 已組裝／驗證通過 |  |
 | `case_studies/sp500_options/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/sp500_options/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/sp500_options/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
