@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**242** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**237** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**262** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**217** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -369,26 +369,26 @@
 | `case_studies/fx_pairs/17_holdout_predictions.ipynb` | 5/5 | 1/1 | 已組裝／驗證通過 |  |
 | `case_studies/fx_pairs/18_holdout_backtest.ipynb` | 5/5 | 1/1 | 已組裝／驗證通過 |  |
 | `case_studies/fx_pairs/19_strategy_analysis.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
-| `case_studies/nasdaq100_microstructure/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/04_model_based_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/05_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/06_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/07_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/08_dl_nlinear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/09_dl_lstm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/10_dl_tcn.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/11_dl_patchtst.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/12_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/13_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/14_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/15_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/16_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/17_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/18_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/19_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/nasdaq100_microstructure/20_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/nasdaq100_microstructure/01_feasibility_analysis.ipynb` | 22/22 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/02_labels.ipynb` | 28/28 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/03_financial_features.ipynb` | 40/40 | 9/9 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/04_model_based_features.ipynb` | 43/43 | 9/9 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/05_evaluation.ipynb` | 38/38 | 8/8 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/06_linear.ipynb` | 19/19 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/07_gbm.ipynb` | 21/21 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/08_dl_nlinear.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/09_dl_lstm.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/10_dl_tcn.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/11_dl_patchtst.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/12_causal_dml.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/13_model_analysis.ipynb` | 55/55 | 10/10 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/14_backtest.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/15_portfolio_management.ipynb` | 13/13 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/16_risk_management.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/17_costs.ipynb` | 19/19 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/18_holdout_predictions.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/19_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/nasdaq100_microstructure/20_strategy_analysis.ipynb` | 38/38 | 7/7 | 已組裝／驗證通過 |  |
 | `case_studies/sp500_equity_option_analytics/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/sp500_equity_option_analytics/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/sp500_equity_option_analytics/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
