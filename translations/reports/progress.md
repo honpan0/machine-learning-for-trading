@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**332** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**147** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**353** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**126** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -459,27 +459,27 @@
 | `case_studies/us_equities_panel/20_holdout_predictions.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/us_equities_panel/21_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/us_equities_panel/22_strategy_analysis.ipynb` | 24/24 | 4/4 | 已組裝／驗證通過 |  |
-| `case_studies/us_firm_characteristics/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/04_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/05_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/06_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/07_tabular_dl.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/08_latent_factors.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/08a_ipca.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/08b_conditional_autoencoder.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/08c_stochastic_discount_factor.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/08d_supervised_autoencoder.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/09_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/10_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/11_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/12_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/13_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/14_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/15_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/16_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_firm_characteristics/17_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/us_firm_characteristics/01_feasibility_analysis.ipynb` | 24/24 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/02_labels.ipynb` | 25/25 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/03_financial_features.ipynb` | 27/27 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/04_evaluation.ipynb` | 29/29 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/05_linear.ipynb` | 21/21 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/06_gbm.ipynb` | 19/19 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/07_tabular_dl.ipynb` | 20/20 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/08_latent_factors.ipynb` | 8/8 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/08a_ipca.ipynb` | 19/19 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/08b_conditional_autoencoder.ipynb` | 18/18 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/08c_stochastic_discount_factor.ipynb` | 18/18 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/08d_supervised_autoencoder.ipynb` | 17/17 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/09_causal_dml.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/10_model_analysis.ipynb` | 49/49 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/11_backtest.ipynb` | 10/10 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/12_portfolio_management.ipynb` | 13/13 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/13_risk_management.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/14_costs.ipynb` | 10/10 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/15_holdout_predictions.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/16_holdout_backtest.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_firm_characteristics/17_strategy_analysis.ipynb` | 51/51 | 7/7 | 已組裝／驗證通過 |  |
 | `data/crypto/market/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
 | `data/equities/firm_characteristics/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
 | `data/equities/market/microstructure/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
