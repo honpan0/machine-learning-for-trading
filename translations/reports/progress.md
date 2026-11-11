@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**287** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**192** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**308** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**171** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -414,27 +414,27 @@
 | `case_studies/sp500_equity_option_analytics/18_holdout_predictions.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
 | `case_studies/sp500_equity_option_analytics/19_holdout_backtest.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/sp500_equity_option_analytics/20_strategy_analysis.ipynb` | 21/21 | 3/3 | 已組裝／驗證通過 |  |
-| `case_studies/sp500_options/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/04_model_based_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/05_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/06_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/07_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/08_tabular_dl.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/09_deep_learning.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/09a_lstm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/09b_patchtst.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/10_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/11_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/12_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/13_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/14_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/15_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/16_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/17_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/18_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/sp500_options/90_ic_diagnostic.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/sp500_options/01_feasibility_analysis.ipynb` | 27/27 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/02_labels.ipynb` | 32/32 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/03_financial_features.ipynb` | 34/34 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/04_model_based_features.ipynb` | 45/45 | 10/10 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/05_evaluation.ipynb` | 51/51 | 8/8 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/06_linear.ipynb` | 21/21 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/07_gbm.ipynb` | 20/20 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/08_tabular_dl.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/09_deep_learning.ipynb` | 5/5 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/09a_lstm.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/09b_patchtst.ipynb` | 6/6 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/10_causal_dml.ipynb` | 4/4 | 1/1 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/11_model_analysis.ipynb` | 8/8 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/12_backtest.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/13_portfolio_management.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/14_risk_management.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/15_costs.ipynb` | 8/8 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/16_holdout_predictions.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/17_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/18_strategy_analysis.ipynb` | 49/49 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/sp500_options/90_ic_diagnostic.ipynb` | 9/9 | 1/1 | 已組裝／驗證通過 |  |
 | `case_studies/us_equities_panel/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/us_equities_panel/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/us_equities_panel/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
