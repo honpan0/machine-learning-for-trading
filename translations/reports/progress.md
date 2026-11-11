@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**308** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
-- 未開始：**171** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**332** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 未開始：**147** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -435,30 +435,30 @@
 | `case_studies/sp500_options/17_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/sp500_options/18_strategy_analysis.ipynb` | 49/49 | 5/5 | 已組裝／驗證通過 |  |
 | `case_studies/sp500_options/90_ic_diagnostic.ipynb` | 9/9 | 1/1 | 已組裝／驗證通過 |  |
-| `case_studies/us_equities_panel/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/02_labels.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/04_model_based_features.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/05_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/06_linear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/07_gbm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/08_tabular_dl.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/09_dl_nlinear.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/10_dl_lstm.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/11_dl_tsmixer.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/12_dl_weekly.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/13_latent_factors.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/13a_pca.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/13b_ipca.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/14_causal_dml.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/15_model_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/16_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/17_portfolio_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/18_risk_management.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/19_costs.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/20_holdout_predictions.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/21_holdout_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `case_studies/us_equities_panel/22_strategy_analysis.ipynb` | — | 0/0 | 未開始 |  |
+| `case_studies/us_equities_panel/01_feasibility_analysis.ipynb` | 27/27 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/02_labels.ipynb` | 27/27 | 6/6 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/03_financial_features.ipynb` | 37/37 | 8/8 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/04_model_based_features.ipynb` | 45/45 | 11/11 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/05_evaluation.ipynb` | 34/34 | 7/7 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/06_linear.ipynb` | 18/18 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/07_gbm.ipynb` | 21/21 | 5/5 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/08_tabular_dl.ipynb` | 17/17 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/09_dl_nlinear.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/10_dl_lstm.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/11_dl_tsmixer.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/12_dl_weekly.ipynb` | 14/14 | 4/4 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/13_latent_factors.ipynb` | 5/5 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/13a_pca.ipynb` | 14/14 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/13b_ipca.ipynb` | 14/14 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/14_causal_dml.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/15_model_analysis.ipynb` | 13/13 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/16_backtest.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/17_portfolio_management.ipynb` | 14/14 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/18_risk_management.ipynb` | 15/15 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/19_costs.ipynb` | 12/12 | 3/3 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/20_holdout_predictions.ipynb` | 10/10 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/21_holdout_backtest.ipynb` | 7/7 | 2/2 | 已組裝／驗證通過 |  |
+| `case_studies/us_equities_panel/22_strategy_analysis.ipynb` | 24/24 | 4/4 | 已組裝／驗證通過 |  |
 | `case_studies/us_firm_characteristics/01_feasibility_analysis.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/us_firm_characteristics/02_labels.ipynb` | — | 0/0 | 未開始 |  |
 | `case_studies/us_firm_characteristics/03_financial_features.ipynb` | — | 0/0 | 未開始 |  |
