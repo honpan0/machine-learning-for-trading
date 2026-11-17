@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**375** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**108** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**387** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**96** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -184,18 +184,18 @@
 | `16_strategy_simulation/16_case_study_lean_parity.ipynb` | 11/11 | 1/1 | 已組裝／驗證通過 |  |
 | `16_strategy_simulation/17_backtrader_zipline_engine_parity.ipynb` | 10/10 | 1/1 | 已組裝／驗證通過 |  |
 | `16_strategy_simulation/18_vectorbt_engine_parity.ipynb` | 10/10 | 1/1 | 已組裝／驗證通過 |  |
-| `17_portfolio_construction/01_portfolio_metrics.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/02_mean_variance_optimization.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/03_robust_optimization.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/04_kelly_criterion.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/05_factor_allocation_evidence.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/06_hierarchical_risk_parity.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/07_conformal_position_sizing.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/08_library_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/09_allocator_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/11_dl_portfolio_allocation.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/12_vlstm_portfolio.ipynb` | — | 0/0 | 未開始 |  |
-| `17_portfolio_construction/13_deepm_regime_robust.ipynb` | — | 0/0 | 未開始 |  |
+| `17_portfolio_construction/01_portfolio_metrics.ipynb` | 35/35 | 5/5 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/02_mean_variance_optimization.ipynb` | 48/48 | 5/5 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/03_robust_optimization.ipynb` | 31/31 | 3/3 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/04_kelly_criterion.ipynb` | 32/32 | 3/3 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/05_factor_allocation_evidence.ipynb` | 51/51 | 5/5 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/06_hierarchical_risk_parity.ipynb` | 45/45 | 4/4 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/07_conformal_position_sizing.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/08_library_comparison.ipynb` | 60/60 | 3/3 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/09_allocator_comparison.ipynb` | 53/53 | 4/4 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/11_dl_portfolio_allocation.ipynb` | 35/35 | 2/2 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/12_vlstm_portfolio.ipynb` | 36/36 | 3/3 | 已組裝／驗證通過 |  |
+| `17_portfolio_construction/13_deepm_regime_robust.ipynb` | 31/31 | 2/2 | 已組裝／驗證通過 |  |
 | `18_transaction_costs/01_cost_taxonomy.ipynb` | — | 0/0 | 未開始 |  |
 | `18_transaction_costs/02_spread_estimation.ipynb` | — | 0/0 | 未開始 |  |
 | `18_transaction_costs/03_market_impact_calibration.ipynb` | — | 0/0 | 未開始 |  |

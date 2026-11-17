@@ -22,7 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
-MASK_VERSION = 8
+MASK_VERSION = 9
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -255,9 +255,40 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
         i = end
 
 
+def _mask_outer_dollars_v9(raw: str, spans: list[tuple[int, int, str]],
+                           fixed_spans: list[tuple[int, int]]):
+    """Protect complete display math before its nested fixed-delimiter math."""
+    occupied = bytearray(len(raw))
+    fixed = bytearray(len(raw))
+    for start, end, _ in spans:
+        occupied[start:end] = b"\x01" * (end - start)
+    for start, end in fixed_spans:
+        fixed[start:end] = b"\x01" * (end - start)
+    i = 0
+    while i < len(raw) - 1:
+        if occupied[i] or fixed[i] or not raw.startswith("$$", i) or _is_escaped_dollar(raw, i):
+            i += 1
+            continue
+        j = i + 2
+        close = None
+        while j < len(raw) - 1:
+            if occupied[j]:
+                break  # Code, links, and markup remain hard barriers.
+            if raw.startswith("$$", j) and not _is_escaped_dollar(raw, j):
+                close = j
+                break
+            j += 1
+        if close is None:
+            raise A3Error("未閉合的雙美元公式；停止產生翻譯 Pack")
+        end = close + 2
+        spans.append((i, end, "math"))
+        occupied[i:end] = b"\x01" * (end - i)
+        i = end
+
+
 def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
-    """Mask protected spans while preserving historical v1-v7 tokenization."""
-    if mask_version not in (1, 2, 3, 4, 5, 6, 7, 8):
+    """Mask protected spans while preserving historical v1-v8 tokenization."""
+    if mask_version not in (1, 2, 3, 4, 5, 6, 7, 8, 9):
         raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")
@@ -284,14 +315,21 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
     for match in INLINE_CODE.finditer(raw):
         add(match.start(), match.end(), "inline-code")
 
-    if mask_version in (3, 4, 5, 6, 7, 8):
+    if mask_version in (3, 4, 5, 6, 7, 8, 9):
         # Fixed-delimiter math, code, links and markup are barriers for the
         # dollar tokenizer. Old versions retain their original precedence.
-        for match in MATH_FIXED_V3.finditer(raw):
-            add(match.start(), match.end(), "math")
+        fixed_matches = list(MATH_FIXED_V3.finditer(raw))
+        if mask_version < 9:
+            for match in fixed_matches:
+                add(match.start(), match.end(), "math")
         for pattern, kind in ((IMAGE, "image"), (URL, "url"), (HTML, "html")):
             for match in pattern.finditer(raw):
                 add(match.start(), match.end(), kind)
+        if mask_version >= 9:
+            _mask_outer_dollars_v9(raw, spans,
+                                   [(m.start(), m.end()) for m in fixed_matches])
+            for match in fixed_matches:
+                add(match.start(), match.end(), "math")
         _mask_dollars_v3(raw, spans, mask_version=mask_version)
     else:
         # Historical v1/v2 behavior is deliberately byte-for-byte unchanged.
@@ -336,12 +374,12 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
         raise A3Error("來源存在未被安全遮蔽的 LaTeX（如不成對的公式），請檢查來源")
     if mask_version == 2 and re.search(r"(?<!\\)\$", masked):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7, 8) and any(
+    if mask_version in (3, 4, 5, 6, 7, 8, 9) and any(
         ch == "$" and not _is_escaped_dollar(masked, pos)
         for pos, ch in enumerate(masked)
     ):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7, 8) and re.search(r"\\[\[(]", masked):
+    if mask_version in (3, 4, 5, 6, 7, 8, 9) and re.search(r"\\[\[(]", masked):
         raise A3Error("來源含未閉合的 LaTeX 括號公式")
     if with_sources:
         return masked, replacements, protected_source
@@ -546,7 +584,7 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         if (present != keys or "[[ML4T_A3_" in TOKEN.sub("", translated) or
             DANGEROUS.search(translated) or "$$" in translated or
             (u.get("mask_version", 1) == 2 and re.search(r"(?<!\\)\$", translated)) or
-            (u.get("mask_version", 1) in (3, 4, 5, 6, 7, 8) and any(
+            (u.get("mask_version", 1) in (3, 4, 5, 6, 7, 8, 9) and any(
                 char == "$" and not _is_escaped_dollar(translated, pos)
                 for pos, char in enumerate(translated)))):
             rejected.append(uid)

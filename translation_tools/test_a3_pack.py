@@ -179,6 +179,63 @@ class MaskV3Tests(unittest.TestCase):
         self.assertEqual((checked, changed, blocked), (1, 1, 0))
 
 
+class MaskV9NestedDisplayTests(unittest.TestCase):
+    def test_nested_align_is_one_token_and_v8_stays_unchanged(self):
+        source = ("Before $$\\sigma^2$$ and then\n\n"
+                  "$$\n\\begin{align}\nx &= y\\\\\ny &= z\n\\end{align}\n$$\n\nAfter.")
+        with self.assertRaisesRegex(a3.A3Error, "未閉合的雙美元公式"):
+            a3.mask_text(source, mask_version=8)
+        masked, tokens, parts = a3.mask_text(source, True, mask_version=9)
+        self.assertEqual([t["kind"] for t in tokens], ["math", "math"])
+        self.assertEqual(list(parts.values()),
+                         ["$$\\sigma^2$$", "$$\n\\begin{align}\nx &= y\\\\\ny &= z\n\\end{align}\n$$"])
+        self.assertIn("Before ", masked)
+        self.assertIn(" and then", masked)
+        self.assertIn("After.", masked)
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+
+    def test_other_protected_spans_remain_barriers(self):
+        source = ("`$$code$$` ![plot](https://example.org/a$$b.png) "
+                  "<span>label</span> $$x+1$$ \\(z\\) ")
+        masked, tokens, parts = a3.mask_text(source, True, mask_version=9)
+        self.assertEqual(list(parts.values()),
+                         ["`$$code$$`", "![plot](https://example.org/a$$b.png)",
+                          "<span>", "</span>", "$$x+1$$", "\\(z\\)"])
+        self.assertEqual([t["kind"] for t in tokens],
+                         ["inline-code", "image", "html", "html", "math", "math"])
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+        for barrier in ("`code`", "![plot](image.png)", "https://example.org/path", "<span>"):
+            with self.subTest(barrier=barrier), self.assertRaises(a3.A3Error):
+                a3.mask_text("$$x " + barrier + " y$$", mask_version=9)
+
+    def test_unclosed_outer_display_still_fails(self):
+        for source in ("$$x + 1", "$$\\begin{align}x&=y\\end{align}",
+                       "$$\\begin{align}x&=y\\end{align} `code` $$"):
+            with self.subTest(source=source), self.assertRaisesRegex(a3.A3Error, "未閉合的雙美元公式"):
+                a3.mask_text(source, mask_version=9)
+
+    def test_v9_restore_checks_tokens_and_original_hashes(self):
+        source = "Explain $$\\begin{align}x&=y\\end{align}$$ here."
+        masked, tokens = a3.mask_text(source, mask_version=9)
+        uid = "c0001-p000"
+        unit = {"id": uid, "mask_version": 9, "source_sha256": a3.sha(source.encode()),
+                "masked_sha256": a3.sha(masked.encode()), "tokens": tokens}
+        with mock.patch.object(a3.packing, "english", return_value=source):
+            for reply_text, valid in ((masked.replace("Explain", "解釋"), True),
+                                      (masked.replace(tokens[0]["key"], "$$x$$"), False)):
+                reply = (f"<<<ML4T-ZH-BEGIN:{uid}>>>\n{reply_text}\n"
+                         f"<<<ML4T-ZH-END:{uid}>>>\n").encode()
+                output, rejected, _, _, _ = a3.restore_one(
+                    Path(), "", Path(), {}, {uid: unit}, {}, {"units": [unit]}, reply)
+                self.assertEqual(bool(output), valid)
+                self.assertEqual(bool(rejected), not valid)
+            self.assertEqual(output, {})
+
+
 class MaskV4UnitPricesTests(unittest.TestCase):
     def test_databento_dollar_price_with_per_symbol_per_month(self):
         source = "ITCH (Free) | DataBento (~$10/symbol/mo), with notes."
@@ -325,7 +382,7 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
         for version in (4, 5):
             with self.subTest(version=version), self.assertRaises(a3.A3Error):
                 a3.mask_text("$1/c(u)$", mask_version=version)
-        self.assertEqual(a3.MASK_VERSION, 8)
+        self.assertEqual(a3.MASK_VERSION, 9)
 
     def test_v6_ratio_restore_and_extra_dollar_rejection(self):
         source = "Weighted uniqueness $1/c(u)$ remains well-defined."
