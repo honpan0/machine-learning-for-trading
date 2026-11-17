@@ -1,7 +1,7 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**353** 份；翻譯中：**4** 份；已翻完待組裝：**0** 份
+- 已驗證：**357** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
 - 未開始：**126** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
@@ -162,10 +162,10 @@
 | `15_causal_estimation/05_momentum_causal_trading.ipynb` | 25/25 | 2/2 | 已組裝／驗證通過 |  |
 | `15_causal_estimation/06_fed_announcement_bsts.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
 | `15_causal_estimation/07_tigramite_time_series.ipynb` | 17/17 | 2/2 | 已組裝／驗證通過 |  |
-| `15_causal_estimation/08_neural_causal_discovery.ipynb` | 0/28 | 0/2 | 翻譯中 |  |
-| `15_causal_estimation/09_adia_causal_benchmark.ipynb` | 0/26 | 0/3 | 翻譯中 |  |
-| `15_causal_estimation/10_case_study_insights.ipynb` | 0/14 | 0/2 | 翻譯中 |  |
-| `15_causal_estimation/11_factor_zoo_validation.ipynb` | 0/16 | 0/2 | 翻譯中 |  |
+| `15_causal_estimation/08_neural_causal_discovery.ipynb` | 28/28 | 2/2 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/09_adia_causal_benchmark.ipynb` | 26/26 | 3/3 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/10_case_study_insights.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `15_causal_estimation/11_factor_zoo_validation.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
 | `16_strategy_simulation/01_backtest_first_principles.ipynb` | — | 0/0 | 未開始 |  |
 | `16_strategy_simulation/02_futures_backtesting.ipynb` | — | 0/0 | 未開始 |  |
 | `16_strategy_simulation/03_single_asset_vectorbt.ipynb` | — | 0/0 | 未開始 |  |
