@@ -22,7 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
-MASK_VERSION = 7
+MASK_VERSION = 8
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -63,6 +63,15 @@ PRICE_PER_UNIT_V6 = re.compile(
 PRICE_MAGNITUDE_V7 = re.compile(
     r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?[KMBT]"
     r"(?![A-Za-z0-9_$+\-*/^_{\\(])"
+)
+# v8: Futures cost prose uses a bare dollar unit and a hyphenated amount.
+# Keep these exact forms separate from general math such as $2-x$.
+PRICE_PER_CONTRACT_V8 = re.compile(
+    r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?-per-contract"
+    r"(?![A-Za-z0-9_$+\-*/^_{\\(])"
+)
+BARE_DOLLAR_PER_CONTRACT_V8 = re.compile(
+    r"(?<!\$)\$[ \t]+per[ \t]+contract\b(?!\$)", re.IGNORECASE
 )
 # v5: A Markdown-table description uses `$D` as a standalone *dollar-bar
 # threshold*, not a math delimiter. Only recognize this exact table context.
@@ -171,6 +180,14 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
             i = end
             continue
 
+        if mask_version >= 8:
+            bare_contract = BARE_DOLLAR_PER_CONTRACT_V8.match(raw, i)
+            # A closing dollar directly after the phrase makes it math.
+            if bare_contract is not None and close != bare_contract.end():
+                add_span(i, bare_contract.end(), "price")
+                i = bare_contract.end()
+                continue
+
         # A numerical dollar amount followed by prose is not the opening of
         # a math expression. In particular, '$50.00; next is $60.00' must
         # protect TWO prices without swallowing 'next is'.
@@ -178,7 +195,9 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
                       else PRICE_PER_UNIT.match(raw, i) if mask_version >= 4 else None)
         magnitude_price = (PRICE_MAGNITUDE_V7.match(raw, i)
                            if mask_version >= 7 else None)
-        price = unit_price or magnitude_price or PRICE.match(raw, i)
+        contract_price = (PRICE_PER_CONTRACT_V8.match(raw, i)
+                          if mask_version >= 8 else None)
+        price = unit_price or magnitude_price or contract_price or PRICE.match(raw, i)
         if price is not None:
             numeric_formula = False
             # In v4, numeric currency/unit notation is normally a price, but
@@ -195,7 +214,12 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
                 if (close == magnitude_price.end() or
                     re.fullmatch(r"\s*[+*/=^\-]\s*(?:[A-Za-z_\\][\w\\{}^]*|\d+(?:\.\d+)?)\s*", tail)):
                     numeric_formula = True
-            if close is not None and unit_price is None and magnitude_price is None:
+            if close is not None and contract_price is not None:
+                tail = raw[contract_price.end():close]
+                if (close == contract_price.end() or
+                    re.fullmatch(r"\s*[+*/=^\-]\s*(?:[A-Za-z_\\][\w\\{}^]*|\d+(?:\.\d+)?)\s*", tail)):
+                    numeric_formula = True
+            if close is not None and unit_price is None and magnitude_price is None and contract_price is None:
                 inside = raw[i + 1:close]
                 tail = inside[len(price.group(0)) - 1:]
                 # $2 + 3$, $2 x$, $2\\times x$ and $100$ are maths;
@@ -232,8 +256,8 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
 
 
 def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
-    """Mask protected spans while preserving historical v1-v6 tokenization."""
-    if mask_version not in (1, 2, 3, 4, 5, 6, 7):
+    """Mask protected spans while preserving historical v1-v7 tokenization."""
+    if mask_version not in (1, 2, 3, 4, 5, 6, 7, 8):
         raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")
@@ -260,7 +284,7 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
     for match in INLINE_CODE.finditer(raw):
         add(match.start(), match.end(), "inline-code")
 
-    if mask_version in (3, 4, 5, 6, 7):
+    if mask_version in (3, 4, 5, 6, 7, 8):
         # Fixed-delimiter math, code, links and markup are barriers for the
         # dollar tokenizer. Old versions retain their original precedence.
         for match in MATH_FIXED_V3.finditer(raw):
@@ -312,12 +336,12 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
         raise A3Error("來源存在未被安全遮蔽的 LaTeX（如不成對的公式），請檢查來源")
     if mask_version == 2 and re.search(r"(?<!\\)\$", masked):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7) and any(
+    if mask_version in (3, 4, 5, 6, 7, 8) and any(
         ch == "$" and not _is_escaped_dollar(masked, pos)
         for pos, ch in enumerate(masked)
     ):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7) and re.search(r"\\[\[(]", masked):
+    if mask_version in (3, 4, 5, 6, 7, 8) and re.search(r"\\[\[(]", masked):
         raise A3Error("來源含未閉合的 LaTeX 括號公式")
     if with_sources:
         return masked, replacements, protected_source
@@ -522,7 +546,7 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         if (present != keys or "[[ML4T_A3_" in TOKEN.sub("", translated) or
             DANGEROUS.search(translated) or "$$" in translated or
             (u.get("mask_version", 1) == 2 and re.search(r"(?<!\\)\$", translated)) or
-            (u.get("mask_version", 1) in (3, 4, 5, 6, 7) and any(
+            (u.get("mask_version", 1) in (3, 4, 5, 6, 7, 8) and any(
                 char == "$" and not _is_escaped_dollar(translated, pos)
                 for pos, char in enumerate(translated)))):
             rejected.append(uid)

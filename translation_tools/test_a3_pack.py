@@ -325,7 +325,7 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
         for version in (4, 5):
             with self.subTest(version=version), self.assertRaises(a3.A3Error):
                 a3.mask_text("$1/c(u)$", mask_version=version)
-        self.assertEqual(a3.MASK_VERSION, 7)
+        self.assertEqual(a3.MASK_VERSION, 8)
 
     def test_v6_ratio_restore_and_extra_dollar_rejection(self):
         source = "Weighted uniqueness $1/c(u)$ remains well-defined."
@@ -349,6 +349,49 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
                     "remains well-defined", "仍有明確定義"))
 
 
+
+
+class MaskV8FuturesContractCurrencyTests(unittest.TestCase):
+    def test_futures_cost_phrases_are_prices_with_prose_visible(self):
+        source = ("| **Costs** | % of trade value | **$ per contract** (fixed) |\n"
+                  "The configured illustrative $2-per-contract per-side fee is not a broker quote.")
+        masked, tokens, spans = a3.mask_text(source, True, mask_version=8)
+        self.assertEqual([token["kind"] for token in tokens], ["price", "price"])
+        self.assertEqual(list(spans.values()), ["$ per contract", "$2-per-contract"])
+        self.assertIn("** (fixed) |", masked)
+        self.assertIn(" per-side fee is not a broker quote.", masked)
+        for key, value in spans.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+        for phrase in ("$ per contract", "$2-per-contract"):
+            self.assertEqual(a3.mask_text(phrase, mask_version=1), (phrase, []))
+        for version in range(2, 8):
+            for phrase in ("$ per contract", "$2-per-contract"):
+                with self.subTest(version=version, phrase=phrase), self.assertRaises(a3.A3Error):
+                    a3.mask_text(phrase, mask_version=version)
+
+    def test_math_and_escaped_dollars_remain_distinct(self):
+        source = (r"Cost $2-per-contract, math $2-x$ and $q = x$, "
+                  r"display $$q = 2$$, escaped \$2.")
+        masked, tokens, spans = a3.mask_text(source, True, mask_version=8)
+        self.assertEqual([token["kind"] for token in tokens],
+                         ["price", "math", "math", "math"])
+        self.assertEqual(list(spans.values()),
+                         ["$2-per-contract", "$2-x$", "$q = x$", "$$q = 2$$"])
+        self.assertIn(r"escaped \$2", masked)
+        for key, value in spans.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+
+    def test_no_broad_hyphenated_price_or_unclosed_formula(self):
+        for source in ("$2-x$", "$2-per-contract + x$"):
+            with self.subTest(source=source):
+                _, tokens, spans = a3.mask_text(source, True, mask_version=8)
+                self.assertEqual([token["kind"] for token in tokens], ["math"])
+                self.assertEqual(list(spans.values()), [source])
+        for source in ("$2-x", "$ per contract$", "$q = x"):
+            with self.subTest(source=source), self.assertRaises(a3.A3Error):
+                a3.mask_text(source, mask_version=8)
 
 
 class MaskV7MagnitudeCurrencyTests(unittest.TestCase):

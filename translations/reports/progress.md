@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**357** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**126** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**375** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**108** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -166,24 +166,24 @@
 | `15_causal_estimation/09_adia_causal_benchmark.ipynb` | 26/26 | 3/3 | 已組裝／驗證通過 |  |
 | `15_causal_estimation/10_case_study_insights.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
 | `15_causal_estimation/11_factor_zoo_validation.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
-| `16_strategy_simulation/01_backtest_first_principles.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/02_futures_backtesting.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/03_single_asset_vectorbt.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/04_single_asset_ml4t_backtest.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/05_stateful_strategies.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/06_framework_parity.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/07_engine_divergence_anatomy.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/08_signal_method_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/09_performance_reporting.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/10_regime_backtest_analysis.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/11_sharpe_ratio_inference.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/12_dsr_validation.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/13_ras_protocol.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/14_cost_sensitivity.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/15_lean_engine_parity.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/16_case_study_lean_parity.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/17_backtrader_zipline_engine_parity.ipynb` | — | 0/0 | 未開始 |  |
-| `16_strategy_simulation/18_vectorbt_engine_parity.ipynb` | — | 0/0 | 未開始 |  |
+| `16_strategy_simulation/01_backtest_first_principles.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/02_futures_backtesting.ipynb` | 25/25 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/03_single_asset_vectorbt.ipynb` | 21/21 | 2/2 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/04_single_asset_ml4t_backtest.ipynb` | 27/27 | 2/2 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/05_stateful_strategies.ipynb` | 42/42 | 4/4 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/06_framework_parity.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/07_engine_divergence_anatomy.ipynb` | 26/26 | 4/4 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/08_signal_method_comparison.ipynb` | 31/31 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/09_performance_reporting.ipynb` | 27/27 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/10_regime_backtest_analysis.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/11_sharpe_ratio_inference.ipynb` | 31/31 | 5/5 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/12_dsr_validation.ipynb` | 29/29 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/13_ras_protocol.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/14_cost_sensitivity.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/15_lean_engine_parity.ipynb` | 8/8 | 1/1 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/16_case_study_lean_parity.ipynb` | 11/11 | 1/1 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/17_backtrader_zipline_engine_parity.ipynb` | 10/10 | 1/1 | 已組裝／驗證通過 |  |
+| `16_strategy_simulation/18_vectorbt_engine_parity.ipynb` | 10/10 | 1/1 | 已組裝／驗證通過 |  |
 | `17_portfolio_construction/01_portfolio_metrics.ipynb` | — | 0/0 | 未開始 |  |
 | `17_portfolio_construction/02_mean_variance_optimization.ipynb` | — | 0/0 | 未開始 |  |
 | `17_portfolio_construction/03_robust_optimization.ipynb` | — | 0/0 | 未開始 |  |
