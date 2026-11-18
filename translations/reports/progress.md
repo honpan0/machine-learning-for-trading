@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**387** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**96** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**399** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**84** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -196,18 +196,18 @@
 | `17_portfolio_construction/11_dl_portfolio_allocation.ipynb` | 35/35 | 2/2 | 已組裝／驗證通過 |  |
 | `17_portfolio_construction/12_vlstm_portfolio.ipynb` | 36/36 | 3/3 | 已組裝／驗證通過 |  |
 | `17_portfolio_construction/13_deepm_regime_robust.ipynb` | 31/31 | 2/2 | 已組裝／驗證通過 |  |
-| `18_transaction_costs/01_cost_taxonomy.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/02_spread_estimation.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/03_market_impact_calibration.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/04_vwap_twap_execution.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/05_almgren_chriss_optimal_execution.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/06_ml4t_execution_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/07_ml4t_volume_participation.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/08_ml_dynamic_execution.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/09_frequency_tradeoff.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/10_gross_vs_net_performance.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/11_cost_cliff.ipynb` | — | 0/0 | 未開始 |  |
-| `18_transaction_costs/12_commission_slippage_comparison.ipynb` | — | 0/0 | 未開始 |  |
+| `18_transaction_costs/01_cost_taxonomy.ipynb` | 30/30 | 3/3 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/02_spread_estimation.ipynb` | 26/26 | 5/5 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/03_market_impact_calibration.ipynb` | 33/33 | 5/5 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/04_vwap_twap_execution.ipynb` | 40/40 | 4/4 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/05_almgren_chriss_optimal_execution.ipynb` | 31/31 | 5/5 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/06_ml4t_execution_demo.ipynb` | 36/36 | 4/4 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/07_ml4t_volume_participation.ipynb` | 27/27 | 3/3 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/08_ml_dynamic_execution.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/09_frequency_tradeoff.ipynb` | 26/26 | 2/2 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/10_gross_vs_net_performance.ipynb` | 31/31 | 2/2 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/11_cost_cliff.ipynb` | 29/29 | 2/2 | 已組裝／驗證通過 |  |
+| `18_transaction_costs/12_commission_slippage_comparison.ipynb` | 39/39 | 2/2 | 已組裝／驗證通過 |  |
 | `19_risk_management/01_var_cvar.ipynb` | — | 0/0 | 未開始 |  |
 | `19_risk_management/02_exit_strategies.ipynb` | — | 0/0 | 未開始 |  |
 | `19_risk_management/03_position_sizing_mae_mfe.ipynb` | — | 0/0 | 未開始 |  |
