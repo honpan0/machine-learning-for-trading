@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**399** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**84** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**410** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**73** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -208,17 +208,17 @@
 | `18_transaction_costs/10_gross_vs_net_performance.ipynb` | 31/31 | 2/2 | 已組裝／驗證通過 |  |
 | `18_transaction_costs/11_cost_cliff.ipynb` | 29/29 | 2/2 | 已組裝／驗證通過 |  |
 | `18_transaction_costs/12_commission_slippage_comparison.ipynb` | 39/39 | 2/2 | 已組裝／驗證通過 |  |
-| `19_risk_management/01_var_cvar.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/02_exit_strategies.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/03_position_sizing_mae_mfe.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/04_factor_exposure.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/05_trade_shap_diagnostics.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/06_stress_testing.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/07_drift_detection.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/08_ml_exit_signals.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/09_deep_hedging.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/10_ml4t_backtest_risk_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `19_risk_management/11_systematic_risk_sweep.ipynb` | — | 0/0 | 未開始 |  |
+| `19_risk_management/01_var_cvar.ipynb` | 37/37 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/02_exit_strategies.ipynb` | 55/55 | 5/5 | 已組裝／驗證通過 |  |
+| `19_risk_management/03_position_sizing_mae_mfe.ipynb` | 44/44 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/04_factor_exposure.ipynb` | 32/32 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/05_trade_shap_diagnostics.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/06_stress_testing.ipynb` | 41/41 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/07_drift_detection.ipynb` | 69/69 | 5/5 | 已組裝／驗證通過 |  |
+| `19_risk_management/08_ml_exit_signals.ipynb` | 37/37 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/09_deep_hedging.ipynb` | 43/43 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/10_ml4t_backtest_risk_demo.ipynb` | 40/40 | 3/3 | 已組裝／驗證通過 |  |
+| `19_risk_management/11_systematic_risk_sweep.ipynb` | 16/16 | 1/1 | 已組裝／驗證通過 |  |
 | `20_strategy_synthesis/01_aggregate_synthesis.ipynb` | — | 0/0 | 未開始 |  |
 | `20_strategy_synthesis/02_feature_evaluation.ipynb` | — | 0/0 | 未開始 |  |
 | `20_strategy_synthesis/03_signal_quality.ipynb` | — | 0/0 | 未開始 |  |
