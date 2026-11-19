@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**418** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**65** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**425** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**58** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -227,13 +227,13 @@
 | `20_strategy_synthesis/06_cost_survival.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
 | `20_strategy_synthesis/07_regime_risk.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
 | `20_strategy_synthesis/08_recommendations.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
-| `21_rl_execution_hedging/01_algorithms_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `21_rl_execution_hedging/02_optimal_execution_ppo.ipynb` | — | 0/0 | 未開始 |  |
-| `21_rl_execution_hedging/03_market_making_ppo.ipynb` | — | 0/0 | 未開始 |  |
-| `21_rl_execution_hedging/04_crypto_execution_rl.ipynb` | — | 0/0 | 未開始 |  |
-| `21_rl_execution_hedging/05_deep_hedging_pfhedge.ipynb` | — | 0/0 | 未開始 |  |
-| `21_rl_execution_hedging/06_inverse_reinforcement_learning.ipynb` | — | 0/0 | 未開始 |  |
-| `21_rl_execution_hedging/07_backtest_with_impact.ipynb` | — | 0/0 | 未開始 |  |
+| `21_rl_execution_hedging/01_algorithms_comparison.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `21_rl_execution_hedging/02_optimal_execution_ppo.ipynb` | 21/21 | 3/3 | 已組裝／驗證通過 |  |
+| `21_rl_execution_hedging/03_market_making_ppo.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `21_rl_execution_hedging/04_crypto_execution_rl.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
+| `21_rl_execution_hedging/05_deep_hedging_pfhedge.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
+| `21_rl_execution_hedging/06_inverse_reinforcement_learning.ipynb` | 31/31 | 4/4 | 已組裝／驗證通過 |  |
+| `21_rl_execution_hedging/07_backtest_with_impact.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
 | `22_rag_financial_research/01_sec_filing_pipeline.ipynb` | — | 0/0 | 未開始 |  |
 | `22_rag_financial_research/02_domain_embeddings_comparison.ipynb` | — | 0/0 | 未開始 |  |
 | `22_rag_financial_research/03_hybrid_retrieval.ipynb` | — | 0/0 | 未開始 |  |
