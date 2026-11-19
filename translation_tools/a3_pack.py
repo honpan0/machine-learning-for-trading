@@ -22,7 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
-MASK_VERSION = 9
+MASK_VERSION = 10
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -79,6 +79,10 @@ BARE_DOLLAR_BAR_THRESHOLD = re.compile(
     r"\|[ \t]*Dollar bars[ \t]*\|[ \t]*Every[ \t]+(?P<symbol>\$D)[ \t]+traded[ \t]*\|",
     re.IGNORECASE,
 )
+# v10: A quoted query parameter such as "$cutoff_date" is a literal
+# identifier, not an opening math delimiter. Require the closing quote
+# immediately after the identifier so quoted prose and $x$ stay fail-closed.
+QUOTED_DOLLAR_PARAMETER_V10 = re.compile(r'"(?P<symbol>\$[A-Za-z_][A-Za-z0-9_]*)"')
 HTML = re.compile(r"</?[A-Za-z][^<>\n]*?>")
 DANGEROUS = re.compile(r"\\(?:frac|dfrac|tfrac|sqrt|mathcal|displaystyle|begin|end|sum|int|left|right|Gamma|Theta|Delta)\b")
 PROMPT = """# ML4T A3 Universal Pack — 固定翻譯規則
@@ -287,8 +291,8 @@ def _mask_outer_dollars_v9(raw: str, spans: list[tuple[int, int, str]],
 
 
 def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
-    """Mask protected spans while preserving historical v1-v8 tokenization."""
-    if mask_version not in (1, 2, 3, 4, 5, 6, 7, 8, 9):
+    """Mask protected spans while preserving historical v1-v9 tokenization."""
+    if mask_version not in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
         raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")
@@ -315,7 +319,7 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
     for match in INLINE_CODE.finditer(raw):
         add(match.start(), match.end(), "inline-code")
 
-    if mask_version in (3, 4, 5, 6, 7, 8, 9):
+    if mask_version in (3, 4, 5, 6, 7, 8, 9, 10):
         # Fixed-delimiter math, code, links and markup are barriers for the
         # dollar tokenizer. Old versions retain their original precedence.
         fixed_matches = list(MATH_FIXED_V3.finditer(raw))
@@ -330,6 +334,9 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
                                    [(m.start(), m.end()) for m in fixed_matches])
             for match in fixed_matches:
                 add(match.start(), match.end(), "math")
+        if mask_version >= 10:
+            for match in QUOTED_DOLLAR_PARAMETER_V10.finditer(raw):
+                add(match.start("symbol"), match.end("symbol"), "symbol")
         _mask_dollars_v3(raw, spans, mask_version=mask_version)
     else:
         # Historical v1/v2 behavior is deliberately byte-for-byte unchanged.
@@ -374,12 +381,12 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
         raise A3Error("來源存在未被安全遮蔽的 LaTeX（如不成對的公式），請檢查來源")
     if mask_version == 2 and re.search(r"(?<!\\)\$", masked):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7, 8, 9) and any(
+    if mask_version in (3, 4, 5, 6, 7, 8, 9, 10) and any(
         ch == "$" and not _is_escaped_dollar(masked, pos)
         for pos, ch in enumerate(masked)
     ):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7, 8, 9) and re.search(r"\\[\[(]", masked):
+    if mask_version in (3, 4, 5, 6, 7, 8, 9, 10) and re.search(r"\\[\[(]", masked):
         raise A3Error("來源含未閉合的 LaTeX 括號公式")
     if with_sources:
         return masked, replacements, protected_source
@@ -584,7 +591,7 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         if (present != keys or "[[ML4T_A3_" in TOKEN.sub("", translated) or
             DANGEROUS.search(translated) or "$$" in translated or
             (u.get("mask_version", 1) == 2 and re.search(r"(?<!\\)\$", translated)) or
-            (u.get("mask_version", 1) in (3, 4, 5, 6, 7, 8, 9) and any(
+            (u.get("mask_version", 1) in (3, 4, 5, 6, 7, 8, 9, 10) and any(
                 char == "$" and not _is_escaped_dollar(translated, pos)
                 for pos, char in enumerate(translated)))):
             rejected.append(uid)

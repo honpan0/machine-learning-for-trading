@@ -236,6 +236,38 @@ class MaskV9NestedDisplayTests(unittest.TestCase):
             self.assertEqual(output, {})
 
 
+class MaskV10QuotedParameterTests(unittest.TestCase):
+    def test_chapter_23_query_parameter_restores_exactly(self):
+        source = ('The whole-graph scan passed because "$cutoff_date" was searched\n'
+                  'for anywhere in the text and a comment is anywhere; the `LIMIT 100000` passed.')
+        with self.assertRaisesRegex(a3.A3Error, "未閉合或歧義的單美元公式"):
+            a3.mask_text(source, mask_version=9)
+        masked, tokens, parts = a3.mask_text(source, True, mask_version=10)
+        self.assertEqual(list(parts.values()), ["$cutoff_date", "`LIMIT 100000`"])
+        self.assertEqual([token["kind"] for token in tokens], ["symbol", "inline-code"])
+        self.assertIn('because "[[ML4T_A3_0001]]" was searched', masked)
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+
+    def test_math_money_display_and_unclosed_formula(self):
+        source = ('Parameter "$cutoff_date", inline $x + y$, '
+                  'prices $50.00 and $100M, display $$\\frac{a}{b}$$.')
+        masked, tokens, parts = a3.mask_text(source, True, mask_version=10)
+        self.assertEqual(list(parts.values()),
+                         ["$cutoff_date", "$x + y$", "$50.00", "$100M",
+                          "$$\\frac{a}{b}$$"])
+        self.assertEqual([token["kind"] for token in tokens],
+                         ["symbol", "math", "price", "price", "math"])
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+        for bad in ('Compute $x + y', 'Compute "$x + y"',
+                    'Parameter "$cutoff_date" then $x + y', '$$x + y'):
+            with self.subTest(bad=bad), self.assertRaises(a3.A3Error):
+                a3.mask_text(bad, mask_version=10)
+
+
 class MaskV4UnitPricesTests(unittest.TestCase):
     def test_databento_dollar_price_with_per_symbol_per_month(self):
         source = "ITCH (Free) | DataBento (~$10/symbol/mo), with notes."
@@ -382,7 +414,7 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
         for version in (4, 5):
             with self.subTest(version=version), self.assertRaises(a3.A3Error):
                 a3.mask_text("$1/c(u)$", mask_version=version)
-        self.assertEqual(a3.MASK_VERSION, 9)
+        self.assertEqual(a3.MASK_VERSION, 10)
 
     def test_v6_ratio_restore_and_extra_dollar_rejection(self):
         source = "Weighted uniqueness $1/c(u)$ remains well-defined."

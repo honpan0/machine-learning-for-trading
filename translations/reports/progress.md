@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**433** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**50** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**443** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**40** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -242,16 +242,16 @@
 | `22_rag_financial_research/06_esg_rag_vs_finetune.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
 | `22_rag_financial_research/07_institutional_holdings_graph.ipynb` | 40/40 | 4/4 | 已組裝／驗證通過 |  |
 | `22_rag_financial_research/08_rag_security.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
-| `23_knowledge_graphs/01_sp100_sec_download.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/02_supply_chain_kg_construction.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/03_graph_rag_qa.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/04_rag_comparison_benchmark.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/05_institutional_holdings_kg.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/06_gnn_feature_engineering.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/07_dynamic_kg_temporal.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/08_8k_event_extraction.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/09_knowledge_graph_features.ipynb` | — | 0/0 | 未開始 |  |
-| `23_knowledge_graphs/10_network_portfolio_construction.ipynb` | — | 0/0 | 未開始 |  |
+| `23_knowledge_graphs/01_sp100_sec_download.ipynb` | 11/11 | 1/1 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/02_supply_chain_kg_construction.ipynb` | 68/68 | 4/4 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/03_graph_rag_qa.ipynb` | 20/20 | 2/2 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/04_rag_comparison_benchmark.ipynb` | 24/24 | 2/2 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/05_institutional_holdings_kg.ipynb` | 41/41 | 3/3 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/06_gnn_feature_engineering.ipynb` | 23/23 | 2/2 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/07_dynamic_kg_temporal.ipynb` | 16/16 | 2/2 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/08_8k_event_extraction.ipynb` | 35/35 | 2/2 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/09_knowledge_graph_features.ipynb` | 42/42 | 3/3 | 已組裝／驗證通過 |  |
+| `23_knowledge_graphs/10_network_portfolio_construction.ipynb` | 34/34 | 2/2 | 已組裝／驗證通過 |  |
 | `24_autonomous_agents/01_react_reasoning.ipynb` | — | 0/0 | 未開始 |  |
 | `24_autonomous_agents/02_tool_contracts.ipynb` | — | 0/0 | 未開始 |  |
 | `24_autonomous_agents/03_state_and_memory.ipynb` | — | 0/0 | 未開始 |  |
