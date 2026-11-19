@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**410** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**73** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**418** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**65** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -219,14 +219,14 @@
 | `19_risk_management/09_deep_hedging.ipynb` | 43/43 | 3/3 | 已組裝／驗證通過 |  |
 | `19_risk_management/10_ml4t_backtest_risk_demo.ipynb` | 40/40 | 3/3 | 已組裝／驗證通過 |  |
 | `19_risk_management/11_systematic_risk_sweep.ipynb` | 16/16 | 1/1 | 已組裝／驗證通過 |  |
-| `20_strategy_synthesis/01_aggregate_synthesis.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/02_feature_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/03_signal_quality.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/04_signal_to_strategy.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/05_portfolio_allocation.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/06_cost_survival.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/07_regime_risk.ipynb` | — | 0/0 | 未開始 |  |
-| `20_strategy_synthesis/08_recommendations.ipynb` | — | 0/0 | 未開始 |  |
+| `20_strategy_synthesis/01_aggregate_synthesis.ipynb` | 40/40 | 6/6 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/02_feature_evaluation.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/03_signal_quality.ipynb` | 11/11 | 1/1 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/04_signal_to_strategy.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/05_portfolio_allocation.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/06_cost_survival.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/07_regime_risk.ipynb` | 12/12 | 2/2 | 已組裝／驗證通過 |  |
+| `20_strategy_synthesis/08_recommendations.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
 | `21_rl_execution_hedging/01_algorithms_comparison.ipynb` | — | 0/0 | 未開始 |  |
 | `21_rl_execution_hedging/02_optimal_execution_ppo.ipynb` | — | 0/0 | 未開始 |  |
 | `21_rl_execution_hedging/03_market_making_ppo.ipynb` | — | 0/0 | 未開始 |  |
