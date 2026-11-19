@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**425** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**58** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**433** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**50** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -234,14 +234,14 @@
 | `21_rl_execution_hedging/05_deep_hedging_pfhedge.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
 | `21_rl_execution_hedging/06_inverse_reinforcement_learning.ipynb` | 31/31 | 4/4 | 已組裝／驗證通過 |  |
 | `21_rl_execution_hedging/07_backtest_with_impact.ipynb` | 18/18 | 2/2 | 已組裝／驗證通過 |  |
-| `22_rag_financial_research/01_sec_filing_pipeline.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/02_domain_embeddings_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/03_hybrid_retrieval.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/04_ragas_evaluation.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/05_10k_rag_assistant.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/06_esg_rag_vs_finetune.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/07_institutional_holdings_graph.ipynb` | — | 0/0 | 未開始 |  |
-| `22_rag_financial_research/08_rag_security.ipynb` | — | 0/0 | 未開始 |  |
+| `22_rag_financial_research/01_sec_filing_pipeline.ipynb` | 13/13 | 2/2 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/02_domain_embeddings_comparison.ipynb` | 30/30 | 3/3 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/03_hybrid_retrieval.ipynb` | 45/45 | 4/4 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/04_ragas_evaluation.ipynb` | 28/28 | 3/3 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/05_10k_rag_assistant.ipynb` | 36/36 | 4/4 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/06_esg_rag_vs_finetune.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/07_institutional_holdings_graph.ipynb` | 40/40 | 4/4 | 已組裝／驗證通過 |  |
+| `22_rag_financial_research/08_rag_security.ipynb` | 24/24 | 3/3 | 已組裝／驗證通過 |  |
 | `23_knowledge_graphs/01_sp100_sec_download.ipynb` | — | 0/0 | 未開始 |  |
 | `23_knowledge_graphs/02_supply_chain_kg_construction.ipynb` | — | 0/0 | 未開始 |  |
 | `23_knowledge_graphs/03_graph_rag_qa.ipynb` | — | 0/0 | 未開始 |  |
