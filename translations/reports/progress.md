@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**454** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**29** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**467** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**16** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -263,19 +263,19 @@
 | `24_autonomous_agents/09_evaluation_and_governance.ipynb` | 25/25 | 3/3 | 已組裝／驗證通過 |  |
 | `24_autonomous_agents/10_framework_comparison.ipynb` | 13/13 | 3/3 | 已組裝／驗證通過 |  |
 | `24_autonomous_agents/11_research_operator.ipynb` | 24/24 | 4/4 | 已組裝／驗證通過 |  |
-| `25_live_trading/01_unified_framework_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/02_etfs_deployment_loop.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/03_ib_paper_trading_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/04_alpaca_paper_trading_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/05_alpaca_crypto_live_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/06_quantconnect_case_study.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/07_order_state_machine.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/08_pipeline_verification.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/09_crypto_funding_deployment_loop.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/10_safety_risk_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/11_fx_deployment_loop.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/12_ib_basket_rebalance_demo.ipynb` | — | 0/0 | 未開始 |  |
-| `25_live_trading/13_runtime_safety_showcase.ipynb` | — | 0/0 | 未開始 |  |
+| `25_live_trading/01_unified_framework_demo.ipynb` | 21/21 | 3/3 | 已組裝／驗證通過 |  |
+| `25_live_trading/02_etfs_deployment_loop.ipynb` | 22/22 | 4/4 | 已組裝／驗證通過 |  |
+| `25_live_trading/03_ib_paper_trading_demo.ipynb` | 21/21 | 2/2 | 已組裝／驗證通過 |  |
+| `25_live_trading/04_alpaca_paper_trading_demo.ipynb` | 20/20 | 2/2 | 已組裝／驗證通過 |  |
+| `25_live_trading/05_alpaca_crypto_live_demo.ipynb` | 14/14 | 2/2 | 已組裝／驗證通過 |  |
+| `25_live_trading/06_quantconnect_case_study.ipynb` | 17/17 | 3/3 | 已組裝／驗證通過 |  |
+| `25_live_trading/07_order_state_machine.ipynb` | 20/20 | 2/2 | 已組裝／驗證通過 |  |
+| `25_live_trading/08_pipeline_verification.ipynb` | 39/39 | 2/2 | 已組裝／驗證通過 |  |
+| `25_live_trading/09_crypto_funding_deployment_loop.ipynb` | 47/47 | 4/4 | 已組裝／驗證通過 |  |
+| `25_live_trading/10_safety_risk_demo.ipynb` | 29/29 | 2/2 | 已組裝／驗證通過 |  |
+| `25_live_trading/11_fx_deployment_loop.ipynb` | 31/31 | 3/3 | 已組裝／驗證通過 |  |
+| `25_live_trading/12_ib_basket_rebalance_demo.ipynb` | 36/36 | 3/3 | 已組裝／驗證通過 |  |
+| `25_live_trading/13_runtime_safety_showcase.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
 | `26_mlops_governance/01_drift_monitoring.ipynb` | — | 0/0 | 未開始 |  |
 | `26_mlops_governance/02_online_drift_detection.ipynb` | — | 0/0 | 未開始 |  |
 | `26_mlops_governance/03_safe_model_rollout.ipynb` | — | 0/0 | 未開始 |  |

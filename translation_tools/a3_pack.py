@@ -22,7 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
-MASK_VERSION = 10
+MASK_VERSION = 11
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -83,6 +83,13 @@ BARE_DOLLAR_BAR_THRESHOLD = re.compile(
 # identifier, not an opening math delimiter. Require the closing quote
 # immediately after the identifier so quoted prose and $x$ stay fail-closed.
 QUOTED_DOLLAR_PARAMETER_V10 = re.compile(r'"(?P<symbol>\$[A-Za-z_][A-Za-z0-9_]*)"')
+# v11: a commission range such as $0-1 per trade is monetary prose.
+# Require the full "per trade" unit so arithmetic like $0-1$ stays math.
+PRICE_RANGE_PER_TRADE_V11 = re.compile(
+    r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
+    r"-(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?[ \t]+per[ \t]+trade\b"
+    r"(?![A-Za-z0-9_$+\-*/^_{\\(])", re.IGNORECASE
+)
 HTML = re.compile(r"</?[A-Za-z][^<>\n]*?>")
 DANGEROUS = re.compile(r"\\(?:frac|dfrac|tfrac|sqrt|mathcal|displaystyle|begin|end|sum|int|left|right|Gamma|Theta|Delta)\b")
 PROMPT = """# ML4T A3 Universal Pack — 固定翻譯規則
@@ -192,6 +199,13 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
                 i = bare_contract.end()
                 continue
 
+        if mask_version >= 11:
+            trade_range = PRICE_RANGE_PER_TRADE_V11.match(raw, i)
+            if trade_range is not None:
+                add_span(i, trade_range.end(), "price")
+                i = trade_range.end()
+                continue
+
         # A numerical dollar amount followed by prose is not the opening of
         # a math expression. In particular, '$50.00; next is $60.00' must
         # protect TWO prices without swallowing 'next is'.
@@ -291,8 +305,8 @@ def _mask_outer_dollars_v9(raw: str, spans: list[tuple[int, int, str]],
 
 
 def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
-    """Mask protected spans while preserving historical v1-v9 tokenization."""
-    if mask_version not in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
+    """Mask protected spans while preserving historical v1-v10 tokenization."""
+    if mask_version not in range(1, 12):
         raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")
@@ -319,7 +333,7 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
     for match in INLINE_CODE.finditer(raw):
         add(match.start(), match.end(), "inline-code")
 
-    if mask_version in (3, 4, 5, 6, 7, 8, 9, 10):
+    if mask_version >= 3:
         # Fixed-delimiter math, code, links and markup are barriers for the
         # dollar tokenizer. Old versions retain their original precedence.
         fixed_matches = list(MATH_FIXED_V3.finditer(raw))
@@ -381,12 +395,12 @@ def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_
         raise A3Error("來源存在未被安全遮蔽的 LaTeX（如不成對的公式），請檢查來源")
     if mask_version == 2 and re.search(r"(?<!\\)\$", masked):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7, 8, 9, 10) and any(
+    if mask_version >= 3 and any(
         ch == "$" and not _is_escaped_dollar(masked, pos)
         for pos, ch in enumerate(masked)
     ):
         raise A3Error("來源含未配對或未遮蔽的美元公式分隔符")
-    if mask_version in (3, 4, 5, 6, 7, 8, 9, 10) and re.search(r"\\[\[(]", masked):
+    if mask_version >= 3 and re.search(r"\\[\[(]", masked):
         raise A3Error("來源含未閉合的 LaTeX 括號公式")
     if with_sources:
         return masked, replacements, protected_source
@@ -591,7 +605,7 @@ def restore_one(root: Path, source: str, work: Path, manifest: dict, units: dict
         if (present != keys or "[[ML4T_A3_" in TOKEN.sub("", translated) or
             DANGEROUS.search(translated) or "$$" in translated or
             (u.get("mask_version", 1) == 2 and re.search(r"(?<!\\)\$", translated)) or
-            (u.get("mask_version", 1) in (3, 4, 5, 6, 7, 8, 9, 10) and any(
+            (u.get("mask_version", 1) >= 3 and any(
                 char == "$" and not _is_escaped_dollar(translated, pos)
                 for pos, char in enumerate(translated)))):
             rejected.append(uid)

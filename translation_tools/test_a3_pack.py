@@ -268,6 +268,47 @@ class MaskV10QuotedParameterTests(unittest.TestCase):
                 a3.mask_text(bad, mask_version=10)
 
 
+class MaskV11CommissionRangeTests(unittest.TestCase):
+    # Exact source fragment from 25_live_trading/04_alpaca_paper_trading_demo.ipynb,
+    # translation unit c0035-p000.
+    SOURCE = ('| Feature | Alpaca | Interactive Brokers |\n'
+              '|---------|--------|---------------------|\n'
+              '| Minimum Balance | None | None (but higher margin reqs) |\n'
+              '| Commissions | Free | $0-1 per trade |\n'
+              '| Real-time Data | Free (IEX) | Paid subscription |')
+
+    def test_original_commission_row_restores_exactly(self):
+        with self.assertRaisesRegex(a3.A3Error, '未閉合或歧義的單美元公式'):
+            a3.mask_text(self.SOURCE, mask_version=10)
+        masked, tokens, parts = a3.mask_text(self.SOURCE, True, mask_version=11)
+        self.assertEqual([token['kind'] for token in tokens], ['price'])
+        self.assertEqual(list(parts.values()), ['$0-1 per trade'])
+        self.assertIn('| Commissions | Free | [[ML4T_A3_0001]] |', masked)
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, self.SOURCE)
+
+    def test_other_dollar_forms_keep_their_meaning(self):
+        source = ('Inline $x + y$; prices $50.00 and $100M; '
+                  'identifier "$cutoff_date"; `print("$code")`; '
+                  'display $$\\frac{a}{b}$$; commission $0-1 per trade.')
+        masked, tokens, parts = a3.mask_text(source, True, mask_version=11)
+        self.assertEqual(list(parts.values()),
+                         ['$x + y$', '$50.00', '$100M', '$cutoff_date',
+                          '`print("$code")`', '$$\\frac{a}{b}$$', '$0-1 per trade'])
+        self.assertEqual([token['kind'] for token in tokens],
+                         ['math', 'price', 'price', 'symbol', 'inline-code', 'math', 'price'])
+        for key, value in parts.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+        for bad in ('Compute $x + y', 'Compute $0-1 per asset', '$$x + y'):
+            with self.subTest(bad=bad), self.assertRaises(a3.A3Error):
+                a3.mask_text(bad, mask_version=11)
+        _, tokens, parts = a3.mask_text('Formula $0-1$ and $x$.', True, mask_version=11)
+        self.assertEqual([token['kind'] for token in tokens], ['math', 'math'])
+        self.assertEqual(list(parts.values()), ['$0-1$', '$x$'])
+
+
 class MaskV4UnitPricesTests(unittest.TestCase):
     def test_databento_dollar_price_with_per_symbol_per_month(self):
         source = "ITCH (Free) | DataBento (~$10/symbol/mo), with notes."
@@ -414,7 +455,7 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
         for version in (4, 5):
             with self.subTest(version=version), self.assertRaises(a3.A3Error):
                 a3.mask_text("$1/c(u)$", mask_version=version)
-        self.assertEqual(a3.MASK_VERSION, 10)
+        self.assertEqual(a3.MASK_VERSION, 11)
 
     def test_v6_ratio_restore_and_extra_dollar_rejection(self):
         source = "Weighted uniqueness $1/c(u)$ remains well-defined."
