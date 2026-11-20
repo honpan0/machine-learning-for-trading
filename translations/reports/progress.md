@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**467** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**16** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**474** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**9** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -276,13 +276,13 @@
 | `25_live_trading/11_fx_deployment_loop.ipynb` | 31/31 | 3/3 | 已組裝／驗證通過 |  |
 | `25_live_trading/12_ib_basket_rebalance_demo.ipynb` | 36/36 | 3/3 | 已組裝／驗證通過 |  |
 | `25_live_trading/13_runtime_safety_showcase.ipynb` | 19/19 | 3/3 | 已組裝／驗證通過 |  |
-| `26_mlops_governance/01_drift_monitoring.ipynb` | — | 0/0 | 未開始 |  |
-| `26_mlops_governance/02_online_drift_detection.ipynb` | — | 0/0 | 未開始 |  |
-| `26_mlops_governance/03_safe_model_rollout.ipynb` | — | 0/0 | 未開始 |  |
-| `26_mlops_governance/04_circuit_breakers.ipynb` | — | 0/0 | 未開始 |  |
-| `26_mlops_governance/05_feast_feature_store.ipynb` | — | 0/0 | 未開始 |  |
-| `26_mlops_governance/05b_feast_live.ipynb` | — | 0/0 | 未開始 |  |
-| `26_mlops_governance/06_mlflow_experiments.ipynb` | — | 0/0 | 未開始 |  |
+| `26_mlops_governance/01_drift_monitoring.ipynb` | 23/23 | 3/3 | 已組裝／驗證通過 |  |
+| `26_mlops_governance/02_online_drift_detection.ipynb` | 21/21 | 4/4 | 已組裝／驗證通過 |  |
+| `26_mlops_governance/03_safe_model_rollout.ipynb` | 27/27 | 4/4 | 已組裝／驗證通過 |  |
+| `26_mlops_governance/04_circuit_breakers.ipynb` | 29/29 | 3/3 | 已組裝／驗證通過 |  |
+| `26_mlops_governance/05_feast_feature_store.ipynb` | 16/16 | 3/3 | 已組裝／驗證通過 |  |
+| `26_mlops_governance/05b_feast_live.ipynb` | 16/16 | 3/3 | 已組裝／驗證通過 |  |
+| `26_mlops_governance/06_mlflow_experiments.ipynb` | 26/26 | 3/3 | 已組裝／驗證通過 |  |
 | `case_studies/cme_futures/01_feasibility_analysis.ipynb` | 26/26 | 7/7 | 已組裝／驗證通過 |  |
 | `case_studies/cme_futures/02_labels.ipynb` | 28/28 | 7/7 | 已組裝／驗證通過 |  |
 | `case_studies/cme_futures/03_financial_features.ipynb` | 36/36 | 7/7 | 已組裝／驗證通過 |  |
