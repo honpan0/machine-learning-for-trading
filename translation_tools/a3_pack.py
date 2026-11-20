@@ -22,7 +22,7 @@ import pack_translation as packing
 import repair_ai_response as repair
 
 VERSION = 1
-MASK_VERSION = 11
+MASK_VERSION = 12
 TOKEN = re.compile(r"\[\[ML4T_A3_\d{4}\]\]")
 FENCED = re.compile(r"(?m)^[ \t]*(`{3,}|~{3,})[^\n]*(?:\n|$)")
 INLINE_CODE = re.compile(r"(?<!`)`{1,3}(?!`)[^\n`]*?`{1,3}(?!`)")
@@ -89,6 +89,14 @@ PRICE_RANGE_PER_TRADE_V11 = re.compile(
     r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
     r"-(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?[ \t]+per[ \t]+trade\b"
     r"(?![A-Za-z0-9_$+\-*/^_{\\(])", re.IGNORECASE
+)
+# v12: Dataset-card cost tables contain monetary ranges in a Cost Estimate
+# column. Require the closing table pipe so an arithmetic $1-2$ stays math.
+PRICE_TABLE_RANGE_V12 = re.compile(
+    r"(?<!\$)\$(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
+    r"-(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d+)?"
+    r"(?=[^\n$|]*\|)"
+    r"(?![A-Za-z0-9_$+\-*/^_{\\(])"
 )
 HTML = re.compile(r"</?[A-Za-z][^<>\n]*?>")
 DANGEROUS = re.compile(r"\\(?:frac|dfrac|tfrac|sqrt|mathcal|displaystyle|begin|end|sum|int|left|right|Gamma|Theta|Delta)\b")
@@ -206,6 +214,13 @@ def _mask_dollars_v3(raw: str, spans: list[tuple[int, int, str]], *, mask_versio
                 i = trade_range.end()
                 continue
 
+        if mask_version >= 12:
+            table_range = PRICE_TABLE_RANGE_V12.match(raw, i)
+            if table_range is not None:
+                add_span(i, table_range.end(), "price")
+                i = table_range.end()
+                continue
+
         # A numerical dollar amount followed by prose is not the opening of
         # a math expression. In particular, '$50.00; next is $60.00' must
         # protect TWO prices without swallowing 'next is'.
@@ -305,8 +320,8 @@ def _mask_outer_dollars_v9(raw: str, spans: list[tuple[int, int, str]],
 
 
 def mask_text(raw: str, with_sources: bool = False, *, mask_version: int = MASK_VERSION):
-    """Mask protected spans while preserving historical v1-v10 tokenization."""
-    if mask_version not in range(1, 12):
+    """Mask protected spans while preserving historical v1-v11 tokenization."""
+    if mask_version not in range(1, 13):
         raise A3Error(f"不支援的遮蔽版本：{mask_version}")
     if TOKEN.search(raw):
         raise A3Error("來源已包含 A3 佔位符；停止以避免混淆")

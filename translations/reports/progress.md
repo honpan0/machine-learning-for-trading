@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**474** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**9** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**483** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**0** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -480,12 +480,12 @@
 | `case_studies/us_firm_characteristics/15_holdout_predictions.ipynb` | 9/9 | 2/2 | 已組裝／驗證通過 |  |
 | `case_studies/us_firm_characteristics/16_holdout_backtest.ipynb` | 11/11 | 3/3 | 已組裝／驗證通過 |  |
 | `case_studies/us_firm_characteristics/17_strategy_analysis.ipynb` | 51/51 | 7/7 | 已組裝／驗證通過 |  |
-| `data/crypto/market/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/equities/firm_characteristics/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/equities/market/microstructure/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/equities/market/us_equities/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/etfs/market/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/factors/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/futures/market/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/fx/market/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
-| `data/macro/dataset_card.ipynb` | — | 0/0 | 未開始 |  |
+| `data/crypto/market/dataset_card.ipynb` | 15/15 | 1/1 | 已組裝／驗證通過 |  |
+| `data/equities/firm_characteristics/dataset_card.ipynb` | 12/12 | 1/1 | 已組裝／驗證通過 |  |
+| `data/equities/market/microstructure/dataset_card.ipynb` | 17/17 | 1/1 | 已組裝／驗證通過 |  |
+| `data/equities/market/us_equities/dataset_card.ipynb` | 14/14 | 1/1 | 已組裝／驗證通過 |  |
+| `data/etfs/market/dataset_card.ipynb` | 14/14 | 1/1 | 已組裝／驗證通過 |  |
+| `data/factors/dataset_card.ipynb` | 15/15 | 1/1 | 已組裝／驗證通過 |  |
+| `data/futures/market/dataset_card.ipynb` | 14/14 | 1/1 | 已組裝／驗證通過 |  |
+| `data/fx/market/dataset_card.ipynb` | 15/15 | 1/1 | 已組裝／驗證通過 |  |
+| `data/macro/dataset_card.ipynb` | 14/14 | 1/1 | 已組裝／驗證通過 |  |

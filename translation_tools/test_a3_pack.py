@@ -309,6 +309,29 @@ class MaskV11CommissionRangeTests(unittest.TestCase):
         self.assertEqual(list(parts.values()), ['$0-1$', '$x$'])
 
 
+class MaskV12TablePriceRangeTests(unittest.TestCase):
+    def test_futures_dataset_card_cost_table(self):
+        source = ("| Hourly OHLCV | ~$0.50-1.00 per product per year |\n"
+                  "| Daily OHLCV | ~$0.05-0.10 per product per year |\n"
+                  "| Full 30 products x 15 years | ~$75-100 |")
+        with self.assertRaises(a3.A3Error):
+            a3.mask_text(source, mask_version=11)
+        masked, tokens, pieces = a3.mask_text(source, True, mask_version=12)
+        self.assertEqual(list(pieces.values()), ["$0.50-1.00", "$0.05-0.10", "$75-100"])
+        self.assertTrue(all(token["kind"] == "price" for token in tokens))
+        for key, value in pieces.items():
+            masked = masked.replace(key, value)
+        self.assertEqual(masked, source)
+
+    def test_math_and_ambiguous_prose_still_fail_closed(self):
+        _, tokens, pieces = a3.mask_text("| Formula | $1-2$ |", True, mask_version=12)
+        self.assertEqual(list(pieces.values()), ["$1-2$"])
+        self.assertEqual(tokens[0]["kind"], "math")
+        for source in ("Estimate $1-2", "| Cost | $1-2"):
+            with self.subTest(source=source), self.assertRaises(a3.A3Error):
+                a3.mask_text(source, mask_version=12)
+
+
 class MaskV4UnitPricesTests(unittest.TestCase):
     def test_databento_dollar_price_with_per_symbol_per_month(self):
         source = "ITCH (Free) | DataBento (~$10/symbol/mo), with notes."
@@ -455,7 +478,7 @@ class MaskV6RatioFormulaTests(unittest.TestCase):
         for version in (4, 5):
             with self.subTest(version=version), self.assertRaises(a3.A3Error):
                 a3.mask_text("$1/c(u)$", mask_version=version)
-        self.assertEqual(a3.MASK_VERSION, 11)
+        self.assertEqual(a3.MASK_VERSION, 12)
 
     def test_v6_ratio_restore_and_extra_dollar_rejection(self):
         source = "Weighted uniqueness $1/c(u)$ remains well-defined."
