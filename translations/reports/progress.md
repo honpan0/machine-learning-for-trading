@@ -1,8 +1,8 @@
 # ML4T 中英對照翻譯進度總覽
 
 - 原始 Notebook：**483** 份
-- 已驗證：**443** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
-- 未開始：**40** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
+- 已驗證：**454** 份；翻譯中：**0** 份；已翻完待組裝：**0** 份
+- 未開始：**29** 份；已組裝未驗證：**0** 份；需要檢查：**0** 份
 
 | Notebook | 翻譯單元 | 批次 | 狀態 | 備註 |
 |---|---:|---:|---|---|
@@ -252,17 +252,17 @@
 | `23_knowledge_graphs/08_8k_event_extraction.ipynb` | 35/35 | 2/2 | 已組裝／驗證通過 |  |
 | `23_knowledge_graphs/09_knowledge_graph_features.ipynb` | 42/42 | 3/3 | 已組裝／驗證通過 |  |
 | `23_knowledge_graphs/10_network_portfolio_construction.ipynb` | 34/34 | 2/2 | 已組裝／驗證通過 |  |
-| `24_autonomous_agents/01_react_reasoning.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/02_tool_contracts.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/03_state_and_memory.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/04_research_agent.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/05_aggregation_math.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/06_multi_agent_research.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/07_adversarial_debate.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/08_forecasting_pipeline.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/09_evaluation_and_governance.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/10_framework_comparison.ipynb` | — | 0/0 | 未開始 |  |
-| `24_autonomous_agents/11_research_operator.ipynb` | — | 0/0 | 未開始 |  |
+| `24_autonomous_agents/01_react_reasoning.ipynb` | 15/15 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/02_tool_contracts.ipynb` | 20/20 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/03_state_and_memory.ipynb` | 28/28 | 4/4 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/04_research_agent.ipynb` | 27/27 | 4/4 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/05_aggregation_math.ipynb` | 21/21 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/06_multi_agent_research.ipynb` | 18/18 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/07_adversarial_debate.ipynb` | 22/22 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/08_forecasting_pipeline.ipynb` | 19/19 | 2/2 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/09_evaluation_and_governance.ipynb` | 25/25 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/10_framework_comparison.ipynb` | 13/13 | 3/3 | 已組裝／驗證通過 |  |
+| `24_autonomous_agents/11_research_operator.ipynb` | 24/24 | 4/4 | 已組裝／驗證通過 |  |
 | `25_live_trading/01_unified_framework_demo.ipynb` | — | 0/0 | 未開始 |  |
 | `25_live_trading/02_etfs_deployment_loop.ipynb` | — | 0/0 | 未開始 |  |
 | `25_live_trading/03_ib_paper_trading_demo.ipynb` | — | 0/0 | 未開始 |  |
